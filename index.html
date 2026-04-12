@@ -302,7 +302,7 @@ body{
 .pg-scroll{overflow:hidden;flex:1;padding:36px 26px 8px}
 
 /* right-side pages: align content start with left-page title+divider */
-.pg-r-align{padding-top:95px}
+.pg-r-align{padding-top:115px}
 
 /* ── NAVIGATION ── */
 #nav-wrap{
@@ -563,10 +563,6 @@ const SPREADS = [
       <div class="cmp-title" style="color:#8a1a1a;display:flex;align-items:center;gap:5px"><iconify-icon icon="solar:user-bold" style="font-size:14px;color:#e8394b"></iconify-icon>시니어 (5년차+)</div>
       ${["안정성 붕괴 (조직개편)","영향력 제한","보상 경쟁력 저하","리더십 실망","커리어 정체 우려"].map(t=>`<div class="cmp-item"><div class="cmp-dot" style="background:#e8394b"></div><div>${t}</div></div>`).join('')}
     </div>
-  </div>
-  <div class="card card-gray">
-    <div class="pg-subtitle" style="display:flex;align-items:center;gap:5px"><iconify-icon icon="solar:danger-triangle-bold" style="font-size:13px;color:#e67e22"></iconify-icon>물류 기업 E 특이 사항</div>
-    <div style="font-size:10.5px;color:#4a4640;margin-top:4px;line-height:1.6;word-break:keep-all">전체 퇴직률 12.3% 중 저연차(1~4년) 퇴직 비중 <strong style="color:#e8394b">90%+</strong>. 환경 적응 실패가 가장 큰 변수. 입사 전 직무 환경 안내가 핵심 개입 포인트.</div>
   </div>
 </div>
 <div class="pg-footer"><span class="pg-footer-text">CH.3 — 5개사 비교 분석</span><span class="pg-footer-text">5</span></div>
@@ -930,7 +926,7 @@ const SPREADS = [
 [
 `<div class="pg" style="border-radius:10px 0 0 10px">
 <div class="pg-scroll">
-  <div class="ch-label" style="color:#e67e22"><iconify-icon icon="solar:case-round-minimalistic-bold"></iconify-icon>CHAPTER 11 · 주니어 리텐션 ① 부록</div>
+  <div class="ch-label" style="color:#e67e22"><iconify-icon icon="solar:case-round-minimalistic-bold"></iconify-icon>CHAPTER 11 · 채용 담당자 액션</div>
   <div class="pg-title">채용 담당자가<br><em>할 수 있는 것</em></div>
   <div class="divider" style="background:linear-gradient(to right,#e67e22,rgba(230,126,34,.1))"></div>
   <div class="pg-body" style="margin-bottom:12px">주니어 리텐션은 현업만의 과제가 아니다. <strong>채용 단계에서부터 HR이 개입할 수 있는 4가지 핵심 액션.</strong></div>
@@ -944,7 +940,7 @@ const SPREADS = [
       ${["JD에 실제 업무 비중(%) 및 반복 업무 비율 명시","면접 시 '이 직무의 어려운 점'도 솔직하게 공유","프리보딩 페이지로 입사 전 현실 정보 전달"].map(t=>`<div class="chk-item"><div class="chk-icon ci-a"><iconify-icon icon="solar:arrow-right-bold"></iconify-icon></div><div>${t}</div></div>`).join('')}
     </div>
   </div>
-  <div class="card card-amber" style="margin-bottom:9px">
+  <div class="card card-amber">
     <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
       <div style="width:32px;height:32px;border-radius:50%;background:#e67e22;display:flex;align-items:center;justify-content:center;flex-shrink:0"><iconify-icon icon="solar:graph-up-bold" style="font-size:16px;color:#fff"></iconify-icon></div>
       <div><div style="font-size:9.5px;color:#7a3c00;font-weight:700;letter-spacing:.06em;text-transform:uppercase">ACTION 02</div><div class="pg-subtitle" style="color:#7a3c00;margin-bottom:0">성장 사례 제시</div></div>
@@ -965,19 +961,19 @@ const SPREADS = [
       <div style="width:32px;height:32px;border-radius:50%;background:#e67e22;display:flex;align-items:center;justify-content:center;flex-shrink:0"><iconify-icon icon="solar:users-group-two-rounded-bold" style="font-size:16px;color:#fff"></iconify-icon></div>
       <div><div style="font-size:9.5px;color:#7a3c00;font-weight:700;letter-spacing:.06em;text-transform:uppercase">ACTION 03</div><div class="pg-subtitle" style="color:#7a3c00;margin-bottom:0">팀과 리더십 검증</div></div>
     </div>
-    <div class="pg-body">채용 단계에서 현업 팀 문화와 리더 스타일을 충분히 파악한다. 주니어는 <strong>사람에 영향을 많이 받으므로</strong> 팀 환경이 핏에 맞는지 사전 확인.</div>
+    <div class="pg-body">채용 단계에서 현업 팀 문화와 리더 스타일을 충분히 파악한다. 주니어는 <strong>사람에 영향을 많이 받으므로</strong> 팀 환경 핏 사전 확인.</div>
     <div class="chk-list" style="margin-top:6px">
       ${["면접 시 팀 문화·소통 방식에 대한 질문 구조화","현업 팀장 면접 참여 시 리더십 스타일 전달 의무화","팀 분위기를 보여주는 콘텐츠(팀 인터뷰 등) 활용"].map(t=>`<div class="chk-item"><div class="chk-icon ci-a"><iconify-icon icon="solar:arrow-right-bold"></iconify-icon></div><div>${t}</div></div>`).join('')}
     </div>
   </div>
-  <div class="card card-amber" style="margin-bottom:10px">
+  <div class="card card-amber" style="margin-bottom:9px">
     <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
       <div style="width:32px;height:32px;border-radius:50%;background:#e67e22;display:flex;align-items:center;justify-content:center;flex-shrink:0"><iconify-icon icon="solar:chart-2-bold" style="font-size:16px;color:#fff"></iconify-icon></div>
       <div><div style="font-size:9.5px;color:#7a3c00;font-weight:700;letter-spacing:.06em;text-transform:uppercase">ACTION 04</div><div class="pg-subtitle" style="color:#7a3c00;margin-bottom:0">초기 적응 모니터링</div></div>
     </div>
     <div class="pg-body">입사 후 1~6개월 사이 설문·인터뷰를 통해 <strong>조기 이탈 신호를 파악</strong>한다. 채용 담당자도 온보딩 플랜에 참여해야 한다.</div>
     <div class="chk-list" style="margin-top:6px">
-      ${["입사 1/3/6개월 시점 적응도 설문 운영","이탈 위험군 조기 감지 → HR-현업 공동 대응","채용 담당자의 온보딩 플랜 참여 의무화","채용-온보딩 연결 피드백 루프 구축"].map(t=>`<div class="chk-item"><div class="chk-icon ci-a"><iconify-icon icon="solar:arrow-right-bold"></iconify-icon></div><div>${t}</div></div>`).join('')}
+      ${["입사 1/3/6개월 시점 적응도 설문 운영","이탈 위험군 조기 감지 → HR-현업 공동 대응","채용 담당자의 온보딩 플랜 참여 의무화"].map(t=>`<div class="chk-item"><div class="chk-icon ci-a"><iconify-icon icon="solar:arrow-right-bold"></iconify-icon></div><div>${t}</div></div>`).join('')}
     </div>
   </div>
   <div class="insight">
@@ -999,39 +995,27 @@ const SPREADS = [
   <div class="pg-body" style="margin-bottom:10px">실제로 초기 이탈률을 낮춘 검증된 온보딩 프로그램들. 물류 기업 E 자체 운영 사례부터 타사 벤치마크까지.</div>
   <div class="co-card" style="margin-bottom:10px">
     <div class="co-head" style="background:linear-gradient(135deg,#0d4a3a,#085038)">
-      <div><div class="co-name">물류 기업 E · 입문교육 4박 5일</div><div class="co-rate">3년째 운영 · 초기 이탈률 대폭 감소 확인</div></div>
+      <div><div class="co-name">물류업 · 입문교육 4박 5일</div><div class="co-rate">3년째 운영 · 초기 이탈률 대폭 감소 확인</div></div>
       <span class="tag tag-t" style="font-size:9px">Best Practice</span>
     </div>
     <div class="co-body">
-      <div style="display:flex;gap:6px;margin-bottom:8px">
-        <div style="flex:1;background:#e8f8f0;border-radius:6px;padding:8px;text-align:center;border:1px solid #b8ead5">
-          <iconify-icon icon="solar:academic-cap-bold" style="font-size:20px;color:#1DB87A"></iconify-icon>
-          <div style="font-size:9px;color:#0a6640;font-weight:600;margin-top:3px">CVS 물류<br>직무교육</div>
-        </div>
-        <div style="flex:1;background:#e8f8f0;border-radius:6px;padding:8px;text-align:center;border:1px solid #b8ead5">
-          <iconify-icon icon="solar:users-group-two-rounded-bold" style="font-size:20px;color:#1DB87A"></iconify-icon>
-          <div style="font-size:9px;color:#0a6640;font-weight:600;margin-top:3px">동기문화<br>형성</div>
-        </div>
-        <div style="flex:1;background:#e8f8f0;border-radius:6px;padding:8px;text-align:center;border:1px solid #b8ead5">
-          <iconify-icon icon="solar:heart-bold" style="font-size:20px;color:#1DB87A"></iconify-icon>
-          <div style="font-size:9px;color:#0a6640;font-weight:600;margin-top:3px">HR 케어<br>인식 강화</div>
-        </div>
-        <div style="flex:1;background:#e8f8f0;border-radius:6px;padding:8px;text-align:center;border:1px solid #b8ead5">
-          <iconify-icon icon="solar:gift-bold" style="font-size:20px;color:#1DB87A"></iconify-icon>
-          <div style="font-size:9px;color:#0a6640;font-weight:600;margin-top:3px">웰컴키트<br>단체복</div>
-        </div>
-      </div>
       <div class="chk-list">
         ${["편의점 물류 사전 직무교육 → 현장 적응력 대폭 향상","동기문화 형성 → 소속감 확대 + HR 케어 인식 강화","웰컴키트·단체복 지급으로 소속감 향상 및 브랜딩 효과","3년 연속 운영 결과: 초기 이탈률 유의미하게 감소"].map(t=>`<div class="chk-item"><div class="chk-icon ci-t"><iconify-icon icon="solar:check-bold"></iconify-icon></div><div>${t}</div></div>`).join('')}
       </div>
     </div>
   </div>
-  <div class="card card-amber">
+  <div class="card card-amber" style="margin-bottom:9px">
     <div class="pg-subtitle" style="color:#7a3c00;margin-bottom:6px;display:flex;align-items:center;gap:5px"><iconify-icon icon="solar:smartphone-2-bold" style="font-size:14px;color:#e67e22"></iconify-icon>프리보딩 페이지 (현재 제작 중)</div>
     <div style="display:flex;gap:5px;margin-bottom:6px;flex-wrap:wrap">
       <span class="tag tag-a">회사소개</span><span class="tag tag-a">물류센터 소개</span><span class="tag tag-a">인근 맛집</span><span class="tag tag-a">거주지 정보</span>
     </div>
-    <div style="font-size:10.5px;color:#4a4640;line-height:1.6">입사 전부터 현장 정보를 사전 제공하여 적응력을 높이는 시도. 프리보딩 + 입문교육 + JD개선을 연결하여 <strong>"입사 전부터 현실을 보여준다"</strong>는 방향으로 채용-온보딩 연결.</div>
+    <div style="font-size:11px;color:#4a4640;line-height:1.6">입사 전부터 현장 정보를 사전 제공하여 적응력을 높이는 시도.</div>
+  </div>
+  <div style="background:linear-gradient(135deg,#f0fbf6,#e8f8f0);border-radius:10px;padding:12px;border:1px solid #b8ead5">
+    <div style="display:flex;align-items:center;justify-content:center;gap:4px;flex-wrap:wrap;margin-bottom:8px">
+      ${[["프리보딩","#e67e22"],["입문교육","#1DB87A"],["현장배치","#534AB7"],["체크인","#e8394b"]].map(([n,c],i)=>`${i>0?'<iconify-icon icon="solar:arrow-right-linear" style="font-size:11px;color:#b8b4aa"></iconify-icon>':''}<div style="background:${c};color:#fff;padding:5px 10px;border-radius:5px;font-size:10px;font-weight:700">${n}</div>`).join('')}
+    </div>
+    <div style="font-size:9.5px;color:#4a4640;text-align:center;line-height:1.5"><strong style="color:#0a6640">끊김 없는 연결 구조가 핵심</strong></div>
   </div>
 </div>
 <div class="pg-footer"><span class="pg-footer-text">CH.12 — 주니어 리텐션 ② 온보딩 우수 사례</span><span class="pg-footer-text">14</span></div>
@@ -1039,21 +1023,14 @@ const SPREADS = [
 
 `<div class="pg" style="border-radius:0 10px 10px 0">
 <div class="pg-scroll pg-r-align">
-  <div class="pg-subtitle" style="margin-bottom:8px">온보딩 프로세스 연결 구조</div>
-  <div style="background:linear-gradient(135deg,#f0fbf6,#e8f8f0);border-radius:10px;padding:14px;margin-bottom:12px;border:1px solid #b8ead5">
-    <div style="display:flex;align-items:center;justify-content:center;gap:4px;flex-wrap:wrap;margin-bottom:10px">
-      ${[["프리보딩","#e67e22"],["입문교육","#1DB87A"],["현장배치","#534AB7"],["체크인","#e8394b"]].map(([n,c],i)=>`${i>0?'<iconify-icon icon="solar:arrow-right-linear" style="font-size:11px;color:#b8b4aa"></iconify-icon>':''}<div style="background:${c};color:#fff;padding:5px 10px;border-radius:5px;font-size:10px;font-weight:700">${n}</div>`).join('')}
-    </div>
-    <div style="font-size:9.5px;color:#4a4640;text-align:center;line-height:1.6">채용 공고 → 프리보딩 → 4박5일 입문교육 → 현장 버디 배정 → 1/3개월 체크인<br><strong style="color:#0a6640">끊김 없는 연결 구조가 핵심</strong></div>
-  </div>
   <div class="pg-subtitle" style="margin-bottom:6px">온보딩 실패 패턴 (주의 사항)</div>
-  <div class="card card-coral" style="margin-bottom:8px">
-    <div style="font-size:9px;color:#8a1a1a;font-weight:700;letter-spacing:.06em;margin-bottom:5px;text-transform:uppercase">52%의 기업이 온보딩을 7일 이하로 진행</div>
+  <div class="card card-coral" style="margin-bottom:9px">
+    <div style="font-size:9.5px;color:#8a1a1a;font-weight:700;letter-spacing:.06em;margin-bottom:5px;text-transform:uppercase">52%의 기업이 온보딩을 7일 이하로 진행</div>
     <div class="chk-list">
       ${["채용과 온보딩 프로세스가 연결되지 않는다","JD/채용 단계의 역할·기대치가 온보딩으로 이어지지 않음","성과 기준이 불명확 — 신입이 무엇으로 인정받는지 모름","프리보딩을 진행하지 않는다 (합격 통보 후 방치)","온보딩을 단기 이벤트로 운영 — 일회성에 그침"].map(t=>`<div class="chk-item"><div class="chk-icon ci-c"><iconify-icon icon="solar:close-bold"></iconify-icon></div><div>${t}</div></div>`).join('')}
     </div>
   </div>
-  <div class="insight">
+  <div class="insight" style="margin-bottom:9px">
     <div class="insight-label"><iconify-icon icon="solar:target-bold" style="font-size:10px"></iconify-icon> 해결책</div>
     <div class="insight-text">30/60/90일 시점의 <strong style="color:#4ECDC4">마일스톤 설계</strong>가 핵심. 온보딩은 이벤트가 아니라 <strong style="color:#4ECDC4">최소 90일의 프로세스</strong>로 설계해야 한다.</div>
   </div>
@@ -1173,17 +1150,9 @@ const SPREADS = [
       ${["구성원 1인당 담당 물류센터 배정","고민·고충이 있으면 담당자에게 바로 1:1 연결","현장 분산 구조에서 '나만의 HR 담당자'가 있다는 심리적 안전망","정기 순회 + 비정기 소통 채널 병행 운영"].map(t=>`<div class="chk-item"><div class="chk-icon ci-a"><iconify-icon icon="solar:check-bold"></iconify-icon></div><div>${t}</div></div>`).join('')}
     </div>
   </div>
-  <div class="pg-subtitle" style="margin-bottom:6px">업종별 온보딩 특성 — 물류업</div>
-  <div class="card card-gray" style="margin-bottom:10px">
-    <div style="font-size:10.5px;color:#4a4640;line-height:1.65">
-      <strong>핵심 과제:</strong> 표준화 + 현장 밀착<br>
-      <strong>구조적 특징:</strong> 센터별 분산 → 멘토링 제도화 + 분기/반기/연간 집합 교육<br>
-      <strong>차별점:</strong> 오피스 기반 기업과 달리 <strong>물리적 분산</strong>이 가장 큰 변수 → 디지털 소통 채널 + 정기 집합이 필수
-    </div>
-  </div>
   <div class="insight">
     <div class="insight-label"><iconify-icon icon="solar:star-shine-bold" style="font-size:10px"></iconify-icon> 주니어 리텐션 핵심 요약</div>
-    <div class="insight-text">채용 공고부터 3주년까지 <strong style="color:#4ECDC4">끊김 없는 연결 구조</strong>가 핵심이다. JD 구체화 → 프리보딩 → 입문교육 → 버디 → 주년 교육 → 주니어보드. 이 파이프라인이 주니어 리텐션의 전부다.</div>
+    <div class="insight-text">채용 공고부터 3주년까지 <strong style="color:#4ECDC4">끊김 없는 연결 구조</strong>가 핵심이다.<br>JD 구체화 → 프리보딩 → 입문교육 → 버디 → 주년 교육 → 주니어보드</div>
   </div>
 </div>
 <div class="pg-footer"><span class="pg-footer-text">CH.14 — 주니어 리텐션 ④ 저연차 이탈 방지</span><span class="pg-footer-text">16</span></div>
@@ -1203,16 +1172,15 @@ const SPREADS = [
   </div>
   <div class="card card-coral" style="margin-bottom:8px">
     <div style="font-size:9.5px;color:#8a1a1a;font-weight:700;letter-spacing:.08em;margin-bottom:4px;text-transform:uppercase">01 · 안정성 붕괴 방지</div>
-    <div class="pg-body" style="margin-bottom:6px">조직 변화로 인한 안정성 붕괴를 방지하기 위해, 역할 변경 시 기존 전문성과 유지 역할을 명확히 하고 <strong>전문 영역 책임을 부여</strong>하여 지속적인 기여 구조를 설계한다.</div>
     <div class="chk-list">
-      ${["조직 단위·직책·포지션별 요구 역량 및 성과 기준 정의 (허들 설정)","개인에게 권한과 책임을 명확히 부여 — 기대치를 투명 공개","조직개편 시에도 흔들리지 않는 평가 프레임워크 운영","역할 변경 시 기존 전문성 유지 역할을 문서화"].map(t=>`<div class="chk-item"><div class="chk-icon ci-c"><iconify-icon icon="solar:arrow-right-bold"></iconify-icon></div><div>${t}</div></div>`).join('')}
+      ${["조직 단위·직책·포지션별 요구 역량 및 성과 기준 정의 (허들 설정)","개인에게 권한과 책임을 명확히 부여 — 기대치 투명 공개","역할 변경 시 기존 전문성 유지 역할을 문서화"].map(t=>`<div class="chk-item"><div class="chk-icon ci-c"><iconify-icon icon="solar:arrow-right-bold"></iconify-icon></div><div>${t}</div></div>`).join('')}
     </div>
   </div>
   <div class="card card-coral">
     <div style="font-size:9.5px;color:#8a1a1a;font-weight:700;letter-spacing:.08em;margin-bottom:4px;text-transform:uppercase">02 · R&R 명확화 — Decision Rights 맵</div>
-    <div class="pg-body" style="margin-bottom:6px">업무의 나열이 아니라 <strong>"어디까지 내 맘대로 결정할 수 있는가"</strong>를 정의한다. (예: 예산 집행권, 채용, 외부 파트너십 체결권 등)</div>
+    <div class="pg-body" style="margin-bottom:6px">"어디까지 내 맘대로 결정할 수 있는가"를 정의 (예산 집행권, 채용, 파트너십 체결권)</div>
     <div class="chk-list">
-      ${["Decision Rights 맵: 결정 권한의 범위를 문서화·공식화","조직개편 시에도 결정권 범위가 유지되면 영향력 보존 체감","리더-시니어 간 결정 권한 충돌 방지 가이드 운영"].map(t=>`<div class="chk-item"><div class="chk-icon ci-c"><iconify-icon icon="solar:arrow-right-bold"></iconify-icon></div><div>${t}</div></div>`).join('')}
+      ${["결정 권한의 범위를 문서화·공식화","조직개편 시에도 결정권 범위가 유지되면 영향력 보존 체감","리더-시니어 간 결정 권한 충돌 방지 가이드 운영"].map(t=>`<div class="chk-item"><div class="chk-icon ci-c"><iconify-icon icon="solar:arrow-right-bold"></iconify-icon></div><div>${t}</div></div>`).join('')}
     </div>
   </div>
 </div>
@@ -1261,16 +1229,14 @@ const SPREADS = [
   </div>
   <div class="card card-amber" style="margin-bottom:8px">
     <div style="font-size:9.5px;color:#7a3c00;font-weight:700;letter-spacing:.08em;margin-bottom:4px;text-transform:uppercase">02 · Skill-up Support 패키지</div>
-    <div class="pg-body" style="margin-bottom:6px">단순 교육비 지원을 넘어, <strong>시장 경쟁력을 회사 비용으로 키워주고 있음</strong>을 체감시키는 구조.</div>
     <div class="chk-list">
       ${["글로벌 컨퍼런스 참관 지원","고가 유료 리포트 구독권 제공","외부 전문가 네트워킹 비용 지원","한도 없는 학습 계정으로 자기 투자 극대화"].map(t=>`<div class="chk-item"><div class="chk-icon ci-a"><iconify-icon icon="solar:check-bold"></iconify-icon></div><div>${t}</div></div>`).join('')}
     </div>
   </div>
   <div class="card card-coral">
     <div style="font-size:9.5px;color:#8a1a1a;font-weight:700;letter-spacing:.08em;margin-bottom:4px;text-transform:uppercase">03 · 시장 경쟁력 격차 관리</div>
-    <div class="pg-body" style="margin-bottom:6px">외부 대비 경쟁력 격차 인식을 낮추기 위한 투명한 보상 관리 체계.</div>
     <div class="chk-list">
-      ${["시장 기준 보상 현황 매년 투명 공유 (본인 위치 확인 가능)","동일 시장 평균치 대비 본인 수준을 투명하게 안내","핵심 프로젝트 및 성장 기회 우선 제공","리더 보상 패키지 별도 운영·관리 (사전 케어 체계)"].map(t=>`<div class="chk-item"><div class="chk-icon ci-c"><iconify-icon icon="solar:arrow-right-bold"></iconify-icon></div><div>${t}</div></div>`).join('')}
+      ${["시장 기준 보상 현황 매년 투명 공유 (본인 위치 확인 가능)","핵심 프로젝트 및 성장 기회 우선 제공","리더 보상 패키지 별도 운영·관리 (사전 케어 체계)"].map(t=>`<div class="chk-item"><div class="chk-icon ci-c"><iconify-icon icon="solar:arrow-right-bold"></iconify-icon></div><div>${t}</div></div>`).join('')}
     </div>
   </div>
 </div>
