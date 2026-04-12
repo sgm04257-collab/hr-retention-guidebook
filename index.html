@@ -427,7 +427,7 @@ const SPREADS = [
   <div class="ch-label"><iconify-icon icon="solar:list-bold"></iconify-icon>CONTENTS</div>
   <div class="pg-title">목 차</div>
   <div style="margin-top:12px">
-    ${[["CH.1","왜 우리는 사람을 놓치는가","3"],["CH.2","거시 환경 분석 2024~2026","4"],["CH.3","5개사 퇴사 원인 비교","5"],["CH.4","메타넷 · 위버스 심층 분석","6"],["CH.5","키다리/레진 · 라이나 · BGF","7"],["CH.6","공통 패턴 3대 인사이트","8"],["CH.7","Phase 1 — 채용 전 전략","9"],["CH.8","Phase 2 — 온보딩 90일","10"],["CH.9","Phase 3 — 성장 경로","11"],["CH.10","리텐션 통합 프레임워크","12"]].map(([c,t,p],i)=>`<div class="toc-row" onclick="goTo(${i+2})"><span class="toc-ch">${c}</span><span class="toc-title">${t}</span><span style="flex:1;border-bottom:1px dotted #e0ddd8;margin:0 5px 3px"></span><span class="toc-pg">${p}</span></div>`).join('')}
+    ${[["CH.1","왜 우리는 사람을 놓치는가","3"],["CH.2","거시 환경 분석 2024~2026","4"],["CH.3","5개사 퇴사 원인 비교","5"],["CH.4","메타넷 · 위버스 심층 분석","6"],["CH.5","키다리/레진 · 라이나 · BGF","7"],["CH.6","공통 패턴 3대 인사이트","8"],["CH.7","Phase 1 — 채용 전 전략","9"],["CH.8","Phase 2 — 온보딩 90일","10"],["CH.9","Phase 3 — 성장 경로","11"],["CH.10","리텐션 통합 프레임워크","12"],["CH.11","주니어 리텐션 실전 전략","13"],["CH.12","시니어 리텐션 실전 전략","14"]].map(([c,t,p],i)=>`<div class="toc-row" onclick="goTo(${i+2})"><span class="toc-ch">${c}</span><span class="toc-title">${t}</span><span style="flex:1;border-bottom:1px dotted #e0ddd8;margin:0 5px 3px"></span><span class="toc-pg">${p}</span></div>`).join('')}
   </div>
 </div>
 <div class="pg-footer"><span class="pg-footer-text">HR RETENTION PROJECT</span><span class="pg-footer-text">2</span></div>
@@ -438,7 +438,7 @@ const SPREADS = [
   <div class="ch-label" style="color:#e67e22"><iconify-icon icon="solar:users-group-two-rounded-bold"></iconify-icon>MEMBER DATA</div>
   <div class="pg-title">조원 자료</div>
   <div style="margin-top:12px">
-    ${[["M-01","조원 1 자료","13"],["M-02","조원 2 자료","14"],["M-03","조원 3 자료","15"],["M-04","조원 4 자료","16"],["M-05","조원 5 자료","17"]].map(([c,t,p],i)=>`<div class="toc-row" onclick="goTo(${i+13})"><span class="toc-ch" style="color:#e67e22">${c}</span><span class="toc-title">${t}</span><span style="flex:1;border-bottom:1px dotted #e0ddd8;margin:0 5px 3px"></span><span class="toc-pg">${p}</span></div>`).join('')}
+    ${[["M-01","조원 1 자료","15"],["M-02","조원 2 자료","16"],["M-03","조원 3 자료","17"],["M-04","조원 4 자료","18"],["M-05","조원 5 자료","19"]].map(([c,t,p],i)=>`<div class="toc-row" onclick="goTo(${i+15})"><span class="toc-ch" style="color:#e67e22">${c}</span><span class="toc-title">${t}</span><span style="flex:1;border-bottom:1px dotted #e0ddd8;margin:0 5px 3px"></span><span class="toc-pg">${p}</span></div>`).join('')}
   </div>
   <div class="insight" style="margin-top:18px">
     <div class="insight-label"><iconify-icon icon="solar:target-bold" style="font-size:10px"></iconify-icon> 이 가이드북의 목적</div>
@@ -869,6 +869,130 @@ const SPREADS = [
 [
 `<div class="pg" style="border-radius:10px 0 0 10px">
 <div class="pg-scroll">
+  <div class="ch-label" style="color:#1DB87A"><iconify-icon icon="solar:user-heart-bold"></iconify-icon>CHAPTER 11</div>
+  <div class="pg-title">주니어 리텐션<br><em>실전 전략</em></div>
+  <div class="divider"></div>
+  <div class="pg-body" style="margin-bottom:10px">주니어가 '여기 더 있고 싶다'고 느끼게 만드는 3가지 핵심 전략. 즉각적 인정, 일의 의미, 롤모델이 답이다.</div>
+  <div class="card card-teal" style="margin-bottom:8px">
+    <div style="font-size:9px;color:#0a6640;font-weight:700;letter-spacing:.08em;margin-bottom:4px;text-transform:uppercase">전략 01</div>
+    <div class="pg-subtitle" style="color:#0a6640;margin-bottom:6px;display:flex;align-items:center;gap:5px"><iconify-icon icon="solar:chat-round-check-bold" style="font-size:14px;color:#1DB87A"></iconify-icon>즉각적이고 구체적인 피드백</div>
+    <div class="chk-list">
+      ${["작은 성과라도 즉각적이고 적절한 인정과 피드백 제공","'~해서 행동한 점이 좋았어요' — 구체적인 칭찬이 핵심","칭찬의 타이밍: 성과 발생 24시간 이내 피드백 권장","공개 인정(팀 미팅) + 개인 피드백(1:1) 병행"].map(t=>`<div class="chk-item"><div class="chk-icon ci-t"><iconify-icon icon="solar:check-bold"></iconify-icon></div><div>${t}</div></div>`).join('')}
+    </div>
+  </div>
+  <div class="card card-teal" style="margin-bottom:8px">
+    <div style="font-size:9px;color:#0a6640;font-weight:700;letter-spacing:.08em;margin-bottom:4px;text-transform:uppercase">전략 02</div>
+    <div class="pg-subtitle" style="color:#0a6640;margin-bottom:6px;display:flex;align-items:center;gap:5px"><iconify-icon icon="solar:map-bold" style="font-size:14px;color:#1DB87A"></iconify-icon>일의 의미 부여</div>
+    <div class="chk-list">
+      ${["'내가 부품인가?' 하는 생각을 하지 않도록 업무 맥락 공유","이 업무가 전체 프로젝트·회사 성과에 어떻게 연결되는지 설명","업무 배정 시 Why(왜 이 일이 중요한지)를 함께 전달","분기별 팀 성과 공유 시 개인 기여도 가시화"].map(t=>`<div class="chk-item"><div class="chk-icon ci-t"><iconify-icon icon="solar:check-bold"></iconify-icon></div><div>${t}</div></div>`).join('')}
+    </div>
+  </div>
+  <div class="card card-teal">
+    <div style="font-size:9px;color:#0a6640;font-weight:700;letter-spacing:.08em;margin-bottom:4px;text-transform:uppercase">전략 03</div>
+    <div class="pg-subtitle" style="color:#0a6640;margin-bottom:6px;display:flex;align-items:center;gap:5px"><iconify-icon icon="solar:star-bold" style="font-size:14px;color:#1DB87A"></iconify-icon>롤모델이 되는 선배·리더 만들기</div>
+    <div class="chk-list">
+      ${["리더 정기 교육으로 '본받고 싶은 선배' 환경 조성","후배 소통·커뮤니케이션 방식 교육 필수 포함","'이 회사에 오래 있고 싶다'는 생각이 들게 하는 리더십","내부 교육 프로그램으로 롤모델 리더 체계적 육성"].map(t=>`<div class="chk-item"><div class="chk-icon ci-t"><iconify-icon icon="solar:check-bold"></iconify-icon></div><div>${t}</div></div>`).join('')}
+    </div>
+  </div>
+</div>
+<div class="pg-footer"><span class="pg-footer-text">CH.11 — 주니어 리텐션 실전</span><span class="pg-footer-text">13</span></div>
+</div>`,
+
+`<div class="pg" style="border-radius:0 10px 10px 0">
+<div class="pg-scroll">
+  <div class="pg-subtitle" style="margin-bottom:8px;display:flex;align-items:center;gap:5px"><iconify-icon icon="solar:case-round-bold" style="font-size:14px;color:#1DB87A"></iconify-icon>BGF로지스 우수 사례</div>
+  <div class="co-card" style="margin-bottom:10px">
+    <div class="co-head" style="background:#0d4a3a">
+      <div><div class="co-name">입문교육 4박 5일 프로그램</div><div class="co-rate">3년째 운영 · 초기 이탈률 대폭 감소</div></div>
+      <span class="tag tag-t">Best</span>
+    </div>
+    <div class="co-body">
+      <div class="chk-list">
+        ${["신입사원 입사 시 4박 5일 집중 입문교육 진행","편의점 물류에 대한 상세 직무교육 포함","동기 문화 형성 → 소속감·유대감 강화","3년 운영 결과: 초기 이탈률 상당히 감소 확인"].map(t=>`<div class="chk-item"><div class="chk-icon ci-t"><iconify-icon icon="solar:check-bold"></iconify-icon></div><div>${t}</div></div>`).join('')}
+      </div>
+    </div>
+  </div>
+  <div class="card card-amber" style="margin-bottom:8px">
+    <div class="pg-subtitle" style="color:#7a3c00;margin-bottom:6px;display:flex;align-items:center;gap:5px"><iconify-icon icon="solar:smartphone-bold" style="font-size:14px;color:#e67e22"></iconify-icon>프리보딩 페이지 운영</div>
+    <div class="chk-list">
+      ${["입사 전 프리보딩 페이지 제작·운영 중","물류센터 소개, 인근 맛집, 거주지 정보 사전 제공","현장 적응력을 높이기 위한 선제적 정보 공유","입사 전부터 소속감 형성 유도"].map(t=>`<div class="chk-item"><div class="chk-icon ci-a"><iconify-icon icon="solar:arrow-right-bold"></iconify-icon></div><div>${t}</div></div>`).join('')}
+    </div>
+  </div>
+  <div class="card card-purple" style="margin-bottom:8px">
+    <div class="pg-subtitle" style="color:#2e2880;margin-bottom:6px;display:flex;align-items:center;gap:5px"><iconify-icon icon="solar:calendar-bold" style="font-size:14px;color:#534AB7"></iconify-icon>저연차 리텐션 프로그램</div>
+    <div class="chk-list">
+      ${["입사 1~3주년 리텐션 교육 정기 진행","동기 재회 → 소속감 재확인 → 장기 재직 효과","저연차 전용 TF 활성화로 참여감·성장감 부여","채용 공고에 커리어 로드 설계를 복리후생보다 우선 표기"].map(t=>`<div class="chk-item"><div class="chk-icon ci-p"><iconify-icon icon="solar:check-bold"></iconify-icon></div><div>${t}</div></div>`).join('')}
+    </div>
+  </div>
+  <div class="insight">
+    <div class="insight-label"><iconify-icon icon="solar:lightbulb-bolt-bold" style="font-size:10px"></iconify-icon> 핵심 포인트</div>
+    <div class="insight-text">스케줄 공유, JD와 현실의 괴리감 해소가 필수. 공고 페이지에 복리후생보다 <strong style="color:#4ECDC4">커리어 로드 설계</strong>를 더 강조하는 것이 효과적이다.</div>
+  </div>
+</div>
+<div class="pg-footer"><span class="pg-footer-text">CH.11 — 주니어 리텐션 실전</span><span class="pg-footer-text">13</span></div>
+</div>`
+],
+
+[
+`<div class="pg" style="border-radius:10px 0 0 10px">
+<div class="pg-scroll">
+  <div class="ch-label" style="color:#e8394b"><iconify-icon icon="solar:shield-user-bold"></iconify-icon>CHAPTER 12</div>
+  <div class="pg-title">시니어 리텐션<br><em>실전 전략</em></div>
+  <div class="divider" style="background:linear-gradient(to right,#e8394b,rgba(232,57,75,.1))"></div>
+  <div class="pg-body" style="margin-bottom:10px">시니어에게는 '안정성'과 '영향력'이 핵심이다. 권한의 경계와 보상의 실시간성을 설계해야 한다.</div>
+  <div class="card card-coral" style="margin-bottom:8px">
+    <div style="font-size:9px;color:#8a1a1a;font-weight:700;letter-spacing:.08em;margin-bottom:4px;text-transform:uppercase">전략 01 · 안정성 확보</div>
+    <div class="pg-subtitle" style="color:#8a1a1a;margin-bottom:6px;display:flex;align-items:center;gap:5px"><iconify-icon icon="solar:shield-check-bold" style="font-size:14px;color:#e8394b"></iconify-icon>포지션별 기대치·역량 기준 수립</div>
+    <div class="chk-list">
+      ${["개인에게 권한과 책임을 명확히 부여","포지션별 요구 역량·허들을 회사 차원에서 설정","성과 기준을 투명하게 공개하여 예측 가능성 확보","조직개편 시에도 흔들리지 않는 평가 프레임워크 운영"].map(t=>`<div class="chk-item"><div class="chk-icon ci-c"><iconify-icon icon="solar:arrow-right-bold"></iconify-icon></div><div>${t}</div></div>`).join('')}
+    </div>
+  </div>
+  <div class="card card-coral" style="margin-bottom:8px">
+    <div style="font-size:9px;color:#8a1a1a;font-weight:700;letter-spacing:.08em;margin-bottom:4px;text-transform:uppercase">전략 02 · R&R 명확화</div>
+    <div class="pg-subtitle" style="color:#8a1a1a;margin-bottom:6px;display:flex;align-items:center;gap:5px"><iconify-icon icon="solar:document-medicine-bold" style="font-size:14px;color:#e8394b"></iconify-icon>Decision Rights 맵 도입</div>
+    <div class="chk-list">
+      ${["업무 나열이 아닌 '어디까지 내 맘대로 결정할 수 있는가' 정의","조직개편 시에도 결정권 범위가 유지되면 영향력 보존 체감","권한의 경계선(Decision Rights) 문서화·공식화","리더-시니어 간 결정 권한 충돌 방지 가이드 운영"].map(t=>`<div class="chk-item"><div class="chk-icon ci-c"><iconify-icon icon="solar:arrow-right-bold"></iconify-icon></div><div>${t}</div></div>`).join('')}
+    </div>
+  </div>
+  <div class="card card-amber">
+    <div style="font-size:9px;color:#7a3c00;font-weight:700;letter-spacing:.08em;margin-bottom:4px;text-transform:uppercase">전략 03 · 72시간 스태빌리티 프로토콜</div>
+    <div class="pg-subtitle" style="color:#7a3c00;margin-bottom:6px;display:flex;align-items:center;gap:5px"><iconify-icon icon="solar:clock-circle-bold" style="font-size:14px;color:#e67e22"></iconify-icon>조직개편 후 72시간 이내 1:1 세션 의무화</div>
+    <div class="chk-list">
+      ${["조직개편·대규모 업무 조정 시 리더-시니어 1:1 세션 72h 내 완료","변경된 R&R을 문서로 확정하고 이전 업무와 클린컷 공식화","불확실성 기간을 최소화하여 이탈 심리 차단"].map(t=>`<div class="chk-item"><div class="chk-icon ci-a"><iconify-icon icon="solar:arrow-right-bold"></iconify-icon></div><div>${t}</div></div>`).join('')}
+    </div>
+  </div>
+</div>
+<div class="pg-footer"><span class="pg-footer-text">CH.12 — 시니어 리텐션 실전</span><span class="pg-footer-text">14</span></div>
+</div>`,
+
+`<div class="pg" style="border-radius:0 10px 10px 0">
+<div class="pg-scroll">
+  <div class="pg-subtitle" style="margin-bottom:8px;display:flex;align-items:center;gap:5px"><iconify-icon icon="solar:wallet-money-bold" style="font-size:14px;color:#e67e22"></iconify-icon>보상·인정 체계</div>
+  <div class="pg-body" style="margin-bottom:10px">시니어에게 다음 해 연봉협상은 너무 멀다. <strong>실시간 가치 증명</strong>이 핵심이다.</div>
+  <div class="card card-amber" style="margin-bottom:8px">
+    <div class="pg-subtitle" style="color:#7a3c00;margin-bottom:6px">리텐션 앵커 인센티브</div>
+    <div class="chk-list">
+      ${["LTI(장기 인센티브) 설계로 장기 재직 유도","Spot Recognition(현장 보상): 즉각적 성과 인정 보상","스킬업 서포트 패키지: 교육·자격증·컨퍼런스 지원","시장 수준 연봉 데이터 매년 투명 공유 (본인 위치 확인 가능)"].map(t=>`<div class="chk-item"><div class="chk-icon ci-a"><iconify-icon icon="solar:check-bold"></iconify-icon></div><div>${t}</div></div>`).join('')}
+    </div>
+  </div>
+  <div class="card card-purple" style="margin-bottom:8px">
+    <div class="pg-subtitle" style="color:#2e2880;margin-bottom:6px;display:flex;align-items:center;gap:5px"><iconify-icon icon="solar:crown-bold" style="font-size:14px;color:#534AB7"></iconify-icon>인정 체계 — 대체 불가능한 존재감</div>
+    <div class="chk-list">
+      ${["시니어 자문단 운영: 시니어 의견을 공식 수렴하는 공간 마련","마스터트랙 인증제: 특정 분야 성과를 낸 시니어에게 '마스터·펠로우' 호칭 부여","사내 아카데미 강사로서 주니어 육성 권한 공식 부여","조직 내 대체 불가능한 존재감을 제도적으로 보장"].map(t=>`<div class="chk-item"><div class="chk-icon ci-p"><iconify-icon icon="solar:check-bold"></iconify-icon></div><div>${t}</div></div>`).join('')}
+    </div>
+  </div>
+  <div class="insight">
+    <div class="insight-label"><iconify-icon icon="solar:lightbulb-bolt-bold" style="font-size:10px"></iconify-icon> 시니어 리텐션 핵심</div>
+    <div class="insight-text">시니어는 <strong style="color:#4ECDC4">결정 권한의 보존</strong>과 <strong style="color:#4ECDC4">실시간 가치 인정</strong>이 핵심이다. 연봉만으로는 붙잡을 수 없다 — 영향력과 존재감을 제도화하라.</div>
+  </div>
+</div>
+<div class="pg-footer"><span class="pg-footer-text">CH.12 — 시니어 리텐션 실전</span><span class="pg-footer-text">14</span></div>
+</div>`
+],
+
+[
+`<div class="pg" style="border-radius:10px 0 0 10px">
+<div class="pg-scroll">
   <div class="ch-label" style="color:#e67e22"><iconify-icon icon="solar:user-bold"></iconify-icon>MEMBER DATA · 01</div>
   <div class="pg-title">조원 1 자료<br><span style="font-size:13px;font-weight:500;color:#b0ada6">[ 자료 입력 예정 ]</span></div>
   <div class="divider" style="background:linear-gradient(to right,#e67e22,rgba(230,126,34,.1))"></div>
@@ -882,7 +1006,7 @@ const SPREADS = [
     <div style="font-size:10.5px;color:#666;line-height:1.75;word-break:keep-all">분석 기업 / 산업 유형 / 퇴사율 현황<br>주니어·시니어 이탈 원인 비교<br>HR 개입 가능 포인트 / 대응 방안<br>이 가이드북 프레임워크 적용 제안</div>
   </div>
 </div>
-<div class="pg-footer"><span class="pg-footer-text">M-01 — 조원 자료</span><span class="pg-footer-text">13</span></div>
+<div class="pg-footer"><span class="pg-footer-text">M-01 — 조원 자료</span><span class="pg-footer-text">15</span></div>
 </div>`,
 
 `<div class="pg" style="border-radius:0 10px 10px 0">
@@ -898,7 +1022,7 @@ const SPREADS = [
     <div style="font-weight:700;color:#c0bdb6;font-size:11px">핵심 인사이트 3줄 요약</div>
   </div>
 </div>
-<div class="pg-footer"><span class="pg-footer-text">M-01 — 조원 자료</span><span class="pg-footer-text">13</span></div>
+<div class="pg-footer"><span class="pg-footer-text">M-01 — 조원 자료</span><span class="pg-footer-text">15</span></div>
 </div>`
 ],
 
@@ -918,7 +1042,7 @@ const SPREADS = [
     <div style="font-size:10.5px;color:#666;line-height:1.75;word-break:keep-all">분석 기업 / 산업 유형 / 퇴사율 현황<br>주니어·시니어 이탈 원인 비교<br>HR 개입 가능 포인트 / 대응 방안<br>이 가이드북 프레임워크 적용 제안</div>
   </div>
 </div>
-<div class="pg-footer"><span class="pg-footer-text">M-02 — 조원 자료</span><span class="pg-footer-text">14</span></div>
+<div class="pg-footer"><span class="pg-footer-text">M-02 — 조원 자료</span><span class="pg-footer-text">16</span></div>
 </div>`,
 
 `<div class="pg" style="border-radius:0 10px 10px 0">
@@ -934,7 +1058,7 @@ const SPREADS = [
     <div style="font-weight:700;color:#c0bdb6;font-size:11px">핵심 인사이트 3줄 요약</div>
   </div>
 </div>
-<div class="pg-footer"><span class="pg-footer-text">M-02 — 조원 자료</span><span class="pg-footer-text">14</span></div>
+<div class="pg-footer"><span class="pg-footer-text">M-02 — 조원 자료</span><span class="pg-footer-text">16</span></div>
 </div>`
 ],
 
@@ -954,7 +1078,7 @@ const SPREADS = [
     <div style="font-size:10.5px;color:#666;line-height:1.75;word-break:keep-all">분석 기업 / 산업 유형 / 퇴사율 현황<br>주니어·시니어 이탈 원인 비교<br>HR 개입 가능 포인트 / 대응 방안<br>이 가이드북 프레임워크 적용 제안</div>
   </div>
 </div>
-<div class="pg-footer"><span class="pg-footer-text">M-03 — 조원 자료</span><span class="pg-footer-text">15</span></div>
+<div class="pg-footer"><span class="pg-footer-text">M-03 — 조원 자료</span><span class="pg-footer-text">17</span></div>
 </div>`,
 
 `<div class="pg" style="border-radius:0 10px 10px 0">
@@ -970,7 +1094,7 @@ const SPREADS = [
     <div style="font-weight:700;color:#c0bdb6;font-size:11px">핵심 인사이트 3줄 요약</div>
   </div>
 </div>
-<div class="pg-footer"><span class="pg-footer-text">M-03 — 조원 자료</span><span class="pg-footer-text">15</span></div>
+<div class="pg-footer"><span class="pg-footer-text">M-03 — 조원 자료</span><span class="pg-footer-text">17</span></div>
 </div>`
 ],
 
@@ -990,7 +1114,7 @@ const SPREADS = [
     <div style="font-size:10.5px;color:#666;line-height:1.75;word-break:keep-all">분석 기업 / 산업 유형 / 퇴사율 현황<br>주니어·시니어 이탈 원인 비교<br>HR 개입 가능 포인트 / 대응 방안<br>이 가이드북 프레임워크 적용 제안</div>
   </div>
 </div>
-<div class="pg-footer"><span class="pg-footer-text">M-04 — 조원 자료</span><span class="pg-footer-text">16</span></div>
+<div class="pg-footer"><span class="pg-footer-text">M-04 — 조원 자료</span><span class="pg-footer-text">18</span></div>
 </div>`,
 
 `<div class="pg" style="border-radius:0 10px 10px 0">
@@ -1006,7 +1130,7 @@ const SPREADS = [
     <div style="font-weight:700;color:#c0bdb6;font-size:11px">핵심 인사이트 3줄 요약</div>
   </div>
 </div>
-<div class="pg-footer"><span class="pg-footer-text">M-04 — 조원 자료</span><span class="pg-footer-text">16</span></div>
+<div class="pg-footer"><span class="pg-footer-text">M-04 — 조원 자료</span><span class="pg-footer-text">18</span></div>
 </div>`
 ],
 
@@ -1026,7 +1150,7 @@ const SPREADS = [
     <div style="font-size:10.5px;color:#666;line-height:1.75;word-break:keep-all">분석 기업 / 산업 유형 / 퇴사율 현황<br>주니어·시니어 이탈 원인 비교<br>HR 개입 가능 포인트 / 대응 방안<br>이 가이드북 프레임워크 적용 제안</div>
   </div>
 </div>
-<div class="pg-footer"><span class="pg-footer-text">M-05 — 조원 자료</span><span class="pg-footer-text">17</span></div>
+<div class="pg-footer"><span class="pg-footer-text">M-05 — 조원 자료</span><span class="pg-footer-text">19</span></div>
 </div>`,
 
 `<div class="pg" style="border-radius:0 10px 10px 0">
@@ -1042,7 +1166,7 @@ const SPREADS = [
     <div style="font-weight:700;color:#c0bdb6;font-size:11px">핵심 인사이트 3줄 요약</div>
   </div>
 </div>
-<div class="pg-footer"><span class="pg-footer-text">M-05 — 조원 자료</span><span class="pg-footer-text">17</span></div>
+<div class="pg-footer"><span class="pg-footer-text">M-05 — 조원 자료</span><span class="pg-footer-text">19</span></div>
 </div>`
 ],
 
