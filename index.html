@@ -397,7 +397,7 @@ const SPREADS = [
       <div style="font-size:9px;color:rgba(255,255,255,.4);margin-top:2px">출처</div>
     </div>
   </div>
-  <div style="font-size:9.5px;color:rgba(255,255,255,.25);word-break:keep-all">메타넷 &middot; 위버스 &middot; 키다리/레진 &middot; 라이나 &middot; BGF로지스</div>
+  <div style="font-size:9.5px;color:rgba(255,255,255,.25);word-break:keep-all">IT/SI &middot; 플랫폼 &middot; 콘텐츠 &middot; 금융/보험 &middot; 물류</div>
   <div style="font-size:9.5px;color:rgba(255,255,255,.2);margin-top:3px">2024&ndash;2026 최신 HR 데이터 기반</div>
 </div>
 </div>`,
@@ -427,7 +427,7 @@ const SPREADS = [
   <div class="ch-label"><iconify-icon icon="solar:list-bold"></iconify-icon>CONTENTS</div>
   <div class="pg-title">목 차</div>
   <div style="margin-top:12px">
-    ${[["CH.1","왜 우리는 사람을 놓치는가","3"],["CH.2","거시 환경 분석 2024~2026","4"],["CH.3","5개사 퇴사 원인 비교","5"],["CH.4","메타넷 · 위버스 심층 분석","6"],["CH.5","키다리/레진 · 라이나 · BGF","7"],["CH.6","공통 패턴 3대 인사이트","8"],["CH.7","Phase 1 — 채용 전 전략","9"],["CH.8","Phase 2 — 온보딩 90일","10"],["CH.9","Phase 3 — 성장 경로","11"],["CH.10","리텐션 통합 프레임워크","12"],["CH.11","주니어 리텐션 ① 핵심 전략 3축","13"],["CH.12","주니어 리텐션 ② 온보딩 우수 사례","14"],["CH.13","주니어 리텐션 ③ 타사 벤치마크","15"],["CH.14","주니어 리텐션 ④ 저연차 이탈 방지","16"],["CH.15","시니어 리텐션 실전 전략","17"]].map(([c,t,p],i)=>`<div class="toc-row" onclick="goTo(${i+2})"><span class="toc-ch">${c}</span><span class="toc-title">${t}</span><span style="flex:1;border-bottom:1px dotted #e0ddd8;margin:0 5px 3px"></span><span class="toc-pg">${p}</span></div>`).join('')}
+    ${[["CH.1","왜 우리는 사람을 놓치는가","3"],["CH.2","거시 환경 분석 2024~2026","4"],["CH.3","5개사 퇴사 원인 비교","5"],["CH.4","IT/SI · 플랫폼 심층 분석","6"],["CH.5","콘텐츠 · 금융/보험 · 물류","7"],["CH.6","공통 패턴 3대 인사이트","8"],["CH.7","Phase 1 — 채용 전 전략","9"],["CH.8","Phase 2 — 온보딩 90일","10"],["CH.9","Phase 3 — 성장 경로","11"],["CH.10","리텐션 통합 프레임워크","12"],["CH.11","주니어 리텐션 ① 핵심 전략 3축","13"],["CH.12","주니어 리텐션 ② 온보딩 우수 사례","14"],["CH.13","주니어 리텐션 ③ 타사 벤치마크","15"],["CH.14","주니어 리텐션 ④ 저연차 이탈 방지","16"],["CH.15","시니어 리텐션 실전 전략","17"]].map(([c,t,p],i)=>`<div class="toc-row" onclick="goTo(${i+2})"><span class="toc-ch">${c}</span><span class="toc-title">${t}</span><span style="flex:1;border-bottom:1px dotted #e0ddd8;margin:0 5px 3px"></span><span class="toc-pg">${p}</span></div>`).join('')}
   </div>
 </div>
 <div class="pg-footer"><span class="pg-footer-text">HR RETENTION PROJECT</span><span class="pg-footer-text">2</span></div>
@@ -539,8 +539,8 @@ const SPREADS = [
   <div class="pg-title">5개사 퇴사 원인<br><em>비교 분석</em></div>
   <div class="divider"></div>
   <table class="tbl">
-    <tr><th>기업</th><th>업종</th><th>주니어 핵심 원인</th></tr>
-    ${[["메타넷","IT","SM 반복·번아웃·성장 비전 부재","purple"],["위버스","플랫폼","JD 불일치·피드백 부재·온보딩 미흡","teal"],["키다리/레진","콘텐츠","보상 불만·외부 오퍼 격차 인지","amber"],["라이나생명","금융","워라밸 붕괴·시간 주권 침해","amber"],["BGF로지스","물류","환경 적응 실패·소통 단절","coral"]].map(([n,i,c,col])=>`<tr><td><b>${n}</b></td><td><span class="tag tag-${col}" style="font-size:8px">${i}</span></td><td>${c}</td></tr>`).join('')}
+    <tr><th>업종</th><th>분류</th><th>주니어 핵심 원인</th></tr>
+    ${[["IT/SI","IT","SM 반복·번아웃·성장 비전 부재","purple"],["플랫폼","플랫폼","JD 불일치·피드백 부재·온보딩 미흡","teal"],["콘텐츠","콘텐츠","보상 불만·외부 오퍼 격차 인지","amber"],["금융/보험","금융","워라밸 붕괴·시간 주권 침해","amber"],["물류","물류","환경 적응 실패·소통 단절","coral"]].map(([n,i,c,col])=>`<tr><td><b>${n}</b></td><td><span class="tag tag-${col}" style="font-size:8px">${i}</span></td><td>${c}</td></tr>`).join('')}
   </table>
   <div class="insight">
     <div class="insight-label"><iconify-icon icon="solar:lightbulb-minimalistic-bold" style="font-size:10px"></iconify-icon> 핵심 발견</div>
@@ -564,7 +564,7 @@ const SPREADS = [
     </div>
   </div>
   <div class="card card-gray">
-    <div class="pg-subtitle" style="display:flex;align-items:center;gap:5px"><iconify-icon icon="solar:danger-triangle-bold" style="font-size:13px;color:#e67e22"></iconify-icon>BGF로지스 특이 사항</div>
+    <div class="pg-subtitle" style="display:flex;align-items:center;gap:5px"><iconify-icon icon="solar:danger-triangle-bold" style="font-size:13px;color:#e67e22"></iconify-icon>물류 기업 E 특이 사항</div>
     <div style="font-size:10.5px;color:#4a4640;margin-top:4px;line-height:1.6;word-break:keep-all">전체 퇴직률 12.3% 중 저연차(1~4년) 퇴직 비중 <strong style="color:#e8394b">90%+</strong>. 환경 적응 실패가 가장 큰 변수. 입사 전 직무 환경 안내가 핵심 개입 포인트.</div>
   </div>
 </div>
@@ -576,10 +576,10 @@ const SPREADS = [
 `<div class="pg" style="border-radius:10px 0 0 10px">
 <div class="pg-scroll">
   <div class="ch-label" style="color:#534AB7"><iconify-icon icon="solar:magnifer-bold"></iconify-icon>CHAPTER 04</div>
-  <div class="pg-title">기업별 분석 I<br><span style="font-size:13px;font-weight:600;color:#888">메타넷 · 위버스</span></div>
+  <div class="pg-title">기업별 분석 I<br><span style="font-size:13px;font-weight:600;color:#888">IT/SI · 플랫폼</span></div>
   <div class="co-card">
     <div class="co-head" style="background:#0A2240">
-      <div><div class="co-name">메타넷 그룹</div><div class="co-rate">퇴사율 11.9% · IT 업계 평균(15~20%) 대비 선방</div></div>
+      <div><div class="co-name">IT/SI 기업 A</div><div class="co-rate">퇴사율 11.9% · IT 업계 평균(15~20%) 대비 선방</div></div>
       <span class="tag tag-p">IT</span>
     </div>
     <div class="co-body">
@@ -602,7 +602,7 @@ const SPREADS = [
   <div style="height:16px"></div>
   <div class="co-card">
     <div class="co-head" style="background:#0d4a3a">
-      <div><div class="co-name">위버스컴퍼니</div><div class="co-rate">퇴직률 급증 추세 · 성장통 국면</div></div>
+      <div><div class="co-name">플랫폼 기업 B</div><div class="co-rate">퇴직률 급증 추세 · 성장통 국면</div></div>
       <span class="tag tag-t">플랫폼</span>
     </div>
     <div class="co-body">
@@ -629,10 +629,10 @@ const SPREADS = [
 `<div class="pg" style="border-radius:10px 0 0 10px">
 <div class="pg-scroll">
   <div class="ch-label" style="color:#e67e22"><iconify-icon icon="solar:buildings-2-bold"></iconify-icon>CHAPTER 05</div>
-  <div class="pg-title">기업별 분석 II<br><span style="font-size:13px;font-weight:600;color:#888">키다리/레진 · 라이나 · BGF</span></div>
+  <div class="pg-title">기업별 분석 II<br><span style="font-size:13px;font-weight:600;color:#888">콘텐츠 · 금융/보험 · 물류</span></div>
   <div class="co-card">
     <div class="co-head" style="background:#4a2800">
-      <div><div class="co-name">키다리스튜디오 / 레진</div><div class="co-rate">팀장급 & 3년차 허리라인 이탈</div></div>
+      <div><div class="co-name">콘텐츠 기업 C</div><div class="co-rate">팀장급 & 3년차 허리라인 이탈</div></div>
       <span class="tag tag-a">콘텐츠</span>
     </div>
     <div class="co-body">
@@ -644,7 +644,7 @@ const SPREADS = [
   </div>
   <div class="co-card">
     <div class="co-head" style="background:#4a1d00">
-      <div><div class="co-name">라이나생명</div><div class="co-rate">전 세대(X/M/Z) 복합 이탈</div></div>
+      <div><div class="co-name">금융/보험 기업 D</div><div class="co-rate">전 세대(X/M/Z) 복합 이탈</div></div>
       <span class="tag tag-a">금융</span>
     </div>
     <div class="co-body">
@@ -663,7 +663,7 @@ const SPREADS = [
   <div style="height:14px"></div>
   <div class="co-card">
     <div class="co-head" style="background:#6b1a1a">
-      <div><div class="co-name">BGF로지스</div><div class="co-rate">퇴사율 12.3% · 저연차 비중 90%+</div></div>
+      <div><div class="co-name">물류 기업 E</div><div class="co-rate">퇴사율 12.3% · 저연차 비중 90%+</div></div>
       <span class="tag tag-c">물류</span>
     </div>
     <div class="co-body">
@@ -675,7 +675,7 @@ const SPREADS = [
   </div>
   <div class="insight" style="margin-top:10px">
     <div class="insight-label"><iconify-icon icon="solar:map-point-bold" style="font-size:10px"></iconify-icon> 물류업 리텐션 핵심</div>
-    <div class="insight-text" style="font-size:10.5px">채용 공고에서부터 현장 근무 환경을 투명하게 전달하는 것이 BGF 저연차 이탈 문제의 가장 직접적인 해결책이다.</div>
+    <div class="insight-text" style="font-size:10.5px">채용 공고에서부터 현장 근무 환경을 투명하게 전달하는 것이 물류업 저연차 이탈 문제의 가장 직접적인 해결책이다.</div>
   </div>
 </div>
 <div class="pg-footer"><span class="pg-footer-text">CH.5 — 기업별 분석 II</span><span class="pg-footer-text">7</span></div>
@@ -749,9 +749,9 @@ const SPREADS = [
   <div class="insight" style="margin-top:10px">
     <div class="insight-label"><iconify-icon icon="solar:buildings-bold" style="font-size:10px"></iconify-icon> 기업별 적용 포인트</div>
     <div class="insight-text" style="font-size:10.5px;line-height:1.85;word-break:keep-all">
-      <strong style="color:#4ECDC4">메타넷:</strong> SM 업무 비중 명시 → 기대-현실 갭 차단<br>
-      <strong style="color:#4ECDC4">위버스:</strong> 운영 업무 비중 공개 + 성장 로드맵 제시<br>
-      <strong style="color:#4ECDC4">BGF:</strong> Job Preview 영상으로 현장 환경 사전 체험
+      <strong style="color:#4ECDC4">IT/SI:</strong> SM 업무 비중 명시 → 기대-현실 갭 차단<br>
+      <strong style="color:#4ECDC4">플랫폼:</strong> 운영 업무 비중 공개 + 성장 로드맵 제시<br>
+      <strong style="color:#4ECDC4">물류:</strong> Job Preview 영상으로 현장 환경 사전 체험
     </div>
   </div>
 </div>
@@ -947,10 +947,10 @@ const SPREADS = [
   <div class="ch-label" style="color:#1DB87A"><iconify-icon icon="solar:medal-ribbons-star-bold"></iconify-icon>CHAPTER 12 · 주니어 리텐션 ②</div>
   <div class="pg-title">온보딩<br><em>우수 사례</em></div>
   <div class="divider"></div>
-  <div class="pg-body" style="margin-bottom:10px">실제로 초기 이탈률을 낮춘 검증된 온보딩 프로그램들. BGF로지스 자체 운영 사례부터 타사 벤치마크까지.</div>
+  <div class="pg-body" style="margin-bottom:10px">실제로 초기 이탈률을 낮춘 검증된 온보딩 프로그램들. 물류 기업 E 자체 운영 사례부터 타사 벤치마크까지.</div>
   <div class="co-card" style="margin-bottom:10px">
     <div class="co-head" style="background:linear-gradient(135deg,#0d4a3a,#085038)">
-      <div><div class="co-name">BGF로지스 · 입문교육 4박 5일</div><div class="co-rate">3년째 운영 · 초기 이탈률 대폭 감소 확인</div></div>
+      <div><div class="co-name">물류 기업 E · 입문교육 4박 5일</div><div class="co-rate">3년째 운영 · 초기 이탈률 대폭 감소 확인</div></div>
       <span class="tag tag-t" style="font-size:9px">Best Practice</span>
     </div>
     <div class="co-body">
@@ -1022,7 +1022,7 @@ const SPREADS = [
   <div class="divider" style="background:linear-gradient(to right,#534AB7,rgba(83,74,183,.1))"></div>
   <div class="co-card" style="margin-bottom:8px">
     <div class="co-head" style="background:linear-gradient(135deg,#1a1a6b,#0d0d4a)">
-      <div><div class="co-name">토스 (Toss)</div><div class="co-rate">"노트북 없는 첫날" + 메이트 제도</div></div>
+      <div><div class="co-name">핀테크 기업</div><div class="co-rate">"노트북 없는 첫날" + 메이트 제도</div></div>
       <span class="tag tag-p" style="font-size:9px">핀테크</span>
     </div>
     <div class="co-body">
@@ -1043,7 +1043,7 @@ const SPREADS = [
   </div>
   <div class="co-card">
     <div class="co-head" style="background:linear-gradient(135deg,#8a3200,#4a1d00)">
-      <div><div class="co-name">SK그룹 (이노베이션)</div><div class="co-rate">3개월 서베이 + 그룹 카운슬링</div></div>
+      <div><div class="co-name">대기업 그룹</div><div class="co-rate">3개월 서베이 + 그룹 카운슬링</div></div>
       <span class="tag tag-a" style="font-size:9px">대기업</span>
     </div>
     <div class="co-body">
@@ -1058,22 +1058,22 @@ const SPREADS = [
 
 `<div class="pg" style="border-radius:0 10px 10px 0">
 <div class="pg-scroll">
-  <div class="pg-subtitle" style="margin-bottom:8px">BGF vs SK 비교 — 개선 아이디어</div>
+  <div class="pg-subtitle" style="margin-bottom:8px">물류 vs 대기업 비교 — 개선 아이디어</div>
   <div class="compare" style="margin-bottom:10px">
     <div class="cmp-box cmp-t">
-      <div class="cmp-title" style="color:#0a6640">BGF로지스 (현재)</div>
+      <div class="cmp-title" style="color:#0a6640">물류업 (현재)</div>
       ${["4박5일 입문교육","동기문화 형성","주년 리텐션 교육","웰컴키트 지급"].map(t=>`<div class="cmp-item"><div class="cmp-dot" style="background:#1DB87A"></div><div>${t}</div></div>`).join('')}
     </div>
     <div class="cmp-box" style="background:#f4f3fd;border-color:#c9c6f0;border-top:3px solid #534AB7">
-      <div class="cmp-title" style="color:#2e2880">SK그룹 참고 포인트</div>
+      <div class="cmp-title" style="color:#2e2880">대기업 참고 포인트</div>
       ${["3개월 시점 데이터 서베이","그룹 카운슬링 프로그램","즉시 개입 시스템","마음건강 모니터링"].map(t=>`<div class="cmp-item"><div class="cmp-dot" style="background:#534AB7"></div><div>${t}</div></div>`).join('')}
     </div>
   </div>
   <div class="card card-navy" style="margin-bottom:10px">
     <div style="font-size:9px;color:#4ECDC4;font-weight:700;letter-spacing:.08em;margin-bottom:4px;text-transform:uppercase">개선 아이디어</div>
-    <div style="font-size:11px;color:rgba(255,255,255,.85);line-height:1.7">BGF도 입문교육 후 <strong style="color:#4ECDC4">3개월 시점에 서베이를 추가</strong>하면 SK와 유사한 데이터 기반 조기 개입이 가능하다. 동기문화의 강점을 유지하면서 데이터 관리를 보완하는 방향.</div>
+    <div style="font-size:11px;color:rgba(255,255,255,.85);line-height:1.7">물류업도 입문교육 후 <strong style="color:#4ECDC4">3개월 시점에 서베이를 추가</strong>하면 대기업과 유사한 데이터 기반 조기 개입이 가능하다. 동기문화의 강점을 유지하면서 데이터 관리를 보완하는 방향.</div>
   </div>
-  <div class="pg-subtitle" style="margin-bottom:6px">JD 개선 벤치마크 — 토스증권</div>
+  <div class="pg-subtitle" style="margin-bottom:6px">JD 개선 벤치마크 — 핀테크 증권사</div>
   <div class="card card-purple">
     <div class="pg-subtitle" style="color:#2e2880;margin-bottom:6px;display:flex;align-items:center;gap:5px"><iconify-icon icon="solar:document-text-bold" style="font-size:14px;color:#534AB7"></iconify-icon>지원자 심리적 허들을 낮추는 JD</div>
     <div style="font-size:10.5px;color:#4a4640;line-height:1.65;margin-bottom:6px">포트폴리오 제출 시 <strong>어떤 내용을 담으면 좋은지</strong>까지 구체적으로 안내. 지원자 입장에서 준비 과정의 막막함을 줄이고, 기업은 더 좋은 지원서를 받는 구조.</div>
