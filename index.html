@@ -138,7 +138,7 @@ body{
   background:#fff;
   display:flex;flex-direction:column;
 }
-.pg-inner{flex:1;overflow:hidden;padding:24px 26px 20px}
+.pg-inner{flex:1;overflow:hidden;padding:36px 26px 20px}
 .pg-footer{
   height:36px;flex-shrink:0;display:flex;align-items:center;
   justify-content:space-between;padding:0 30px;
@@ -299,7 +299,7 @@ body{
 .toc-title{font-size:12.5px;font-weight:500;flex:1;color:#2a2520;word-break:keep-all}
 .toc-pg{font-size:11px;color:#b0ada6;min-width:18px;text-align:right}
 
-.pg-scroll{overflow-y:auto;flex:1;padding:22px 26px 8px;scrollbar-width:thin;scrollbar-color:#e0ddd8 transparent}
+.pg-scroll{overflow-y:auto;flex:1;padding:36px 26px 8px;scrollbar-width:thin;scrollbar-color:#e0ddd8 transparent}
 .pg-scroll::-webkit-scrollbar{width:3px}
 .pg-scroll::-webkit-scrollbar-thumb{background:#e0ddd8;border-radius:2px}
 
@@ -871,38 +871,24 @@ const SPREADS = [
 `<div class="pg" style="border-radius:10px 0 0 10px">
 <div class="pg-scroll">
   <div class="ch-label" style="color:#1DB87A"><iconify-icon icon="solar:user-heart-bold"></iconify-icon>CHAPTER 11 · 주니어 리텐션 ①</div>
-  <div class="pg-title">주니어가 머무는<br><em>3가지 조건</em></div>
+  <div class="pg-title">주니어가 머무는<br><em>5가지 조건</em></div>
   <div class="divider"></div>
-  <div class="pg-body" style="margin-bottom:10px">5개사 분석 결과, 주니어가 조직에 남는 이유는 단 3가지로 수렴된다. 기대-현실 갭이 없고, 성장이 보이며, 혼자가 아닌 환경이다.</div>
-  <div style="display:flex;gap:6px;margin-bottom:12px">
-    <div style="flex:1;background:linear-gradient(135deg,#0d6b4a,#085038);border-radius:8px;padding:14px 11px;text-align:center">
-      <div style="width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,.12);display:flex;align-items:center;justify-content:center;margin:0 auto 8px"><iconify-icon icon="solar:eye-bold" style="font-size:18px;color:#4ECDC4"></iconify-icon></div>
-      <div style="font-size:11px;font-weight:700;color:#fff;margin-bottom:3px">기대=현실</div>
-      <div style="font-size:9px;color:rgba(255,255,255,.6);line-height:1.5">상세 JD + 직무인터뷰<br>프리보딩 페이지</div>
-    </div>
-    <div style="flex:1;background:linear-gradient(135deg,#0d6b4a,#085038);border-radius:8px;padding:14px 11px;text-align:center">
-      <div style="width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,.12);display:flex;align-items:center;justify-content:center;margin:0 auto 8px"><iconify-icon icon="solar:graph-up-bold" style="font-size:18px;color:#4ECDC4"></iconify-icon></div>
-      <div style="font-size:11px;font-weight:700;color:#fff;margin-bottom:3px">성장 가시화</div>
-      <div style="font-size:9px;color:rgba(255,255,255,.6);line-height:1.5">마일스톤 설계<br>피드백 구조화</div>
-    </div>
-    <div style="flex:1;background:linear-gradient(135deg,#0d6b4a,#085038);border-radius:8px;padding:14px 11px;text-align:center">
-      <div style="width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,.12);display:flex;align-items:center;justify-content:center;margin:0 auto 8px"><iconify-icon icon="solar:users-group-rounded-bold" style="font-size:18px;color:#4ECDC4"></iconify-icon></div>
-      <div style="font-size:11px;font-weight:700;color:#fff;margin-bottom:3px">혼자가 아님</div>
-      <div style="font-size:9px;color:rgba(255,255,255,.6);line-height:1.5">주니어보드<br>멘토링 제도</div>
+  <div class="pg-body" style="margin-bottom:10px">주니어는 스스로에 대한 확신이 부족하다. 작은 인정, 일의 의미, 성장 신호, 롤모델, 팀 분위기 — 이 5가지가 리텐션을 결정한다.</div>
+  <div style="display:flex;gap:5px;margin-bottom:12px;flex-wrap:wrap">
+    ${[["solar:chat-round-check-bold","인정·피드백","구체적 행동 칭찬"],["solar:star-bold","롤모델 리더","태도·방식에서 배움"],["solar:map-bold","일의 의미","맥락 공유·기여 가시화"],["solar:graph-up-bold","성장 확신","경로·경험·피드백"],["solar:users-group-rounded-bold","관계·분위기","소통 방식이 리텐션"]].map(([ic,t,d])=>`<div style="flex:1;min-width:80px;background:linear-gradient(135deg,#0d6b4a,#085038);border-radius:8px;padding:12px 8px;text-align:center"><div style="width:32px;height:32px;border-radius:50%;background:rgba(255,255,255,.12);display:flex;align-items:center;justify-content:center;margin:0 auto 6px"><iconify-icon icon="${ic}" style="font-size:16px;color:#4ECDC4"></iconify-icon></div><div style="font-size:10.5px;font-weight:700;color:#fff;margin-bottom:2px">${t}</div><div style="font-size:8.5px;color:rgba(255,255,255,.55);line-height:1.4">${d}</div></div>`).join('')}
+  </div>
+  <div class="card card-teal" style="margin-bottom:8px">
+    <div style="font-size:9.5px;color:#0a6640;font-weight:700;letter-spacing:.08em;margin-bottom:4px;text-transform:uppercase">01 · 적절한 인정과 피드백</div>
+    <div class="pg-body" style="margin-bottom:6px">주니어는 스스로에 대한 확신이 부족하다. 작은 성과라도 구체적인 피드백과 인정이 필요하다. 단순 칭찬보다 <strong>어떤 행동이 좋았는지</strong> 명확히 전달하는 것이 핵심.</div>
+    <div class="chk-list">
+      ${["'~해서 행동한 점이 좋았어요' — 구체적 행동 기반 칭찬","공개 인정(팀 미팅) + 개인 피드백(1:1) 병행 운영","마일스톤 등 신입사원 행동지표 구체화 → 인정 기준 명확화"].map(t=>`<div class="chk-item"><div class="chk-icon ci-t"><iconify-icon icon="solar:check-bold"></iconify-icon></div><div>${t}</div></div>`).join('')}
     </div>
   </div>
   <div class="card card-teal" style="margin-bottom:8px">
-    <div style="font-size:9px;color:#0a6640;font-weight:700;letter-spacing:.08em;margin-bottom:4px;text-transform:uppercase">전략 01 · 즉각적 인정과 피드백</div>
-    <div class="pg-subtitle" style="color:#0a6640;margin-bottom:6px;display:flex;align-items:center;gap:5px"><iconify-icon icon="solar:chat-round-check-bold" style="font-size:14px;color:#1DB87A"></iconify-icon>작은 성과도 놓치지 않는 피드백 체계</div>
+    <div style="font-size:9.5px;color:#0a6640;font-weight:700;letter-spacing:.08em;margin-bottom:4px;text-transform:uppercase">02 · 롤모델이 되는 선배와 리더</div>
+    <div class="pg-body" style="margin-bottom:6px">주니어는 가까운 선배와 리더를 통해 자신의 미래 모습을 상상한다. 업무 역량뿐 아니라 <strong>일하는 방식, 태도, 커뮤니케이션</strong>에서 배울 점이 있어야 한다.</div>
     <div class="chk-list">
-      ${["'~해서 행동한 점이 좋았어요' — 구체적 행동 기반 칭찬","성과 발생 24시간 이내 즉각 피드백 권장","공개 인정(팀 미팅) + 개인 피드백(1:1) 병행","마일스톤 등 신입사원 행동지표 구체화 → 인정 기준 명확화"].map(t=>`<div class="chk-item"><div class="chk-icon ci-t"><iconify-icon icon="solar:check-bold"></iconify-icon></div><div>${t}</div></div>`).join('')}
-    </div>
-  </div>
-  <div class="card card-teal">
-    <div style="font-size:9px;color:#0a6640;font-weight:700;letter-spacing:.08em;margin-bottom:4px;text-transform:uppercase">전략 02 · 일의 의미 부여</div>
-    <div class="pg-subtitle" style="color:#0a6640;margin-bottom:6px;display:flex;align-items:center;gap:5px"><iconify-icon icon="solar:map-bold" style="font-size:14px;color:#1DB87A"></iconify-icon>'내가 부품인가?' 생각을 차단하는 구조</div>
-    <div class="chk-list">
-      ${["업무 전체 맥락 공유 — 이 일이 어떤 결과에 연결되는지 설명","업무 배정 시 Why(왜 이 일이 중요한지)를 함께 전달","분기별 팀 성과 공유 시 개인 기여도 가시화"].map(t=>`<div class="chk-item"><div class="chk-icon ci-t"><iconify-icon icon="solar:check-bold"></iconify-icon></div><div>${t}</div></div>`).join('')}
+      ${["리더 정기 교육으로 '본받고 싶은 선배' 환경 조성","후배 소통·커뮤니케이션 방식 교육 필수 포함","리더가 성장 경험을 공유하는 정기 세션 운영"].map(t=>`<div class="chk-item"><div class="chk-icon ci-t"><iconify-icon icon="solar:check-bold"></iconify-icon></div><div>${t}</div></div>`).join('')}
     </div>
   </div>
 </div>
@@ -911,32 +897,96 @@ const SPREADS = [
 
 `<div class="pg" style="border-radius:0 10px 10px 0">
 <div class="pg-scroll">
-  <div class="card card-teal" style="margin-bottom:10px">
-    <div style="font-size:9px;color:#0a6640;font-weight:700;letter-spacing:.08em;margin-bottom:4px;text-transform:uppercase">전략 03 · 롤모델 리더 만들기</div>
-    <div class="pg-subtitle" style="color:#0a6640;margin-bottom:6px;display:flex;align-items:center;gap:5px"><iconify-icon icon="solar:star-bold" style="font-size:14px;color:#1DB87A"></iconify-icon>'이 회사에 오래 있고 싶다'는 생각이 들게 하기</div>
+  <div class="card card-teal" style="margin-bottom:8px">
+    <div style="font-size:9.5px;color:#0a6640;font-weight:700;letter-spacing:.08em;margin-bottom:4px;text-transform:uppercase">03 · 일의 의미 부여</div>
+    <div class="pg-body" style="margin-bottom:6px">주니어는 반복적이고 단편적인 업무를 많이 맡게 된다. 이 과정에서 <strong>부품처럼 느끼기 쉽다.</strong> 업무가 어떤 결과로 이어지는지 맥락 설명이 필수.</div>
     <div class="chk-list">
-      ${["리더 정기 교육으로 '본받고 싶은 선배' 환경 조성","후배 소통·커뮤니케이션 방식 교육 필수 포함","내부 교육 프로그램으로 롤모델 리더 체계적 육성","리더가 성장 경험을 공유하는 정기 세션 운영"].map(t=>`<div class="chk-item"><div class="chk-icon ci-t"><iconify-icon icon="solar:check-bold"></iconify-icon></div><div>${t}</div></div>`).join('')}
+      ${["업무 전체 맥락 공유 — 이 일이 어떤 결과에 연결되는지 설명","업무 배정 시 Why(왜 이 일이 중요한지)를 함께 전달","분기별 팀 성과 공유 시 개인 기여도 가시화"].map(t=>`<div class="chk-item"><div class="chk-icon ci-t"><iconify-icon icon="solar:check-bold"></iconify-icon></div><div>${t}</div></div>`).join('')}
     </div>
   </div>
-  <div class="pg-subtitle" style="margin-bottom:8px">JD 구체화 — 리텐션의 시작점</div>
-  <div class="card card-amber" style="margin-bottom:8px">
-    <div class="pg-subtitle" style="color:#7a3c00;margin-bottom:6px;display:flex;align-items:center;gap:5px"><iconify-icon icon="solar:document-add-bold" style="font-size:14px;color:#e67e22"></iconify-icon>채용 공고 개선 액션</div>
+  <div class="card card-teal" style="margin-bottom:8px">
+    <div style="font-size:9.5px;color:#0a6640;font-weight:700;letter-spacing:.08em;margin-bottom:4px;text-transform:uppercase">04 · 성장에 대한 확신</div>
+    <div class="pg-body" style="margin-bottom:6px">직무에 대한 명확한 성장 경로, 정기적인 피드백, 새로운 경험 제공이 필요하다. <strong>성장 기대감이 없으면 이탈 가능성이 높아진다.</strong></div>
     <div class="chk-list">
-      ${["채용공고 내 커리어 로드 + 직원 인터뷰 기입 의무화","JD는 '우리가 원하는 것'이 아닌 '지원자가 궁금한 것'을 해소하는 문서","복리후생보다 커리어 로드 설계를 우선 노출","직무인터뷰 콘텐츠 + 실제 업무환경 소개 병행 운영"].map(t=>`<div class="chk-item"><div class="chk-icon ci-a"><iconify-icon icon="solar:arrow-right-bold"></iconify-icon></div><div>${t}</div></div>`).join('')}
+      ${["커리어 로드맵 공개 — 다음 단계가 보이는 구조","정기 성장 리뷰(분기 1회) + 새로운 프로젝트 경험 기회","저연차 전용 TF 참여 → 기획 업무 실행 기회 제공"].map(t=>`<div class="chk-item"><div class="chk-icon ci-t"><iconify-icon icon="solar:check-bold"></iconify-icon></div><div>${t}</div></div>`).join('')}
     </div>
   </div>
-  <div class="card card-purple">
-    <div class="pg-subtitle" style="color:#2e2880;margin-bottom:6px;display:flex;align-items:center;gap:5px"><iconify-icon icon="solar:bolt-circle-bold" style="font-size:14px;color:#534AB7"></iconify-icon>저연차 TF 활성화</div>
+  <div class="card card-teal" style="margin-bottom:8px">
+    <div style="font-size:9.5px;color:#0a6640;font-weight:700;letter-spacing:.08em;margin-bottom:4px;text-transform:uppercase">05 · 관계와 팀 분위기</div>
+    <div class="pg-body" style="margin-bottom:6px">주니어는 업무보다 <strong>사람에 영향을 많이 받는</strong> 경향이 있다. 팀 내 소통 방식과 분위기가 리텐션에 직접적인 영향을 미친다.</div>
     <div class="chk-list">
-      ${["신입 직원들이 입사 전 생각한 기획 업무를 실행해볼 수 있는 기회 제공","저연차 전용 TF 구성 → 참여감·성장감·주도성 동시 확보","TF 결과물을 경영진에 발표하는 구조 → 영향력 체감"].map(t=>`<div class="chk-item"><div class="chk-icon ci-p"><iconify-icon icon="solar:check-bold"></iconify-icon></div><div>${t}</div></div>`).join('')}
+      ${["팀 내 심리적 안전성 확보 — 질문·실수를 허용하는 문화","주니어보드·멘토링 제도로 '나만의 연결 고리' 형성","동기 네트워크 유지 프로그램 (주년 교육 등)"].map(t=>`<div class="chk-item"><div class="chk-icon ci-t"><iconify-icon icon="solar:check-bold"></iconify-icon></div><div>${t}</div></div>`).join('')}
     </div>
   </div>
-  <div class="insight" style="margin-top:8px">
+  <div class="insight">
     <div class="insight-label"><iconify-icon icon="solar:lightbulb-bolt-bold" style="font-size:10px"></iconify-icon> 핵심 공식</div>
-    <div class="insight-text"><strong style="color:#4ECDC4">기대=현실 갭 차단</strong> + <strong style="color:#4ECDC4">성장 신호 설계</strong> + <strong style="color:#4ECDC4">적응 안전망 구축</strong> = 주니어 리텐션</div>
+    <div class="insight-text"><strong style="color:#4ECDC4">인정</strong> + <strong style="color:#4ECDC4">롤모델</strong> + <strong style="color:#4ECDC4">의미</strong> + <strong style="color:#4ECDC4">성장</strong> + <strong style="color:#4ECDC4">관계</strong> = 주니어 리텐션</div>
   </div>
 </div>
 <div class="pg-footer"><span class="pg-footer-text">CH.11 — 주니어 리텐션 ① 핵심 전략</span><span class="pg-footer-text">13</span></div>
+</div>`
+],
+
+/* ─── CH.11-2 채용 담당자 액션 플랜 ─── */
+[
+`<div class="pg" style="border-radius:10px 0 0 10px">
+<div class="pg-scroll">
+  <div class="ch-label" style="color:#e67e22"><iconify-icon icon="solar:case-round-minimalistic-bold"></iconify-icon>CHAPTER 11 · 주니어 리텐션 ① 부록</div>
+  <div class="pg-title">채용 담당자가<br><em>할 수 있는 것</em></div>
+  <div class="divider" style="background:linear-gradient(to right,#e67e22,rgba(230,126,34,.1))"></div>
+  <div class="pg-body" style="margin-bottom:12px">주니어 리텐션은 현업만의 과제가 아니다. <strong>채용 단계에서부터 HR이 개입할 수 있는 4가지 핵심 액션.</strong></div>
+  <div class="card card-amber" style="margin-bottom:9px">
+    <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
+      <div style="width:32px;height:32px;border-radius:50%;background:#e67e22;display:flex;align-items:center;justify-content:center;flex-shrink:0"><iconify-icon icon="solar:target-bold" style="font-size:16px;color:#fff"></iconify-icon></div>
+      <div><div style="font-size:9.5px;color:#7a3c00;font-weight:700;letter-spacing:.06em;text-transform:uppercase">ACTION 01</div><div class="pg-subtitle" style="color:#7a3c00;margin-bottom:0">현실적인 기대치 설정</div></div>
+    </div>
+    <div class="pg-body">채용 과정에서 업무 난이도, 반복 업무 비중, 성장 속도 등을 <strong>솔직하게 전달</strong>하여 기대-현실 간 격차를 사전에 줄인다.</div>
+    <div class="chk-list" style="margin-top:6px">
+      ${["JD에 실제 업무 비중(%) 및 반복 업무 비율 명시","면접 시 '이 직무의 어려운 점'도 솔직하게 공유","프리보딩 페이지로 입사 전 현실 정보 전달"].map(t=>`<div class="chk-item"><div class="chk-icon ci-a"><iconify-icon icon="solar:arrow-right-bold"></iconify-icon></div><div>${t}</div></div>`).join('')}
+    </div>
+  </div>
+  <div class="card card-amber" style="margin-bottom:9px">
+    <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
+      <div style="width:32px;height:32px;border-radius:50%;background:#e67e22;display:flex;align-items:center;justify-content:center;flex-shrink:0"><iconify-icon icon="solar:graph-up-bold" style="font-size:16px;color:#fff"></iconify-icon></div>
+      <div><div style="font-size:9.5px;color:#7a3c00;font-weight:700;letter-spacing:.06em;text-transform:uppercase">ACTION 02</div><div class="pg-subtitle" style="color:#7a3c00;margin-bottom:0">성장 사례 제시</div></div>
+    </div>
+    <div class="pg-body">채용 단계에서 조직 내 성장 사례를 <strong>구체적으로</strong> 전달한다. 막연한 비전이 아닌 실제 선배의 커리어 경로를 보여준다.</div>
+    <div class="chk-list" style="margin-top:6px">
+      ${["채용 공고에 커리어 로드맵 + 직원 인터뷰 콘텐츠 기입","면접에서 '입사 N년차의 실제 커리어 변화' 사례 공유","복리후생보다 성장 경로를 우선 노출하는 공고 구성"].map(t=>`<div class="chk-item"><div class="chk-icon ci-a"><iconify-icon icon="solar:arrow-right-bold"></iconify-icon></div><div>${t}</div></div>`).join('')}
+    </div>
+  </div>
+</div>
+<div class="pg-footer"><span class="pg-footer-text">CH.11 — 채용 담당자 액션 플랜</span><span class="pg-footer-text">13</span></div>
+</div>`,
+
+`<div class="pg" style="border-radius:0 10px 10px 0">
+<div class="pg-scroll">
+  <div class="card card-amber" style="margin-bottom:9px">
+    <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
+      <div style="width:32px;height:32px;border-radius:50%;background:#e67e22;display:flex;align-items:center;justify-content:center;flex-shrink:0"><iconify-icon icon="solar:users-group-two-rounded-bold" style="font-size:16px;color:#fff"></iconify-icon></div>
+      <div><div style="font-size:9.5px;color:#7a3c00;font-weight:700;letter-spacing:.06em;text-transform:uppercase">ACTION 03</div><div class="pg-subtitle" style="color:#7a3c00;margin-bottom:0">팀과 리더십 검증</div></div>
+    </div>
+    <div class="pg-body">채용 단계에서 현업 팀 문화와 리더 스타일을 충분히 파악한다. 주니어는 <strong>사람에 영향을 많이 받으므로</strong> 팀 환경이 핏에 맞는지 사전 확인.</div>
+    <div class="chk-list" style="margin-top:6px">
+      ${["면접 시 팀 문화·소통 방식에 대한 질문 구조화","현업 팀장 면접 참여 시 리더십 스타일 전달 의무화","팀 분위기를 보여주는 콘텐츠(팀 인터뷰 등) 활용"].map(t=>`<div class="chk-item"><div class="chk-icon ci-a"><iconify-icon icon="solar:arrow-right-bold"></iconify-icon></div><div>${t}</div></div>`).join('')}
+    </div>
+  </div>
+  <div class="card card-amber" style="margin-bottom:10px">
+    <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
+      <div style="width:32px;height:32px;border-radius:50%;background:#e67e22;display:flex;align-items:center;justify-content:center;flex-shrink:0"><iconify-icon icon="solar:chart-2-bold" style="font-size:16px;color:#fff"></iconify-icon></div>
+      <div><div style="font-size:9.5px;color:#7a3c00;font-weight:700;letter-spacing:.06em;text-transform:uppercase">ACTION 04</div><div class="pg-subtitle" style="color:#7a3c00;margin-bottom:0">초기 적응 모니터링</div></div>
+    </div>
+    <div class="pg-body">입사 후 1~6개월 사이 설문·인터뷰를 통해 <strong>조기 이탈 신호를 파악</strong>한다. 채용 담당자도 온보딩 플랜에 참여해야 한다.</div>
+    <div class="chk-list" style="margin-top:6px">
+      ${["입사 1/3/6개월 시점 적응도 설문 운영","이탈 위험군 조기 감지 → HR-현업 공동 대응","채용 담당자의 온보딩 플랜 참여 의무화","채용-온보딩 연결 피드백 루프 구축"].map(t=>`<div class="chk-item"><div class="chk-icon ci-a"><iconify-icon icon="solar:arrow-right-bold"></iconify-icon></div><div>${t}</div></div>`).join('')}
+    </div>
+  </div>
+  <div class="insight">
+    <div class="insight-label"><iconify-icon icon="solar:lightbulb-bolt-bold" style="font-size:10px"></iconify-icon> 채용 담당자의 역할</div>
+    <div class="insight-text">채용은 '뽑는 것'에서 끝나지 않는다. <strong style="color:#4ECDC4">기대치 설정 → 성장 사례 → 팀 검증 → 적응 모니터링</strong>까지, 채용 담당자가 리텐션의 첫 번째 설계자다.</div>
+  </div>
+</div>
+<div class="pg-footer"><span class="pg-footer-text">CH.11 — 채용 담당자 액션 플랜</span><span class="pg-footer-text">13</span></div>
 </div>`
 ],
 
