@@ -996,11 +996,10 @@ const SPREADS = [
     ${[["온보딩 부족","<span class='tag tag-t'>직접 해결 가능</span>"],["JD 불일치","<span class='tag tag-t'>직접 해결 가능</span>"],["커리어 성장 부재","<span class='tag tag-t'>직접 해결 가능</span>"],["리더십 문제","<span class='tag tag-t'>교육·평가로 개선</span>"],["보상 경쟁력","<span class='tag tag-a'>부분 개선 가능</span>"],["산업·직군 이동","<span class='tag tag-c'>개입 어려움</span>"]].map(([a,b])=>`<tr><td>${a}</td><td>${b}</td></tr>`).join('')}
   </table>
   <div class="blockquote">"69%의 직원이 '어려운 대화'가 심리적 안전성을 강화한다고 응답. 솔직한 피드백 문화가 보상 못지않게 리텐션에 기여한다." <br>— SHRM Q3 2024</div>
-  <div class="pg-subtitle" style="margin-top:14px;margin-bottom:8px">분기별 추적 권장 KPI</div>
-  <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:5px;margin-bottom:8px">
-    ${[["JD","JD<br>일치도","#534AB7"],["NPS","온보딩<br>NPS","#1DB87A"],["12M","12개월<br>리텐션","#4ECDC4"],["GR%","성장<br>체감률","#e67e22"],["EXIT","Exit<br>인터뷰","#e8394b"]].map(([code,t,c])=>`<div style="background:#fafaf7;border:1px solid #e8e5dd;border-top:3px solid ${c};border-radius:6px;padding:8px 4px;text-align:center"><div style="font-size:11px;font-weight:900;color:${c};font-family:monospace;letter-spacing:.02em">${code}</div><div style="font-size:8.5px;color:#4a4640;line-height:1.35;margin-top:3px">${t}</div></div>`).join('')}
+  <div class="pg-subtitle" style="margin-top:8px;margin-bottom:6px">분기별 추적 권장 KPI</div>
+  <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:4px">
+    ${[["JD","JD 일치도","#534AB7"],["NPS","온보딩","#1DB87A"],["12M","리텐션","#4ECDC4"],["GR%","성장체감","#e67e22"],["EXIT","Exit","#e8394b"]].map(([code,t,c])=>`<div style="background:#fafaf7;border:1px solid #e8e5dd;border-top:3px solid ${c};border-radius:5px;padding:5px 3px;text-align:center"><div style="font-size:10px;font-weight:900;color:${c};font-family:monospace">${code}</div><div style="font-size:8px;color:#4a4640;line-height:1.2;margin-top:2px">${t}</div></div>`).join('')}
   </div>
-  <div style="font-size:10px;color:#666;text-align:center;line-height:1.55">정성적 직감이 아닌 <strong style="color:#0A2240">정량적 시그널</strong>로 운영하라</div>
 </div>
 <div class="pg-footer"><span class="pg-footer-text">CH.5 — 3대 인사이트</span><span class="pg-footer-text">7</span></div>
 </div>`
@@ -1019,8 +1018,8 @@ const SPREADS = [
   </div>
   <div class="pg-subtitle" style="margin-bottom:7px">HR 모니터링 KPI</div>
   <table class="tbl">
-    <tr><th>Phase</th><th>핵심 지표</th><th style="width:28px">목표</th></tr>
-    ${[["채용 전","JD 업무 일치도 만족률","↑"],["90일","90일 이내 이탈률","↓"],["90일","온보딩 NPS","↑"],["1~3년차","성장 체감 인식률","↑"],["1~3년차","1년·3년차 리텐션율","↑"]].map(([a,b,c])=>`<tr><td>${a}</td><td>${b}</td><td style="text-align:center;color:#1DB87A;font-weight:700">${c}</td></tr>`).join('')}
+    <tr><th>Phase</th><th>핵심 지표</th><th style="width:60px">방향</th></tr>
+    ${[["채용 전","JD 업무 일치도 만족률","up","향상"],["90일","90일 이내 이탈률","down","감소"],["90일","온보딩 NPS","up","향상"],["1~3년차","성장 체감 인식률","up","향상"],["1~3년차","1년·3년차 리텐션율","up","향상"]].map(([a,b,d,t])=>`<tr><td>${a}</td><td>${b}</td><td style="text-align:center"><span style="display:inline-flex;align-items:center;gap:3px;font-size:9.5px;font-weight:800;padding:2px 7px;border-radius:10px;background:${d==='up'?'rgba(29,184,122,.15)':'rgba(232,57,75,.15)'};color:${d==='up'?'#0a6640':'#8a1a1a'}"><iconify-icon icon="solar:${d==='up'?'arrow-up-bold':'arrow-down-bold'}" style="font-size:10px"></iconify-icon>${t}</span></td></tr>`).join('')}
   </table>
 </div>
 <div class="pg-footer"><span class="pg-footer-text">CH.6 — 통합 프레임워크</span><span class="pg-footer-text">8</span></div>
@@ -1266,14 +1265,10 @@ const SPREADS = [
       ${["Senior Council: 신규 사업·대규모 투자 전 시니어 의견 공식 청취","'자문 회의' 정례화 → '항로를 결정하는 사람' 인식 부여","Master-Track: 독보적 성과자에 'Master·Fellow' 호칭","사내 아카데미 강사 권한 부여 → 대체 불가 존재감 제도화"].map(t=>`<div class="chk-item"><div class="chk-icon ci-p"><iconify-icon icon="solar:check-bold"></iconify-icon></div><div>${t}</div></div>`).join('')}
     </div>
   </div>
-  <div class="pg-subtitle" style="margin-top:8px;margin-bottom:8px">시니어 리텐션 3축</div>
-  <div style="background:linear-gradient(135deg,#fafaf7,#f3f0e7);border-radius:10px;padding:14px 12px;border:1px solid #e8e5dd;margin-bottom:10px">
-    <div style="display:flex;align-items:center;justify-content:space-around;gap:6px">
-      ${[["solar:shield-check-bold","구조","#e8394b","R&R · 72h"],["solar:wallet-money-bold","보상","#e67e22","LTI · Spot"],["solar:crown-bold","인정","#534AB7","Council · Master"]].map(([ic,t,c,d])=>`<div style="text-align:center;flex:1"><div style="width:42px;height:42px;border-radius:50%;background:${c};display:flex;align-items:center;justify-content:center;margin:0 auto 5px;box-shadow:0 4px 10px ${c}40"><iconify-icon icon="${ic}" style="font-size:20px;color:#fff"></iconify-icon></div><div style="font-size:11px;font-weight:800;color:${c};margin-bottom:2px">${t}</div><div style="font-size:8.5px;color:#888;line-height:1.4">${d}</div></div>`).join('')}
-    </div>
-    <div style="display:flex;align-items:center;justify-content:center;gap:6px;margin-top:10px;padding-top:10px;border-top:1px dashed #d0cdc5">
-      <iconify-icon icon="solar:link-bold" style="font-size:11px;color:#888"></iconify-icon>
-      <span style="font-size:9.5px;color:#666;font-weight:600">3축 동시 작동 시 리텐션 효과 극대화</span>
+  <div class="pg-subtitle" style="margin-top:6px;margin-bottom:6px">시니어 리텐션 3축</div>
+  <div style="background:linear-gradient(135deg,#fafaf7,#f3f0e7);border-radius:8px;padding:9px 10px;border:1px solid #e8e5dd;margin-bottom:8px">
+    <div style="display:flex;align-items:center;justify-content:space-around;gap:5px">
+      ${[["solar:shield-check-bold","구조","#e8394b","R&R · 72h"],["solar:wallet-money-bold","보상","#e67e22","LTI · Spot"],["solar:crown-bold","인정","#534AB7","Council · Master"]].map(([ic,t,c,d])=>`<div style="display:flex;align-items:center;gap:6px;flex:1"><div style="width:30px;height:30px;border-radius:50%;background:${c};display:flex;align-items:center;justify-content:center;flex-shrink:0;box-shadow:0 2px 6px ${c}30"><iconify-icon icon="${ic}" style="font-size:14px;color:#fff"></iconify-icon></div><div><div style="font-size:10px;font-weight:800;color:${c};line-height:1.1">${t}</div><div style="font-size:8px;color:#888;line-height:1.3;margin-top:1px">${d}</div></div></div>`).join('')}
     </div>
   </div>
   <div class="insight">
