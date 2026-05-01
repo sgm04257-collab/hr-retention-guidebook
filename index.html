@@ -1055,43 +1055,22 @@ const SPREADS = [
   <div class="ch-label" style="color:#e67e22"><iconify-icon icon="solar:case-round-minimalistic-bold"></iconify-icon>CHAPTER 08 · 주니어 리텐션 ②</div>
   <div class="pg-title">주니어<br><em>액션플랜</em></div>
   <div class="divider" style="background:linear-gradient(to right,#e67e22,rgba(230,126,34,.1))"></div>
-  <div class="pg-body" style="margin-bottom:10px">채용 단계부터 HR이 개입할 수 있는 4가지 핵심 액션. 각 액션은 측정 지표와 함께 운영.</div>
-  <div class="card card-amber" style="margin-bottom:8px">
-    <div style="display:flex;align-items:center;gap:7px;margin-bottom:5px">
-      <div style="width:28px;height:28px;border-radius:50%;background:#e67e22;display:flex;align-items:center;justify-content:center;flex-shrink:0"><iconify-icon icon="solar:target-bold" style="font-size:14px;color:#fff"></iconify-icon></div>
-      <div><div style="font-size:9px;color:#7a3c00;font-weight:700;letter-spacing:.06em;text-transform:uppercase">ACTION 01</div><div style="font-size:11px;font-weight:700;color:#7a3c00">현실적 기대치 설정</div></div>
+  <div class="pg-body" style="margin-bottom:8px;font-size:11px">채용 단계부터 HR이 개입할 수 있는 4가지 핵심 액션.</div>
+  ${[
+    ["solar:target-bold","ACTION 01","현실적 기대치 설정",["JD에 실제 업무 비중(%) + 'Not Doing' 명시","면접 시 '직무 어려운 점' 솔직 공유","프리보딩 페이지로 사전 현실 전달"]],
+    ["solar:graph-up-bold","ACTION 02","성장 사례 제시",["채용 공고에 커리어 로드맵 + 직원 인터뷰","면접에서 'N년차의 실제 변화' 사례 공유","복리후생보다 성장 경로 우선 노출"]],
+    ["solar:users-group-two-rounded-bold","ACTION 03","팀·리더십 검증",["면접 시 팀 문화·소통 방식 질문 구조화","현업 팀장 면접 참여 + 리더십 전달","팀 분위기 콘텐츠(팀 인터뷰) 활용"]],
+    ["solar:chart-2-bold","ACTION 04","초기 적응 모니터링",["입사 1/3/6개월 시점 적응도 설문","이탈 위험군 조기 감지 → 공동 대응","채용 담당자의 온보딩 플랜 참여"]]
+  ].map(([ic,label,title,items])=>`
+  <div class="card card-amber" style="margin-bottom:6px;padding:8px 11px">
+    <div style="display:flex;align-items:center;gap:7px;margin-bottom:4px">
+      <div style="width:22px;height:22px;border-radius:50%;background:#e67e22;display:flex;align-items:center;justify-content:center;flex-shrink:0"><iconify-icon icon="${ic}" style="font-size:11px;color:#fff"></iconify-icon></div>
+      <div style="display:flex;align-items:baseline;gap:6px;flex-wrap:wrap"><div style="font-size:8.5px;color:#7a3c00;font-weight:700;letter-spacing:.05em;text-transform:uppercase">${label}</div><div style="font-size:11px;font-weight:700;color:#7a3c00">${title}</div></div>
     </div>
-    <div class="chk-list">
-      ${["JD에 실제 업무 비중(%) + 'Not Doing' 항목 명시","면접 시 '이 직무의 어려운 점' 솔직 공유","프리보딩 페이지로 입사 전 현실 정보 전달"].map(t=>`<div class="chk-item"><div class="chk-icon ci-a"><iconify-icon icon="solar:arrow-right-bold"></iconify-icon></div><div>${t}</div></div>`).join('')}
+    <div style="display:flex;flex-direction:column;gap:2px">
+      ${items.map(t=>`<div style="display:flex;align-items:flex-start;gap:5px;font-size:10px;color:#4a4640;line-height:1.45;word-break:keep-all"><iconify-icon icon="solar:arrow-right-bold" style="font-size:9px;color:#e67e22;flex-shrink:0;margin-top:3px"></iconify-icon><div>${t}</div></div>`).join('')}
     </div>
-  </div>
-  <div class="card card-amber" style="margin-bottom:8px">
-    <div style="display:flex;align-items:center;gap:7px;margin-bottom:5px">
-      <div style="width:28px;height:28px;border-radius:50%;background:#e67e22;display:flex;align-items:center;justify-content:center;flex-shrink:0"><iconify-icon icon="solar:graph-up-bold" style="font-size:14px;color:#fff"></iconify-icon></div>
-      <div><div style="font-size:9px;color:#7a3c00;font-weight:700;letter-spacing:.06em;text-transform:uppercase">ACTION 02</div><div style="font-size:11px;font-weight:700;color:#7a3c00">성장 사례 제시</div></div>
-    </div>
-    <div class="chk-list">
-      ${["채용 공고에 커리어 로드맵 + 직원 인터뷰 기입","면접에서 '입사 N년차의 실제 변화' 사례 공유","복리후생보다 성장 경로를 우선 노출"].map(t=>`<div class="chk-item"><div class="chk-icon ci-a"><iconify-icon icon="solar:arrow-right-bold"></iconify-icon></div><div>${t}</div></div>`).join('')}
-    </div>
-  </div>
-  <div class="card card-amber" style="margin-bottom:8px">
-    <div style="display:flex;align-items:center;gap:7px;margin-bottom:5px">
-      <div style="width:28px;height:28px;border-radius:50%;background:#e67e22;display:flex;align-items:center;justify-content:center;flex-shrink:0"><iconify-icon icon="solar:users-group-two-rounded-bold" style="font-size:14px;color:#fff"></iconify-icon></div>
-      <div><div style="font-size:9px;color:#7a3c00;font-weight:700;letter-spacing:.06em;text-transform:uppercase">ACTION 03</div><div style="font-size:11px;font-weight:700;color:#7a3c00">팀·리더십 검증</div></div>
-    </div>
-    <div class="chk-list">
-      ${["면접 시 팀 문화·소통 방식 질문 구조화","현업 팀장 면접 참여 + 리더십 스타일 전달","팀 분위기 콘텐츠(팀 인터뷰 등) 활용"].map(t=>`<div class="chk-item"><div class="chk-icon ci-a"><iconify-icon icon="solar:arrow-right-bold"></iconify-icon></div><div>${t}</div></div>`).join('')}
-    </div>
-  </div>
-  <div class="card card-amber">
-    <div style="display:flex;align-items:center;gap:7px;margin-bottom:5px">
-      <div style="width:28px;height:28px;border-radius:50%;background:#e67e22;display:flex;align-items:center;justify-content:center;flex-shrink:0"><iconify-icon icon="solar:chart-2-bold" style="font-size:14px;color:#fff"></iconify-icon></div>
-      <div><div style="font-size:9px;color:#7a3c00;font-weight:700;letter-spacing:.06em;text-transform:uppercase">ACTION 04</div><div style="font-size:11px;font-weight:700;color:#7a3c00">초기 적응 모니터링</div></div>
-    </div>
-    <div class="chk-list">
-      ${["입사 1/3/6개월 시점 적응도 설문","이탈 위험군 조기 감지 → HR-현업 공동 대응","채용 담당자의 온보딩 플랜 참여 의무화"].map(t=>`<div class="chk-item"><div class="chk-icon ci-a"><iconify-icon icon="solar:arrow-right-bold"></iconify-icon></div><div>${t}</div></div>`).join('')}
-    </div>
-  </div>
+  </div>`).join('')}
 </div>
 <div class="pg-footer"><span class="pg-footer-text">CH.8 — 주니어 리텐션 ② 액션플랜</span><span class="pg-footer-text">10</span></div>
 </div>`,
