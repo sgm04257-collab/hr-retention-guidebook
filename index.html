@@ -820,7 +820,7 @@ const SPREADS = [
 `<div class="pg" style="border-radius:0 10px 10px 0">
 <div class="pg-scroll pg-r-align">
   <div class="pg-subtitle" style="margin-bottom:10px">주니어 vs 시니어 이탈 패턴 비교</div>
-  <div class="compare">
+  <div class="compare" style="margin-bottom:14px">
     <div class="cmp-box cmp-t">
       <div class="cmp-title" style="color:#0a6640;display:flex;align-items:center;gap:5px"><iconify-icon icon="solar:user-rounded-bold" style="font-size:14px;color:#1DB87A"></iconify-icon>주니어 (1~4년차)</div>
       ${["기대-현실 갭","성장 신호 없음","적응 구조 부재","워라밸 붕괴","피드백 부재"].map(t=>`<div class="cmp-item"><div class="cmp-dot" style="background:#1DB87A"></div><div>${t}</div></div>`).join('')}
@@ -830,6 +830,16 @@ const SPREADS = [
       ${["안정성 붕괴 (조직개편)","영향력 제한","보상 경쟁력 저하","리더십 실망","커리어 정체 우려"].map(t=>`<div class="cmp-item"><div class="cmp-dot" style="background:#e8394b"></div><div>${t}</div></div>`).join('')}
     </div>
   </div>
+  <div class="pg-subtitle" style="margin-bottom:8px">연차별 이탈 위험 패턴</div>
+  <div style="background:linear-gradient(135deg,#fafaf7,#f3f0e7);border-radius:10px;padding:14px 14px 12px;border:1px solid #e8e5dd;margin-bottom:10px">
+    <div style="display:flex;align-items:flex-end;justify-content:space-between;height:62px;margin-bottom:8px;padding:0 8px">
+      ${[["#e8394b","#ff7a8a",54],["#e67e22","#ffaa55",36],["#1DB87A","#4ECDC4",22],["#534AB7","#8a7be0",42]].map(([c1,c2,h])=>`<div style="flex:1;display:flex;justify-content:center"><div style="width:22px;height:${h}px;background:linear-gradient(to top,${c1},${c2});border-radius:3px 3px 0 0;box-shadow:inset 0 -2px 0 rgba(0,0,0,.12)"></div></div>`).join('')}
+    </div>
+    <div style="display:flex;border-top:1px dashed #d0cdc5;padding-top:7px">
+      ${[["~3개월","적응기","#e8394b"],["1년차","정착기","#e67e22"],["2~3년","안정기","#1DB87A"],["5년+","정체기","#534AB7"]].map(([t,d,c])=>`<div style="flex:1;text-align:center"><div style="font-size:10px;font-weight:700;color:${c}">${t}</div><div style="font-size:8.5px;color:#888;margin-top:1px">${d}</div></div>`).join('')}
+    </div>
+  </div>
+  <div style="font-size:10px;color:#666;text-align:center;line-height:1.6"><strong style="color:#0A2240">적응 실패</strong>와 <strong style="color:#0A2240">커리어 정체</strong> — 이탈의 두 정점</div>
 </div>
 <div class="pg-footer"><span class="pg-footer-text">CH.3 — 5개사 비교 분석</span><span class="pg-footer-text">5</span></div>
 </div>`
@@ -944,6 +954,11 @@ const SPREADS = [
     ${[["온보딩 부족","<span class='tag tag-t'>직접 해결 가능</span>"],["JD 불일치","<span class='tag tag-t'>직접 해결 가능</span>"],["커리어 성장 부재","<span class='tag tag-t'>직접 해결 가능</span>"],["리더십 문제","<span class='tag tag-t'>교육·평가로 개선</span>"],["보상 경쟁력","<span class='tag tag-a'>부분 개선 가능</span>"],["산업·직군 이동","<span class='tag tag-c'>개입 어려움</span>"]].map(([a,b])=>`<tr><td>${a}</td><td>${b}</td></tr>`).join('')}
   </table>
   <div class="blockquote">"69%의 직원이 '어려운 대화'가 심리적 안전성을 강화한다고 응답. 솔직한 피드백 문화가 보상 못지않게 리텐션에 기여한다." <br>— SHRM Q3 2024</div>
+  <div class="pg-subtitle" style="margin-top:14px;margin-bottom:8px">분기별 추적 권장 KPI</div>
+  <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:5px;margin-bottom:8px">
+    ${[["JD","JD<br>일치도","#534AB7"],["NPS","온보딩<br>NPS","#1DB87A"],["12M","12개월<br>리텐션","#4ECDC4"],["GR%","성장<br>체감률","#e67e22"],["EXIT","Exit<br>인터뷰","#e8394b"]].map(([code,t,c])=>`<div style="background:#fafaf7;border:1px solid #e8e5dd;border-top:3px solid ${c};border-radius:6px;padding:8px 4px;text-align:center"><div style="font-size:11px;font-weight:900;color:${c};font-family:monospace;letter-spacing:.02em">${code}</div><div style="font-size:8.5px;color:#4a4640;line-height:1.35;margin-top:3px">${t}</div></div>`).join('')}
+  </div>
+  <div style="font-size:10px;color:#666;text-align:center;line-height:1.55">정성적 직감이 아닌 <strong style="color:#0A2240">정량적 시그널</strong>로 운영하라</div>
 </div>
 <div class="pg-footer"><span class="pg-footer-text">CH.5 — 3대 인사이트</span><span class="pg-footer-text">7</span></div>
 </div>`
@@ -1228,6 +1243,16 @@ const SPREADS = [
     </div>
     <div class="chk-list">
       ${["Senior Council: 신규 사업·대규모 투자 전 시니어 의견 공식 청취","'자문 회의' 정례화 → '항로를 결정하는 사람' 인식 부여","Master-Track: 독보적 성과자에 'Master·Fellow' 호칭","사내 아카데미 강사 권한 부여 → 대체 불가 존재감 제도화"].map(t=>`<div class="chk-item"><div class="chk-icon ci-p"><iconify-icon icon="solar:check-bold"></iconify-icon></div><div>${t}</div></div>`).join('')}
+    </div>
+  </div>
+  <div class="pg-subtitle" style="margin-top:8px;margin-bottom:8px">시니어 리텐션 3축</div>
+  <div style="background:linear-gradient(135deg,#fafaf7,#f3f0e7);border-radius:10px;padding:14px 12px;border:1px solid #e8e5dd;margin-bottom:10px">
+    <div style="display:flex;align-items:center;justify-content:space-around;gap:6px">
+      ${[["solar:shield-check-bold","구조","#e8394b","R&R · 72h"],["solar:wallet-money-bold","보상","#e67e22","LTI · Spot"],["solar:crown-bold","인정","#534AB7","Council · Master"]].map(([ic,t,c,d])=>`<div style="text-align:center;flex:1"><div style="width:42px;height:42px;border-radius:50%;background:${c};display:flex;align-items:center;justify-content:center;margin:0 auto 5px;box-shadow:0 4px 10px ${c}40"><iconify-icon icon="${ic}" style="font-size:20px;color:#fff"></iconify-icon></div><div style="font-size:11px;font-weight:800;color:${c};margin-bottom:2px">${t}</div><div style="font-size:8.5px;color:#888;line-height:1.4">${d}</div></div>`).join('')}
+    </div>
+    <div style="display:flex;align-items:center;justify-content:center;gap:6px;margin-top:10px;padding-top:10px;border-top:1px dashed #d0cdc5">
+      <iconify-icon icon="solar:link-bold" style="font-size:11px;color:#888"></iconify-icon>
+      <span style="font-size:9.5px;color:#666;font-weight:600">3축 동시 작동 시 리텐션 효과 극대화</span>
     </div>
   </div>
   <div class="insight">
