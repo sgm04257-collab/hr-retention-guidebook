@@ -335,25 +335,187 @@ body{
 #book-wrap{animation:fadeUp .6s ease both;position:relative}
 #nav-wrap{animation:fadeUp .7s .1s ease both}
 
-/* ── BOOK COVER OPENING ANIMATION ── */
-#page-left-static{
-  transform-origin:right center;
+/* ── CLOSED BOOK COVER (initial state) ── */
+#book-cover{
+  position:absolute;width:490px;height:620px;
+  left:490px;top:0;z-index:60;
+  transform-origin:left center;
+  transform-style:preserve-3d;
   backface-visibility:hidden;
+  cursor:pointer;
+  border-radius:0 12px 12px 0;
+  background:
+    radial-gradient(circle at 30% 22%, rgba(29,184,122,.10), transparent 60%),
+    radial-gradient(circle at 80% 80%, rgba(78,205,196,.06), transparent 55%),
+    linear-gradient(135deg, #0c2040 0%, #061227 50%, #02060f 100%);
+  box-shadow:
+    inset -1px 0 6px rgba(0,0,0,.5),
+    inset 1px 0 4px rgba(0,0,0,.7),
+    inset 0 0 60px rgba(0,0,0,.5),
+    -10px 0 36px rgba(0,0,0,.7),
+    10px 14px 60px rgba(0,0,0,.85);
+  overflow:hidden;
+  transition:transform 1.6s cubic-bezier(.45,.03,.25,1);
+  animation:coverFloatIn 1.0s cubic-bezier(.4,0,.2,1) both;
 }
-.book-opening #page-left-static{
-  animation:coverFlap 1.5s cubic-bezier(.34,1.0,.5,1.0) .55s both;
+@keyframes coverFloatIn{
+  0%  {opacity:0;transform:translateY(30px) scale(.94)}
+  100%{opacity:1;transform:translateY(0) scale(1)}
 }
-@keyframes coverFlap{
-  0%   {transform:perspective(1800px) rotateY(-180deg)}
-  100% {transform:perspective(1800px) rotateY(0deg)}
+#book-cover.opening{
+  transform:perspective(2400px) rotateY(-180deg);
 }
-.book-opening #right-shadow{
-  animation:openShadow 1.5s ease-out .55s both;
+
+/* dotted pattern */
+.cv-pattern{
+  position:absolute;inset:0;pointer-events:none;
+  background-image:radial-gradient(circle at 1.5px 1.5px, rgba(29,184,122,.07) 1px, transparent 0);
+  background-size:22px 22px;
+  opacity:.9;
 }
-@keyframes openShadow{
-  0%   {opacity:.7}
-  100% {opacity:0}
+/* corner glows */
+.cv-glow-1{
+  position:absolute;width:240px;height:240px;
+  top:-80px;right:-80px;pointer-events:none;
+  background:radial-gradient(circle, rgba(29,184,122,.22), transparent 70%);
+  border-radius:50%;
 }
+.cv-glow-2{
+  position:absolute;width:200px;height:200px;
+  bottom:-60px;left:-60px;pointer-events:none;
+  background:radial-gradient(circle, rgba(78,205,196,.14), transparent 70%);
+  border-radius:50%;
+}
+/* inner frame */
+.cv-frame{
+  position:absolute;inset:24px 28px;pointer-events:none;
+  border:1px solid rgba(29,184,122,.22);
+  border-radius:4px;
+}
+/* corner brackets */
+.cv-corner{
+  position:absolute;width:18px;height:18px;pointer-events:none;
+  border:1.5px solid #1DB87A;
+}
+.cv-tl{top:20px;left:24px;border-right:0;border-bottom:0}
+.cv-tr{top:20px;right:28px;border-left:0;border-bottom:0}
+.cv-bl{bottom:20px;left:24px;border-right:0;border-top:0}
+.cv-br{bottom:20px;right:28px;border-left:0;border-top:0}
+
+/* page edges on right (3D book depth) */
+.cv-spine-edge{
+  position:absolute;right:-7px;top:6px;bottom:6px;
+  width:7px;pointer-events:none;
+  background:repeating-linear-gradient(to bottom,
+    #f3f0e7 0px,#f3f0e7 1px,
+    #d8d2bd 1px,#d8d2bd 2px);
+  border-radius:0 3px 3px 0;
+  box-shadow:inset 0 0 5px rgba(0,0,0,.25);
+}
+
+/* cover content */
+.cv-content{
+  position:relative;z-index:5;height:100%;
+  display:flex;flex-direction:column;
+  align-items:center;justify-content:center;
+  padding:62px 40px 132px;text-align:center;
+}
+.cv-eyebrow{
+  font-size:9px;font-weight:700;
+  letter-spacing:.26em;text-transform:uppercase;
+  color:#4ECDC4;margin-bottom:34px;
+}
+.cv-emblem{
+  width:78px;height:78px;border-radius:50%;
+  background:rgba(29,184,122,.1);
+  border:1.5px solid rgba(29,184,122,.42);
+  display:flex;align-items:center;justify-content:center;
+  margin-bottom:22px;
+  box-shadow:0 0 36px rgba(29,184,122,.2),inset 0 0 20px rgba(29,184,122,.08);
+}
+.cv-emblem iconify-icon{font-size:34px;color:#1DB87A}
+.cv-line{
+  width:36px;height:2px;margin-bottom:18px;
+  background:linear-gradient(to right, transparent, #1DB87A, transparent);
+}
+.cv-title{
+  font-size:24px;font-weight:800;color:#fff;
+  line-height:1.28;word-break:keep-all;
+  margin-bottom:2px;letter-spacing:-.01em;
+}
+.cv-title-em{
+  font-size:26px;font-weight:900;color:#1DB87A;
+  line-height:1.25;word-break:keep-all;
+  letter-spacing:-.01em;margin-bottom:18px;
+}
+.cv-subtitle{
+  font-size:10.5px;color:rgba(255,255,255,.45);
+  letter-spacing:.15em;text-transform:uppercase;
+  margin-bottom:24px;
+}
+.cv-tags{
+  display:flex;gap:4px;flex-wrap:wrap;
+  justify-content:center;max-width:300px;
+}
+.cv-tags span{
+  font-size:9px;color:rgba(255,255,255,.55);
+  padding:3px 9px;letter-spacing:.04em;
+  background:rgba(255,255,255,.04);
+  border:1px solid rgba(255,255,255,.1);
+  border-radius:10px;
+}
+
+/* Open book button */
+#open-book-btn{
+  position:absolute;bottom:48px;left:50%;
+  transform:translateX(-50%);
+  display:flex;align-items:center;gap:10px;
+  padding:12px 26px;border:0;cursor:pointer;
+  font-family:inherit;font-size:12px;font-weight:700;
+  letter-spacing:.1em;color:#fff;
+  background:linear-gradient(135deg,#1DB87A,#16a368);
+  border-radius:24px;z-index:6;
+  transition:all .3s cubic-bezier(.4,0,.2,1);
+  box-shadow:0 6px 18px rgba(29,184,122,.4),0 2px 6px rgba(29,184,122,.25);
+  animation:openBtnPulse 2.4s 1.2s infinite;
+}
+#open-book-btn:hover{
+  transform:translateX(-50%) translateY(-2px);
+  box-shadow:0 10px 26px rgba(29,184,122,.5),0 3px 8px rgba(29,184,122,.3);
+  animation:none;
+}
+#open-book-btn iconify-icon{font-size:14px;display:block}
+#open-book-btn .arrow-ic{transition:transform .3s}
+#open-book-btn:hover .arrow-ic{transform:translateX(3px)}
+@keyframes openBtnPulse{
+  0%,100%{box-shadow:0 6px 18px rgba(29,184,122,.4),0 0 0 0 rgba(29,184,122,.55)}
+  50%   {box-shadow:0 6px 18px rgba(29,184,122,.4),0 0 0 14px rgba(29,184,122,0)}
+}
+
+/* When closed, hide pages/nav/bookmarks */
+.book-closed-state #spine,
+.book-closed-state #page-left-static,
+.book-closed-state #page-right-bg,
+.book-closed-state #flip-leaf,
+.book-closed-state #nav-wrap,
+.book-closed-state #bookmarks{
+  opacity:0;pointer-events:none;
+}
+/* Stagger reveal during opening */
+.book-opening-state #spine,
+.book-opening-state #page-left-static,
+.book-opening-state #page-right-bg,
+.book-opening-state #flip-leaf{
+  animation:pgReveal .8s .55s ease-out both;
+}
+.book-opening-state #nav-wrap,
+.book-opening-state #bookmarks{
+  animation:pgReveal .6s 1.1s ease-out both;
+}
+@keyframes pgReveal{
+  from{opacity:0}to{opacity:1}
+}
+
 #book-container{
   animation:bookEntrance .9s cubic-bezier(.4,0,.2,1) both;
 }
@@ -422,6 +584,35 @@ body{
   <div id="flip-leaf">
     <div id="leaf-front"></div>
     <div id="leaf-back"></div>
+  </div>
+  <div id="book-cover">
+    <div class="cv-pattern"></div>
+    <div class="cv-glow-1"></div>
+    <div class="cv-glow-2"></div>
+    <div class="cv-frame"></div>
+    <div class="cv-corner cv-tl"></div>
+    <div class="cv-corner cv-tr"></div>
+    <div class="cv-corner cv-bl"></div>
+    <div class="cv-corner cv-br"></div>
+    <div class="cv-content">
+      <div class="cv-eyebrow">HR AMBASSADOR · M조 · 2025</div>
+      <div class="cv-emblem">
+        <iconify-icon icon="solar:book-2-bold"></iconify-icon>
+      </div>
+      <div class="cv-line"></div>
+      <div class="cv-title">사람이 떠나지<br>않는 구조를</div>
+      <div class="cv-title-em">설계하다</div>
+      <div class="cv-subtitle">HR Retention Project</div>
+      <div class="cv-tags">
+        <span>IT/SI</span><span>플랫폼</span><span>콘텐츠</span><span>금융/보험</span><span>물류</span>
+      </div>
+    </div>
+    <button id="open-book-btn" type="button">
+      <iconify-icon icon="solar:book-bookmark-bold"></iconify-icon>
+      <span>책 펼치기</span>
+      <iconify-icon icon="solar:arrow-right-linear" class="arrow-ic"></iconify-icon>
+    </button>
+    <div class="cv-spine-edge"></div>
   </div>
 </div>
 <div id="bookmarks"></div>
@@ -1389,9 +1580,23 @@ rightBg.innerHTML = SPREADS[0][1];
 leafBack.innerHTML = SPREADS.length > 1 ? SPREADS[1][0] : '';
 render();
 
-/* Book cover opening animation on first load */
-bookContainer.classList.add('book-opening');
-setTimeout(() => bookContainer.classList.remove('book-opening'), 2300);
+/* ── BOOK OPEN INTERACTION ── */
+document.body.classList.add('book-closed-state');
+let bookOpened = false;
+function openBook(){
+  if (bookOpened) return;
+  bookOpened = true;
+  const cover = document.getElementById('book-cover');
+  cover.classList.add('opening');
+  document.body.classList.remove('book-closed-state');
+  document.body.classList.add('book-opening-state');
+  setTimeout(() => {
+    document.body.classList.remove('book-opening-state');
+    document.body.classList.add('book-opened-state');
+    cover.style.display = 'none';
+  }, 1700);
+}
+document.getElementById('book-cover').addEventListener('click', openBook);
 </script>
 </body>
 </html>
