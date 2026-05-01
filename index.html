@@ -299,7 +299,13 @@ body{
 .toc-title{font-size:12.5px;font-weight:500;flex:1;color:#2a2520;word-break:keep-all}
 .toc-pg{font-size:11px;color:#b0ada6;min-width:18px;text-align:right}
 
-.pg-scroll{overflow:hidden;flex:1;padding:36px 26px 8px}
+.pg-scroll{
+  overflow:hidden;flex:1;
+  padding:36px 26px 18px;
+  display:flex;flex-direction:column;
+  justify-content:space-between;
+}
+.pg-scroll > *{flex-shrink:0}
 
 /* right-side pages: align content start with left-page title+divider */
 .pg-r-align{padding-top:115px}
