@@ -742,7 +742,7 @@ const SPREADS = [
   </div>
   <div style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:8px;padding:14px 16px;text-align:left">
     <div style="font-size:9.5px;font-weight:700;color:#1DB87A;letter-spacing:.1em;text-transform:uppercase;margin-bottom:8px">M조 핵심 명제 3</div>
-    ${["산업보다 연차가 더 중요하다","퇴사는 채용 단계부터 예고된다","측정 가능한 리텐션을 운영해야 한다"].map((t,i)=>`<div style="display:flex;gap:8px;align-items:flex-start;margin-bottom:6px;font-size:10.5px;color:rgba(255,255,255,.65);word-break:keep-all"><span style="color:#1DB87A;font-weight:700;flex-shrink:0">${i+1}.</span>${t}</div>`).join('')}
+    ${["산업보다 재직 초기 경험이 더 중요하다","퇴사는 채용 단계부터 예고된다","측정 가능한 리텐션을 운영해야 한다"].map((t,i)=>`<div style="display:flex;gap:8px;align-items:flex-start;margin-bottom:6px;font-size:10.5px;color:rgba(255,255,255,.65);word-break:keep-all"><span style="color:#1DB87A;font-weight:700;flex-shrink:0">${i+1}.</span>${t}</div>`).join('')}
   </div>
 </div>
 </div>`
@@ -871,7 +871,7 @@ const SPREADS = [
   </table>
   <div class="insight">
     <div class="insight-label"><iconify-icon icon="solar:lightbulb-minimalistic-bold" style="font-size:10px"></iconify-icon> 핵심 발견</div>
-    <div class="insight-text">산업은 달랐지만 신호는 같았다. 주니어 이탈 원인은 <strong style="color:#4ECDC4">산업보다 연차에 따라</strong> 더 일관성 있게 수렴되었다.</div>
+    <div class="insight-text">산업은 달랐지만 신호는 같았다. 주니어 이탈 원인은 업종 특수성보다 <strong style="color:#4ECDC4">재직 초기(0~3년) 공통 과제</strong>—기대-역할 불일치, 성장 경로 부재, 온보딩 공백—로 수렴되는 경향을 보였다.</div>
   </div>
 </div>
 <div class="pg-footer"><span class="pg-footer-text">CH.3 — 5개사 비교 분석</span><span class="pg-footer-text">5</span></div>
@@ -971,8 +971,8 @@ const SPREADS = [
   <div class="divider"></div>
   <div class="card card-navy" style="margin-bottom:8px">
     <div style="font-size:9px;color:#4ECDC4;font-weight:700;letter-spacing:.08em;margin-bottom:4px;text-transform:uppercase">INSIGHT 01</div>
-    <div style="font-size:12px;font-weight:700;color:#fff;margin-bottom:5px;word-break:keep-all">산업보다 연차가 더 중요하다</div>
-    <div style="font-size:10.5px;color:rgba(255,255,255,.72);line-height:1.65;word-break:keep-all">5개 기업 모두 산업이 달랐음에도 주니어 이탈 원인은 3가지로 수렴. 리텐션 전략은 산업별이 아닌 <strong style="color:#4ECDC4">연차별 단계 설계</strong>가 우선.</div>
+    <div style="font-size:12px;font-weight:700;color:#fff;margin-bottom:5px;word-break:keep-all">산업보다 재직 초기 경험이 더 중요하다</div>
+    <div style="font-size:10.5px;color:rgba(255,255,255,.72);line-height:1.65;word-break:keep-all">5개 기업 모두 산업이 달랐음에도 주니어 이탈 원인은 기대-역할 불일치·성장 경로 부재·온보딩 공백 3가지로 수렴. 리텐션 전략은 <strong style="color:#4ECDC4">연차별 단계 설계</strong>가 우선.</div>
   </div>
   <div class="card card-navy" style="margin-bottom:8px">
     <div style="font-size:9px;color:#4ECDC4;font-weight:700;letter-spacing:.08em;margin-bottom:4px;text-transform:uppercase">INSIGHT 02</div>
@@ -993,7 +993,7 @@ const SPREADS = [
   <div class="pg-subtitle" style="margin-bottom:9px">HR 개입 가능성 분류</div>
   <table class="tbl">
     <tr><th>퇴사 원인</th><th>개입 가능성</th></tr>
-    ${[["온보딩 부족","<span class='tag tag-t'>직접 해결 가능</span>"],["JD 불일치","<span class='tag tag-t'>직접 해결 가능</span>"],["커리어 성장 부재","<span class='tag tag-t'>직접 해결 가능</span>"],["리더십 문제","<span class='tag tag-t'>교육·평가로 개선</span>"],["보상 경쟁력","<span class='tag tag-a'>부분 개선 가능</span>"],["산업·직군 이동","<span class='tag tag-c'>개입 어려움</span>"]].map(([a,b])=>`<tr><td>${a}</td><td>${b}</td></tr>`).join('')}
+    ${[["온보딩 부족","<span class='tag tag-t'>직접 해결 가능</span>"],["JD 불일치","<span class='tag tag-a'>부분 개선 가능</span>"],["커리어 성장 부재","<span class='tag tag-t'>직접 해결 가능</span>"],["리더십 문제","<span class='tag tag-t'>교육·평가로 개선</span>"],["보상 경쟁력","<span class='tag tag-a'>부분 개선 가능</span>"],["산업·직군 이동","<span class='tag tag-c'>개입 어려움</span>"]].map(([a,b])=>`<tr><td>${a}</td><td>${b}</td></tr>`).join('')}
   </table>
   <div class="blockquote">"69%의 직원이 '어려운 대화'가 심리적 안전성을 강화한다고 응답. 솔직한 피드백 문화가 보상 못지않게 리텐션에 기여한다." <br>— SHRM Q3 2024</div>
   <div class="pg-subtitle" style="margin-top:8px;margin-bottom:6px">분기별 추적 권장 KPI</div>
