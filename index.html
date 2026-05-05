@@ -990,13 +990,13 @@ const SPREADS = [
 
 `<div class="pg" style="border-radius:0 10px 10px 0">
 <div class="pg-scroll pg-r-align">
-  <div class="pg-subtitle" style="margin-bottom:9px">HR 개입 가능성 분류</div>
+  <div class="pg-subtitle" style="margin-bottom:6px">HR 개입 가능성 분류</div>
   <table class="tbl">
     <tr><th>퇴사 원인</th><th>개입 가능성</th></tr>
     ${[["온보딩 부족","<span class='tag tag-t'>직접 해결 가능</span>"],["JD 불일치","<span class='tag tag-a'>부분 개선 가능</span>"],["커리어 성장 부재","<span class='tag tag-t'>직접 해결 가능</span>"],["리더십 문제","<span class='tag tag-t'>교육·평가로 개선</span>"],["보상 경쟁력","<span class='tag tag-a'>부분 개선 가능</span>"],["산업·직군 이동","<span class='tag tag-c'>개입 어려움</span>"]].map(([a,b])=>`<tr><td>${a}</td><td>${b}</td></tr>`).join('')}
   </table>
-  <div class="blockquote">"69%의 직원이 '어려운 대화'가 심리적 안전성을 강화한다고 응답. 솔직한 피드백 문화가 보상 못지않게 리텐션에 기여한다." <br>— SHRM Q3 2024</div>
-  <div class="pg-subtitle" style="margin-top:8px;margin-bottom:6px">분기별 추적 권장 KPI</div>
+  <div class="blockquote">"솔직한 피드백 문화가 보상 못지않게 리텐션에 기여한다." — SHRM Q3 2024</div>
+  <div class="pg-subtitle" style="margin-top:5px;margin-bottom:5px">분기별 추적 권장 KPI</div>
   <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:4px">
     ${[["JD","JD 일치도","#534AB7"],["NPS","온보딩","#1DB87A"],["12M","리텐션","#4ECDC4"],["GR%","성장체감","#e67e22"],["EXIT","Exit","#e8394b"]].map(([code,t,c])=>`<div style="background:#fafaf7;border:1px solid #e8e5dd;border-top:3px solid ${c};border-radius:5px;padding:5px 3px;text-align:center"><div style="font-size:10px;font-weight:900;color:${c};font-family:monospace">${code}</div><div style="font-size:8px;color:#4a4640;line-height:1.2;margin-top:2px">${t}</div></div>`).join('')}
   </div>
