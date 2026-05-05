@@ -801,7 +801,7 @@ const SPREADS = [
   <div class="card card-teal" style="margin-bottom:8px">
     <div class="pg-subtitle" style="color:#0a6640;margin-bottom:7px;display:flex;align-items:center;gap:5px"><iconify-icon icon="solar:check-circle-bold" style="font-size:14px"></iconify-icon>HR 개입 가능 영역</div>
     <div class="chk-list">
-      ${["온보딩 구조 부재 → 체계적 적응 프로그램 설계","JD-업무 불일치 → 정확한 JD 작성·검증","커리어 성장 부재 → 성장 경로 가시화","리더십 문제 → 리더십 평가·교육 강화"].map(t=>`<div class="chk-item"><div class="chk-icon ci-t"><iconify-icon icon="solar:check-bold"></iconify-icon></div><div>${t}</div></div>`).join('')}
+      ${["JD-업무 불일치 → 채용 단계에서 정확한 기대 설계","온보딩 구조 부재 → 90일 마일스톤 체계 도입","커리어 성장 부재 → 레벨 맵 공개 + 분기 리뷰"].map(t=>`<div class="chk-item"><div class="chk-icon ci-t"><iconify-icon icon="solar:check-bold"></iconify-icon></div><div>${t}</div></div>`).join('')}
     </div>
   </div>
   <div class="card card-coral">
@@ -867,7 +867,7 @@ const SPREADS = [
   <div class="divider"></div>
   <table class="tbl">
     <tr><th>업종</th><th>분류</th><th>주니어 핵심 원인</th></tr>
-    ${[["IT/SI","IT","SM 반복·번아웃·성장 비전 부재","purple"],["플랫폼","플랫폼","JD 불일치·피드백 부재·온보딩 미흡","teal"],["콘텐츠","콘텐츠","보상 불만·외부 오퍼 격차 인지","amber"],["금융/보험","금융","워라밸 붕괴·시간 주권 침해","amber"],["물류","물류","환경 적응 실패·소통 단절","coral"]].map(([n,i,c,col])=>`<tr><td><b>${n}</b></td><td><span class="tag tag-${col}" style="font-size:8px">${i}</span></td><td>${c}</td></tr>`).join('')}
+    ${[["IT/SI","IT","SM(유지보수) 반복·번아웃·성장 비전 부재","purple"],["플랫폼","플랫폼","JD 불일치·피드백 부재·온보딩 미흡","teal"],["콘텐츠","콘텐츠","보상 불만·외부 오퍼 격차 인지","amber"],["금융/보험","금융","워라밸 붕괴·시간 주권 침해","amber"],["물류","물류","환경 적응 실패·소통 단절","coral"]].map(([n,i,c,col])=>`<tr><td><b>${n}</b></td><td><span class="tag tag-${col}" style="font-size:8px">${i}</span></td><td>${c}</td></tr>`).join('')}
   </table>
   <div class="insight">
     <div class="insight-label"><iconify-icon icon="solar:lightbulb-minimalistic-bold" style="font-size:10px"></iconify-icon> 핵심 발견</div>
@@ -920,7 +920,7 @@ const SPREADS = [
       <div style="font-size:8px;opacity:.55;margin-top:3px">${l}</div>
     </div>`).join('')}
   </div>
-  ${[["IT/SI · 기업 A","#0A2240","SM 반복 → 성장 비전 부재 + JD 불일치(AI/클라우드 vs SM)"],["플랫폼 · 기업 B","#0d4a3a","JD 불일치(전략 기대 vs 운영) + 체계적 온보딩 부재"],["콘텐츠 · 기업 C","#4a2800","외부 오퍼 +1,000만원 격차 + 잦은 조직개편"],["금융/보험 · 기업 D","#4a1d00","워라밸 붕괴 + 시간 주권 침해(퇴근 후 연락)"],["물류 · 기업 E","#6b1a1a","환경 적응 실패(현장 조건 미전달) + 본사-현장 단절"]].map(([n,c,d])=>`
+  ${[["IT/SI · 기업 A","#0A2240","SM(유지보수) 반복 → 성장 비전 부재 + JD 불일치(AI/클라우드 기대 vs SM 배치)"],["플랫폼 · 기업 B","#0d4a3a","JD 불일치(전략 기획 기대 vs 운영 업무) + 체계적 온보딩 부재"],["콘텐츠 · 기업 C","#4a2800","시장 대비 연봉 격차 + 잦은 조직개편으로 R&R 혼란"],["금융/보험 · 기업 D","#4a1d00","워라밸 붕괴 + 퇴근 후 연락 등 시간 주권 침해"],["물류 · 기업 E","#6b1a1a","현장 근무 조건 사전 미전달 + 본사-현장 소통 단절"]].map(([n,c,d])=>`
   <div style="display:flex;gap:8px;margin-bottom:6px;align-items:center;background:#fafaf7;border-radius:6px;padding:8px 10px;border-left:3px solid ${c}">
     <div style="font-size:10px;font-weight:800;color:${c};min-width:90px;flex-shrink:0">${n}</div>
     <div style="font-size:10px;color:#4a4640;line-height:1.5;flex:1">${d}</div>
@@ -959,7 +959,7 @@ const SPREADS = [
     <div style="font-size:10px;color:#4a4640;line-height:1.55">단순 컬처 핏을 넘어 동기부여 검증이 필요. — 에이치닷 HR 트렌드 2026</div>
   </div>
 </div>
-<div class="pg-footer"><span class="pg-footer-text">CH.4 — 3가지 공통 패턴</span><span class="pg-footer-text">6</span></div>
+<div class="pg-footer"><span class="pg-footer-text">CH.4 — 5개 산업 진단</span><span class="pg-footer-text">6</span></div>
 </div>`
 ],
 
@@ -1238,7 +1238,7 @@ const SPREADS = [
       <div><div style="font-size:9px;color:#7a3c00;font-weight:700;letter-spacing:.06em;text-transform:uppercase">ACTION 02 · 영향력</div><div style="font-size:11px;font-weight:700;color:#7a3c00">Decision Rights 맵 + 전략 참여</div></div>
     </div>
     <div class="chk-list">
-      ${["결정 권한 범위 문서화·공식화 (예산·채용·파트너십)","조직개편 후에도 결정권 유지 → 영향력 보존 체감","프로젝트 단위 리드 역할 부여 → 실질적 영향력 강화","리더십 성과 지표 투명 모니터링"].map(t=>`<div class="chk-item"><div class="chk-icon ci-a"><iconify-icon icon="solar:arrow-right-bold"></iconify-icon></div><div>${t}</div></div>`).join('')}
+      ${["결정 권한 범위 문서화·공식화 (예산·채용·파트너십)","조직개편 시에도 결정권 유지 → 영향력 보존 체감","프로젝트 단위 리드 역할 부여 → 실질적 영향력 강화"].map(t=>`<div class="chk-item"><div class="chk-icon ci-a"><iconify-icon icon="solar:arrow-right-bold"></iconify-icon></div><div>${t}</div></div>`).join('')}
     </div>
   </div>
 </div>
@@ -1253,7 +1253,7 @@ const SPREADS = [
       <div><div style="font-size:9px;color:#7a3c00;font-weight:700;letter-spacing:.06em;text-transform:uppercase">ACTION 03 · 보상</div><div style="font-size:11px;font-weight:700;color:#7a3c00">Retention-Anchor + Skill-up</div></div>
     </div>
     <div class="chk-list">
-      ${["LTI: 2~3년 단위 장기 성과급·스톡옵션 차등 부여","Spot Recognition: 마일스톤 달성 시 즉각 보상","리더에게 별도 현장 보상 재원 부여","Skill-up: 글로벌 컨퍼런스·유료 리포트·학습 계정"].map(t=>`<div class="chk-item"><div class="chk-icon ci-a"><iconify-icon icon="solar:check-bold"></iconify-icon></div><div>${t}</div></div>`).join('')}
+      ${["LTI: 2~3년 단위 장기 성과급·스톡옵션 차등 부여","Spot Recognition: 마일스톤 달성 즉시 즉각 보상","Skill-up 패키지: 컨퍼런스 참관·유료 리포트·학습 계정 지원"].map(t=>`<div class="chk-item"><div class="chk-icon ci-a"><iconify-icon icon="solar:check-bold"></iconify-icon></div><div>${t}</div></div>`).join('')}
     </div>
   </div>
   <div class="card card-purple" style="margin-bottom:8px">
@@ -1262,7 +1262,7 @@ const SPREADS = [
       <div><div style="font-size:9px;color:#2e2880;font-weight:700;letter-spacing:.06em;text-transform:uppercase">ACTION 04 · 인정</div><div style="font-size:11px;font-weight:700;color:#2e2880">Senior Council + Master-Track</div></div>
     </div>
     <div class="chk-list">
-      ${["Senior Council: 신규 사업·대규모 투자 전 시니어 의견 공식 청취","'자문 회의' 정례화 → '항로를 결정하는 사람' 인식 부여","Master-Track: 독보적 성과자에 'Master·Fellow' 호칭","사내 아카데미 강사 권한 부여 → 대체 불가 존재감 제도화"].map(t=>`<div class="chk-item"><div class="chk-icon ci-p"><iconify-icon icon="solar:check-bold"></iconify-icon></div><div>${t}</div></div>`).join('')}
+      ${["Senior Council: 신규 사업·대규모 투자 전 시니어 의견 공식 청취","'자문 회의' 정례화 → 의사결정 참여 구조 제도화","Master-Track: 독보적 성과자에 'Master·Fellow' 호칭 + 강의 권한 부여"].map(t=>`<div class="chk-item"><div class="chk-icon ci-p"><iconify-icon icon="solar:check-bold"></iconify-icon></div><div>${t}</div></div>`).join('')}
     </div>
   </div>
   <div class="pg-subtitle" style="margin-top:6px;margin-bottom:6px">시니어 리텐션 3축</div>
@@ -1286,7 +1286,7 @@ const SPREADS = [
   <div class="ch-label" style="color:#0A2240"><iconify-icon icon="solar:server-square-bold"></iconify-icon>COMPANY · 01 · IT/SI</div>
   <div class="pg-title">IT/SI<br><em>자사 적용안</em></div>
   <div class="divider" style="background:linear-gradient(to right,#0A2240 25%,rgba(10,34,64,.08) 100%)"></div>
-  <div style="background:linear-gradient(135deg,#0A2240,#143354);color:#fff;border-radius:8px;padding:10px 14px;margin-bottom:11px;font-size:11.5px;line-height:1.5;font-weight:600;box-shadow:0 3px 10px rgba(10,34,64,.18)">"SI는 사이트가 운명 — <span style="color:#4ECDC4">본사가 동아줄</span>이어야 한다"</div>
+  <div style="background:linear-gradient(135deg,#0A2240,#143354);color:#fff;border-radius:8px;padding:10px 14px;margin-bottom:11px;font-size:11.5px;line-height:1.5;font-weight:600;box-shadow:0 3px 10px rgba(10,34,64,.18)">"사이트는 현장, <span style="color:#4ECDC4">본사는 직원 정체성의 거점</span>"</div>
   <div class="pg-subtitle" style="margin-bottom:7px;font-size:13px;color:#e8394b;display:flex;align-items:center;gap:5px"><iconify-icon icon="solar:danger-triangle-bold" style="font-size:14px"></iconify-icon>핵심 페인포인트 3가지</div>
   ${[
     ["P1","자료 접근성 zero","회사 정보·환경 자료 어디서 찾을지 모름","주: 회사 이해 부족 · 시: 환경 차이 적응 어려움"],
@@ -1311,7 +1311,7 @@ const SPREADS = [
   ${[
     ["A1","사내 정보 허브","#534AB7","Notion 단일 진입점 · 합격 즉시 접근권(프리보딩)","입사 전 이해도↑ · 시니어 적응 부담↓"],
     ["A2","분기 코호트 + 홈커밍 데이","#1DB87A","분기 통합 OT 3~5일 → 사이트 → 분기 1회 본사 재회","동기 네트워크 형성 · 1년차 이탈 −15~20%p"],
-    ["A3","듀얼 트랙 온보딩","#e67e22","주니어: JD 검증+30/60/90 체크인 · 시니어: Day 30 Decision Rights · Day 90 리텐션 인터뷰","시니어 1년 이탈 −50% · JD 갭 차단"]
+    ["A3","듀얼 트랙 온보딩","#e67e22","주니어: 30/60/90일 체크인 구조화 · 시니어: Day 30 R&R 확정 + Day 90 리텐션 인터뷰","JD 기대-현실 갭 차단 · 시니어 초기 이탈 방지"]
   ].map(([code,name,c,apply,effect])=>`
   <div style="background:#fff;border:1px solid #e8e5dd;border-left:4px solid ${c};border-radius:8px;padding:10px 12px;margin-bottom:7px;box-shadow:0 1px 2px rgba(0,0,0,.03)">
     <div style="display:flex;align-items:center;gap:7px;margin-bottom:5px">
@@ -1321,9 +1321,10 @@ const SPREADS = [
     <div style="font-size:9.5px;color:#5a4a45;line-height:1.5;margin-bottom:2px"><strong style="color:${c}">적용</strong>&nbsp;&nbsp;${apply}</div>
     <div style="font-size:9.5px;color:#5a4a45;line-height:1.5"><strong style="color:#1DB87A">효과</strong>&nbsp;&nbsp;${effect}</div>
   </div>`).join('')}
-  <div style="display:flex;gap:5px;margin-bottom:8px;margin-top:4px">
-    ${[["−15~20%p","1년차 이탈","#e8394b"],["+25%p","온보딩 NPS","#1DB87A"],["−50%","시니어 1년 이탈","#534AB7"]].map(([v,l,c])=>`<div style="flex:1;text-align:center;background:#fafaf7;border:1px solid #e8e5dd;border-top:3px solid ${c};border-radius:6px;padding:8px 4px"><div style="font-size:14px;font-weight:900;color:${c};letter-spacing:-.02em;line-height:1">${v}</div><div style="font-size:8.5px;color:#888;margin-top:3px;line-height:1.3">${l}</div></div>`).join('')}
+  <div style="display:flex;gap:5px;margin-bottom:2px;margin-top:4px">
+    ${[["−15~20%p","1년차 이탈","#e8394b"],["+25%p","온보딩 NPS","#1DB87A"],["−50%","시니어 이탈","#534AB7"]].map(([v,l,c])=>`<div style="flex:1;text-align:center;background:#fafaf7;border:1px solid #e8e5dd;border-top:3px solid ${c};border-radius:6px;padding:8px 4px"><div style="font-size:14px;font-weight:900;color:${c};letter-spacing:-.02em;line-height:1">${v}</div><div style="font-size:8.5px;color:#888;margin-top:3px;line-height:1.3">${l}</div></div>`).join('')}
   </div>
+  <div style="font-size:8px;color:#b0ada6;text-align:right;margin-bottom:6px">* 업계 유사 사례 기반 예상 효과</div>
   <div class="insight">
     <div class="insight-label"><iconify-icon icon="solar:lightbulb-bolt-bold" style="font-size:10px"></iconify-icon>핵심 메시지</div>
     <div class="insight-text">허브(Always-on) + 코호트(Quarterly) + 듀얼 트랙(Day 1/30/90) — <strong style="color:#4ECDC4">사이트로 흩어져도 본사가 정체성의 닻</strong>이 된다.</div>
