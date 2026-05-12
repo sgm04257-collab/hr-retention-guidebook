@@ -1419,34 +1419,62 @@ const SPREADS = [
 `<div class="pg" style="border-radius:10px 0 0 10px">
 <div class="pg-scroll">
   <div class="ch-label" style="color:#4a1d00"><iconify-icon icon="solar:dollar-minimalistic-bold"></iconify-icon>COMPANY · 04 · 금융/보험</div>
-  <div class="pg-title">금융/보험 기업 분석<br><span style="font-size:13px;font-weight:500;color:#b0ada6">[ 자료 입력 예정 ]</span></div>
-  <div class="divider" style="background:linear-gradient(to right,#4a1d00,rgba(74,29,0,.1))"></div>
-  <div class="member-slot" style="height:180px;margin-bottom:10px">
-    <iconify-icon icon="solar:document-text-bold"></iconify-icon>
-    <div style="font-weight:700;color:#c0bdb6;font-size:12px;word-break:keep-all">금융/보험 기업 분석</div>
-    <div style="font-size:10px;color:#d0cdc8;margin-top:3px">회사명 · 퇴사 원인 · HR 인사이트</div>
-  </div>
-  <div class="card card-gray">
-    <div style="font-size:9.5px;color:#888;margin-bottom:4px;display:flex;align-items:center;gap:4px"><iconify-icon icon="solar:pen-bold" style="font-size:11px"></iconify-icon>작성 가이드</div>
-    <div style="font-size:10.5px;color:#666;line-height:1.75;word-break:keep-all">분석 기업 / 산업 유형 / 퇴사율 현황<br>주니어·시니어 이탈 원인 비교<br>HR 개입 가능 포인트 / 대응 방안<br>이 가이드북 프레임워크 적용 제안</div>
+  <div class="pg-title">금융/보험<br><em>자사 적용 사례</em></div>
+  <div class="divider" style="background:linear-gradient(to right,#4a1d00,rgba(74,29,0,.08) 100%)"></div>
+  <div class="pg-subtitle" style="margin-bottom:6px;font-size:11.5px;color:#e8394b;display:flex;align-items:center;gap:4px"><iconify-icon icon="solar:danger-triangle-bold" style="font-size:12px"></iconify-icon>금융/보험 주요 페인포인트</div>
+  ${[
+    ["P1","시간 주권 침해","워라밸 붕괴·퇴근 후 연락 등 개인 시간의 경계가 무너지는 경험이 누적되며 이탈 결심으로 이어짐"],
+    ["P2","일의 의미 불명확","복잡한 조직 구조 속 자신의 업무가 전체 사업에서 어떤 역할을 하는지 파악하기 어려움"],
+    ["P3","성장 경로 미가시화","다음 단계가 보이지 않는 구조 → 정체감 누적 · '이 회사에서 성장할 수 있나' 의구심"]
+  ].map(([code,title,desc])=>`
+  <div style="background:#fdf8f5;border:1px solid #e8d5c0;border-left:3px solid #4a1d00;border-radius:6px;padding:8px 10px;margin-bottom:6px">
+    <div style="display:flex;align-items:center;gap:6px;margin-bottom:3px">
+      <div style="font-size:9.5px;font-weight:900;color:#4a1d00;font-family:monospace">${code}</div>
+      <div style="font-size:11px;font-weight:800;color:#2a1a10">${title}</div>
+    </div>
+    <div style="font-size:9.5px;color:#7a5a40;line-height:1.5">${desc}</div>
+  </div>`).join('')}
+  <div class="insight" style="margin-top:4px">
+    <div class="insight-label"><iconify-icon icon="solar:lightbulb-minimalistic-bold" style="font-size:10px"></iconify-icon>연결 포인트</div>
+    <div class="insight-text">P2·P3는 HR이 직접 개입 가능한 영역 — <strong style="color:#4ECDC4">비즈니스 이해 세션</strong>이 구조적 해법으로 작동한다.</div>
   </div>
 </div>
-<div class="pg-footer"><span class="pg-footer-text">C-04 · 금융/보험 기업 분석</span><span class="pg-footer-text">16</span></div>
+<div class="pg-footer"><span class="pg-footer-text">C-04 · 금융/보험 자사 적용 사례</span><span class="pg-footer-text">16</span></div>
 </div>`,
 
 `<div class="pg" style="border-radius:0 10px 10px 0">
 <div class="pg-scroll pg-r-align">
-  <div class="member-slot" style="height:220px;margin-bottom:10px">
-    <iconify-icon icon="solar:chart-2-bold"></iconify-icon>
-    <div style="font-weight:700;color:#c0bdb6;font-size:12px">데이터 / 표 / 차트 영역</div>
-    <div style="font-size:10px;color:#d0cdc8;margin-top:4px">퇴사 원인 분석 표 또는 그래프</div>
+  <div style="display:flex;align-items:center;gap:5px;margin-bottom:7px">
+    <iconify-icon icon="solar:diploma-bold" style="font-size:13px;color:#4a1d00"></iconify-icon>
+    <div style="font-size:11.5px;font-weight:800;color:#4a1d00">비즈니스 이해 세션</div>
+    <div style="font-size:9px;background:#4a1d0015;color:#4a1d00;border-radius:4px;padding:2px 7px;font-weight:700;margin-left:auto">반기 1회 · 2일</div>
   </div>
-  <div class="member-slot" style="height:130px">
-    <iconify-icon icon="solar:lightbulb-minimalistic-bold"></iconify-icon>
-    <div style="font-weight:700;color:#c0bdb6;font-size:11px">핵심 인사이트 3줄 요약</div>
+  <div style="background:linear-gradient(135deg,#4a1d00,#6b3010);color:#fff;border-radius:8px;padding:10px 13px;margin-bottom:9px;font-size:10px;line-height:1.6">"신입이어도 내가 하는 일이 어떤 영향을 주는지 <span style="color:#ffc8a0;font-weight:700">전체 큰 그림</span>을 그릴 수 있다"</div>
+  <div class="pg-subtitle" style="margin-bottom:6px;font-size:10.5px">운영 구조</div>
+  <div style="background:#fdf8f5;border:1px solid #e8d5c0;border-radius:7px;padding:10px 12px;margin-bottom:9px">
+    <div style="display:flex;gap:4px;margin-bottom:8px">
+      ${[["영업","사업 최전선"],["미드레이어","디지털·인프라"],["기획","전략·방향"]].map(([t,d])=>`<div style="flex:1;background:#fff;border:1px solid #e0c8b0;border-radius:5px;padding:5px 4px;text-align:center"><div style="font-size:9.5px;font-weight:800;color:#4a1d00">${t}</div><div style="font-size:8px;color:#9a7a60;margin-top:1px;line-height:1.3">${d}</div></div>`).join('<div style="display:flex;align-items:center;color:#c0a080;font-size:10px">→</div>')}
+    </div>
+    <div style="font-size:9px;color:#7a5a40;line-height:1.6">밸류체인 형식으로 각 펑션별 리더가 직접 설명<br>→ 내 업무가 전사 사업에서 어떤 위치인지 맥락 제공</div>
+  </div>
+  <div class="pg-subtitle" style="margin-bottom:6px;font-size:10.5px">해소하는 페인포인트 & 기대 효과</div>
+  ${[
+    ["P2 해소","일의 의미 명확화","반복 업무도 전체 밸류체인 안에서 의미 있는 역할임을 인식 → 소속감·몰입 향상","#1DB87A"],
+    ["P3 예방","성장 경로 가시화","각 펑션 리더의 커리어를 직접 보며 '나의 미래'를 구체적으로 상상 가능","#534AB7"]
+  ].map(([tag,title,desc,c])=>`
+  <div style="background:#fff;border:1px solid #e8e5dd;border-left:3px solid ${c};border-radius:6px;padding:8px 10px;margin-bottom:6px">
+    <div style="display:flex;align-items:center;gap:6px;margin-bottom:3px">
+      <div style="font-size:8.5px;background:${c}18;color:${c};border-radius:3px;padding:1px 5px;font-weight:700">${tag}</div>
+      <div style="font-size:10.5px;font-weight:800;color:#2a1a10">${title}</div>
+    </div>
+    <div style="font-size:9px;color:#6a5a50;line-height:1.5">${desc}</div>
+  </div>`).join('')}
+  <div class="insight" style="margin-top:2px">
+    <div class="insight-label"><iconify-icon icon="solar:lightbulb-bolt-bold" style="font-size:10px"></iconify-icon>핵심 메시지</div>
+    <div class="insight-text">'내가 왜 이 일을 하는가'에 답할 수 있는 구조가 갖춰질 때, 주니어는 <strong style="color:#4ECDC4">버티는 것이 아니라 머무는 것</strong>을 선택한다.</div>
   </div>
 </div>
-<div class="pg-footer"><span class="pg-footer-text">C-04 · 금융/보험 기업 분석</span><span class="pg-footer-text">16</span></div>
+<div class="pg-footer"><span class="pg-footer-text">C-04 · 금융/보험 자사 적용 사례</span><span class="pg-footer-text">16</span></div>
 </div>`
 ],
 
