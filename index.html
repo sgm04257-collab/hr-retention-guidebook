@@ -1421,12 +1421,12 @@ const SPREADS = [
   <div class="ch-label" style="color:#4a1d00"><iconify-icon icon="solar:dollar-minimalistic-bold"></iconify-icon>COMPANY · 04 · 금융/보험</div>
   <div class="pg-title">금융/보험<br><em>자사 적용안</em></div>
   <div class="divider" style="background:linear-gradient(to right,#4a1d00 25%,rgba(74,29,0,.08) 100%)"></div>
-  <div style="background:linear-gradient(135deg,#4a1d00,#6b3010);color:#fff;border-radius:8px;padding:10px 14px;margin-bottom:11px;font-size:11px;line-height:1.5;font-weight:600;box-shadow:0 3px 10px rgba(74,29,0,.18)">"신입이어도 내가 하는 일이 어떤 영향을 주는지 <span style="color:#ffc8a0">전체 큰 그림</span>을 그릴 수 있어야 한다"</div>
+  <div style="background:linear-gradient(135deg,#4a1d00,#6b3010);color:#fff;border-radius:8px;padding:10px 14px;margin-bottom:11px;font-size:11px;line-height:1.5;font-weight:600;box-shadow:0 3px 10px rgba(74,29,0,.18)">"<span style="color:#ffc8a0">내 일의 의미</span>와 <span style="color:#ffc8a0">내 역할의 명확성</span> — 머무는 이유는 여기서 시작된다"</div>
   <div class="pg-subtitle" style="margin-bottom:7px;font-size:13px;color:#e8394b;display:flex;align-items:center;gap:5px"><iconify-icon icon="solar:danger-triangle-bold" style="font-size:14px"></iconify-icon>핵심 페인포인트 3가지</div>
   ${[
-    ["P1","시간 주권 침해","워라밸 붕괴·퇴근 후 연락","주: 개인 시간 침범으로 이탈 결심 · 시: 번아웃·리더십 신뢰 저하"],
-    ["P2","업무 의미 불명확","조직 내 내 역할·기여가 보이지 않음","주: 부품화 느낌·정체감 · 시: 영향력 체감 불가"],
-    ["P3","성장 경로 미가시화","다음 단계가 보이지 않는 구조","주: '여기서 성장 가능?' 의구심 · 시: 커리어 정체 누적"]
+    ["P1","피드백 부재","칭찬·지적 모두 모호 → 자기효능감 저하","'내가 잘하고 있는가?' 확인 불가 → 방향성 상실"],
+    ["P2","맥락 부재","반복 업무 중심 → 일의 의미 체감 어려움","'이 일이 왜 중요한가?' 답 찾지 못함 → 몰입도 저하"],
+    ["P3","성장 불확실성","커리어 경로 불명확 → 이직 탐색 시작","더 나은 기회 인식 시 잔류 근거 소멸"]
   ].map(([code,title,sub,detail])=>`
   <div class="card card-coral" style="margin-bottom:7px;padding:10px 12px">
     <div style="display:flex;align-items:center;gap:7px;margin-bottom:4px">
@@ -1447,27 +1447,30 @@ const SPREADS = [
     <div style="font-size:11px;font-weight:800;color:#1DB87A;letter-spacing:.04em">주니어 적용 시 예상 결과</div>
   </div>
   ${[
-    ["업무 의미 불명확","비즈니스 이해 세션 (반기 1회·2일)","밸류체인 형식으로 각 펑션 리더 직강 → 전사 맥락 체감, 소속감·몰입 향상 예상<br><span style='color:#e67e22;font-weight:700'>★ 현재 운영 중 — 주니어보드 연계·멘토링 확장으로 고도화 예정</span>"],
-    ["성장 경로 미가시화","커리어 로드맵 공개 + 분기 성장 리뷰","다음 단계 가시화로 정체감 완화, 이탈 검토 시점 지연 예상<br><span style='color:#e67e22;font-weight:700'>★ 비즈니스 이해 세션과 연계해 개발 중</span>"]
+    ["피드백 부재","3개월 시용평가 종료 전 HRBP 미팅","초기 적응도·팀 분위기·리더십 점검 → 조기 이탈 신호 사전 감지 + 팀·리더 이슈 조기 파악"],
+    ["맥락 부재·성장 불확실성","Value Chain 비즈니스 이해 세션 (분기 운영)","업무와 비즈니스 연결성 강화 → 업무 의미감 향상 + 조직 몰입도 증가 + 성장 방향성 체감 강화"]
   ].map(([pain,action,effect])=>`
   <div style="background:#f2fdf7;border:1px solid #b6ecd4;border-left:3px solid #1DB87A;border-radius:7px;padding:8px 11px;margin-bottom:6px">
     <div style="font-size:9px;color:#888;margin-bottom:2px">페인포인트 → 액션</div>
     <div style="font-size:10.5px;font-weight:700;color:#4a1d00;margin-bottom:3px">${pain} → ${action}</div>
     <div style="font-size:9px;color:#2a7a54;line-height:1.6">${effect}</div>
   </div>`).join('')}
-  <div style="display:flex;align-items:center;gap:5px;margin-top:6px;margin-bottom:6px">
+  <div style="display:flex;align-items:center;gap:5px;margin-top:5px;margin-bottom:6px">
     <div style="width:3px;height:14px;background:#534AB7;border-radius:2px"></div>
     <div style="font-size:11px;font-weight:800;color:#534AB7;letter-spacing:.04em">시니어 적용 시 예상 결과</div>
-    <div style="font-size:8.5px;color:#a0a0a0;margin-left:4px">— 작성 예정</div>
   </div>
-  ${["시니어 페인포인트 → 액션 → 예상 효과","시니어 페인포인트 → 액션 → 예상 효과"].map(()=>`
-  <div style="border:1.5px dashed #c8c4e8;border-radius:7px;padding:10px 12px;margin-bottom:6px;background:#f8f7fd;display:flex;align-items:center;gap:8px;min-height:52px">
-    <iconify-icon icon="solar:pen-bold" style="font-size:14px;color:#c8c4e8;flex-shrink:0"></iconify-icon>
-    <div style="font-size:9.5px;color:#c0bdd8;font-weight:600;word-break:keep-all">시니어 적용 시 예상 결과 입력 예정</div>
+  ${[
+    ["역할 혼선 (조직개편 후)","조직개편 시 R&R 정렬 미팅 운영","역할·우선순위·책임 범위 재정의 → 역할 혼선·업무 피로도 감소 + 불필요한 실행 업무 증가 방지"],
+    ["실행 중심 구조","시니어 의사결정 참여 확대","실행 중심 → 참여형 구조 전환 → 리더십 신뢰 회복 + 업무 주도권 강화 + 조직 잔류 의향 증가"]
+  ].map(([pain,action,effect])=>`
+  <div style="background:#f4f3fd;border:1px solid #c4bff0;border-left:3px solid #534AB7;border-radius:7px;padding:8px 11px;margin-bottom:6px">
+    <div style="font-size:9px;color:#888;margin-bottom:2px">페인포인트 → 액션</div>
+    <div style="font-size:10.5px;font-weight:700;color:#4a1d00;margin-bottom:3px">${pain} → ${action}</div>
+    <div style="font-size:9px;color:#3a3490;line-height:1.6">${effect}</div>
   </div>`).join('')}
-  <div class="insight" style="margin-top:2px">
+  <div class="insight" style="margin-top:3px">
     <div class="insight-label"><iconify-icon icon="solar:lightbulb-bolt-bold" style="font-size:10px"></iconify-icon>핵심 메시지</div>
-    <div class="insight-text">'내가 왜 이 일을 하는가'에 답할 수 있는 구조가 갖춰질 때, 주니어는 <strong style="color:#4ECDC4">버티는 것이 아닌 머무는 것</strong>을 선택한다.</div>
+    <div class="insight-text">주니어는 <strong style="color:#1DB87A">'내 일의 의미와 성장의 연결감'</strong>을 느낄 때, 시니어는 <strong style="color:#4ECDC4">'역할과 권한의 명확성'</strong>을 확보할 때 리텐션이 강화된다.</div>
   </div>
 </div>
 <div class="pg-footer"><span class="pg-footer-text">C-04 · 금융/보험 자사 적용안</span><span class="pg-footer-text">16</span></div>
