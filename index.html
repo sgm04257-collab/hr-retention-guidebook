@@ -1453,35 +1453,61 @@ const SPREADS = [
 [
 `<div class="pg" style="border-radius:10px 0 0 10px">
 <div class="pg-scroll">
-  <div class="ch-label" style="color:#6b1a1a"><iconify-icon icon="solar:delivery-bold"></iconify-icon>COMPANY · 05 · 물류</div>
-  <div class="pg-title">물류 기업 분석<br><span style="font-size:13px;font-weight:500;color:#b0ada6">[ 자료 입력 예정 ]</span></div>
-  <div class="divider" style="background:linear-gradient(to right,#6b1a1a,rgba(107,26,26,.1))"></div>
-  <div class="member-slot" style="height:180px;margin-bottom:10px">
-    <iconify-icon icon="solar:document-text-bold"></iconify-icon>
-    <div style="font-weight:700;color:#c0bdb6;font-size:12px;word-break:keep-all">물류 기업 분석</div>
-    <div style="font-size:10px;color:#d0cdc8;margin-top:3px">회사명 · 퇴사 원인 · HR 인사이트</div>
+  <div class="ch-label" style="color:#6b1a1a"><iconify-icon icon="solar:delivery-bold"></iconify-icon>COMPANY · 05 · 물류 · BGF</div>
+  <div class="pg-title">BGF<br><em>주니어 리텐션 설계</em></div>
+  <div class="divider" style="background:linear-gradient(to right,#6b1a1a,rgba(107,26,26,.08) 100%)"></div>
+  <div style="background:linear-gradient(135deg,#6b1a1a,#8b2a2a);color:#fff;border-radius:8px;padding:9px 13px;margin-bottom:10px;font-size:10.5px;line-height:1.55;font-weight:600;box-shadow:0 3px 10px rgba(107,26,26,.18)">"채용 공고부터 3년까지 <span style="color:#ffc8a0">끊김 없는 연결 구조</span>가 핵심 — 이벤트가 아닌 구조로, 느낌이 아닌 수치로 관리하라"</div>
+  <div class="pg-subtitle" style="margin-bottom:6px;font-size:11.5px;color:#6b1a1a;display:flex;align-items:center;gap:4px"><iconify-icon icon="solar:buildings-2-bold" style="font-size:12px"></iconify-icon>물류업 구조적 특성</div>
+  <div style="display:flex;gap:5px;margin-bottom:10px">
+    ${[["분산 센터","전국 물류센터 분산 구조"],["현장 근무","24h 스케줄·현장 환경"],["외부 협업","외부 인력과 상시 협업"]].map(([t,d])=>`<div style="flex:1;background:#fff8f6;border:1px solid #f0d5cc;border-top:3px solid #6b1a1a;border-radius:6px;padding:6px 5px;text-align:center"><div style="font-size:9px;font-weight:800;color:#6b1a1a;margin-bottom:2px">${t}</div><div style="font-size:8px;color:#7a5a54;line-height:1.4">${d}</div></div>`).join('')}
   </div>
-  <div class="card card-gray">
-    <div style="font-size:9.5px;color:#888;margin-bottom:4px;display:flex;align-items:center;gap:4px"><iconify-icon icon="solar:pen-bold" style="font-size:11px"></iconify-icon>작성 가이드</div>
-    <div style="font-size:10.5px;color:#666;line-height:1.75;word-break:keep-all">분석 기업 / 산업 유형 / 퇴사율 현황<br>주니어·시니어 이탈 원인 비교<br>HR 개입 가능 포인트 / 대응 방안<br>이 가이드북 프레임워크 적용 제안</div>
-  </div>
+  <div class="pg-subtitle" style="margin-bottom:6px;font-size:11.5px;color:#e8394b;display:flex;align-items:center;gap:4px"><iconify-icon icon="solar:danger-triangle-bold" style="font-size:12px"></iconify-icon>핵심 페인포인트</div>
+  ${[
+    ["P1","JD·환경 갭","현장 근무 조건·스케줄이 채용 단계에서 충분히 전달되지 않아 입사 직후 기대-현실 충돌 발생"],
+    ["P2","성장 경로 미가시화","반복적 현장 업무 속 '다음 단계'가 보이지 않아 정체감 누적 → 이탈 검토"],
+    ["P3","현장 고립·소통 단절","분산 센터 구조로 본사 소속감 형성 어려움·심리적 안전망 부재"]
+  ].map(([code,title,desc])=>`
+  <div style="background:#fff8f6;border:1px solid #f0d5cc;border-left:3px solid #6b1a1a;border-radius:6px;padding:8px 10px;margin-bottom:6px">
+    <div style="display:flex;align-items:center;gap:6px;margin-bottom:3px">
+      <div style="font-size:9.5px;font-weight:900;color:#6b1a1a;font-family:monospace">${code}</div>
+      <div style="font-size:11px;font-weight:800;color:#2a1a18">${title}</div>
+    </div>
+    <div style="font-size:9.5px;color:#7a5a54;line-height:1.5">${desc}</div>
+  </div>`).join('')}
 </div>
-<div class="pg-footer"><span class="pg-footer-text">C-05 · 물류 기업 분석</span><span class="pg-footer-text">17</span></div>
+<div class="pg-footer"><span class="pg-footer-text">C-05 · BGF 물류 리텐션 설계</span><span class="pg-footer-text">17</span></div>
 </div>`,
 
 `<div class="pg" style="border-radius:0 10px 10px 0">
 <div class="pg-scroll pg-r-align">
-  <div class="member-slot" style="height:220px;margin-bottom:10px">
-    <iconify-icon icon="solar:chart-2-bold"></iconify-icon>
-    <div style="font-weight:700;color:#c0bdb6;font-size:12px">데이터 / 표 / 차트 영역</div>
-    <div style="font-size:10px;color:#d0cdc8;margin-top:4px">퇴사 원인 분석 표 또는 그래프</div>
+  <div style="display:flex;align-items:center;gap:5px;margin-bottom:7px">
+    <iconify-icon icon="solar:route-bold" style="font-size:13px;color:#6b1a1a"></iconify-icon>
+    <div style="font-size:11.5px;font-weight:800;color:#6b1a1a">3단계 주니어 리텐션 솔루션</div>
   </div>
-  <div class="member-slot" style="height:130px">
-    <iconify-icon icon="solar:lightbulb-minimalistic-bold"></iconify-icon>
-    <div style="font-weight:700;color:#c0bdb6;font-size:11px">핵심 인사이트 3줄 요약</div>
+  ${[
+    ["Phase 1","채용 전","#6b1a1a","JD 정확도 강화 + RJP","현장 근무 조건·스케줄 투명 공개 · 현직자 인터뷰 영상 프리보딩 탑재","기대-현실 갭 차단 · 조기퇴사율 하락"],
+    ["Phase 2","온보딩 90일","#c0392b","버디 제도 + 30/60/90 체크인","선임 1:1 버디 배정 · D+60 몰입도 설문 → 위험군 HR 알림 자동화","90일 이내 이탈↓ · 온보딩 만족도↑"],
+    ["Phase 3","1~3년차","#e67e22","주년별 교육 + 주니어보드","1주년 만족도 면담 · 2주년 직무교육 · 3주년 커리어 로드맵 수립","핵심인재 리텐션↑ · 동기 네트워크 소속감 강화"]
+  ].map(([phase,period,c,action,apply,effect])=>`
+  <div style="background:#fff;border:1px solid #e8e5dd;border-left:4px solid ${c};border-radius:7px;padding:9px 11px;margin-bottom:7px">
+    <div style="display:flex;align-items:center;gap:6px;margin-bottom:4px">
+      <div style="font-size:9px;font-weight:900;color:${c};font-family:monospace;letter-spacing:.04em">${phase}</div>
+      <div style="font-size:11px;font-weight:800;color:#2a1a18">${period}</div>
+      <div style="font-size:9px;background:${c}18;color:${c};border-radius:4px;padding:1px 6px;font-weight:700">${action}</div>
+    </div>
+    <div style="font-size:9px;color:#5a4a45;line-height:1.5;margin-bottom:2px"><strong style="color:${c}">적용</strong>&nbsp;${apply}</div>
+    <div style="font-size:9px;color:#5a4a45;line-height:1.5"><strong style="color:#1DB87A">효과</strong>&nbsp;${effect}</div>
+  </div>`).join('')}
+  <div style="display:flex;gap:5px;margin-bottom:2px">
+    ${[["84.7%","조기퇴사 발생 기업","#e8394b"],["2.8년","MZ 평균 근속","#6b1a1a"],["51%","Z세대 이직 의향","#e67e22"]].map(([v,l,c])=>`<div style="flex:1;text-align:center;background:#fafaf7;border:1px solid #e8e5dd;border-top:3px solid ${c};border-radius:6px;padding:7px 4px"><div style="font-size:13px;font-weight:900;color:${c};letter-spacing:-.02em;line-height:1">${v}</div><div style="font-size:8px;color:#888;margin-top:3px;line-height:1.3">${l}</div></div>`).join('')}
+  </div>
+  <div style="font-size:8px;color:#b0ada6;text-align:right;margin-bottom:5px">* 에이치닷 HR 트렌드 / 사람인 설문 기반</div>
+  <div class="insight">
+    <div class="insight-label"><iconify-icon icon="solar:lightbulb-bolt-bold" style="font-size:10px"></iconify-icon>핵심 메시지</div>
+    <div class="insight-text">물류업 주니어 이탈은 <strong style="color:#ffa07a">현장 파편화</strong>에서 시작된다. 채용부터 3년까지 <strong style="color:#4ECDC4">끊김 없는 HR 연결 구조</strong>가 리텐션의 핵심이다.</div>
   </div>
 </div>
-<div class="pg-footer"><span class="pg-footer-text">C-05 · 물류 기업 분석</span><span class="pg-footer-text">17</span></div>
+<div class="pg-footer"><span class="pg-footer-text">C-05 · BGF 물류 리텐션 설계</span><span class="pg-footer-text">17</span></div>
 </div>`
 ],
 
