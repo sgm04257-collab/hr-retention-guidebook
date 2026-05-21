@@ -754,7 +754,7 @@ const SPREADS = [
   <div class="ch-label"><iconify-icon icon="solar:list-bold"></iconify-icon>CONTENTS</div>
   <div class="pg-title">목 차</div>
   <div style="margin-top:12px">
-    ${[["CH.1","왜 우리는 사람을 놓치는가","3"],["CH.2","거시 환경 분석 2024~2026","4"],["CH.3","5개사 퇴사 원인 비교","5"],["CH.4","5개 산업 핵심 분석","6"],["CH.5","공통 패턴 3대 인사이트","7"],["CH.6","리텐션 통합 프레임워크","8"],["CH.7","주니어 ① 페인포인트·머무는 조건","9"],["CH.8","주니어 ② 액션플랜","10"],["CH.9","시니어 ① 페인포인트·머무는 조건","11"],["CH.10","시니어 ② 액션플랜","12"]].map(([c,t,p],i)=>`<div class="toc-row" onclick="goTo(${i+2})"><span class="toc-ch">${c}</span><span class="toc-title">${t}</span><span style="flex:1;border-bottom:1px dotted #e0ddd8;margin:0 5px 3px"></span><span class="toc-pg">${p}</span></div>`).join('')}
+    ${[["CH.1","왜 우리는 사람을 놓치는가","3"],["CH.2","거시 환경 분석 2024~2026","4"],["CH.3","5개사 퇴사 원인 비교","5"],["CH.4","공통 패턴 3대 인사이트","6"],["CH.5","리텐션 통합 프레임워크","7"],["CH.6","주니어 ① 페인포인트·머무는 조건","8"],["CH.7","주니어 ② 액션플랜","9"],["CH.8","시니어 ① 페인포인트·머무는 조건","10"],["CH.9","시니어 ② 액션플랜","11"]].map(([c,t,p],i)=>`<div class="toc-row" onclick="goTo(${i+2})"><span class="toc-ch">${c}</span><span class="toc-title">${t}</span><span style="flex:1;border-bottom:1px dotted #e0ddd8;margin:0 5px 3px"></span><span class="toc-pg">${p}</span></div>`).join('')}
   </div>
 </div>
 <div class="pg-footer"><span class="pg-footer-text">HR RETENTION PROJECT</span><span class="pg-footer-text">2</span></div>
@@ -765,7 +765,7 @@ const SPREADS = [
   <div class="ch-label" style="color:#e67e22"><iconify-icon icon="solar:buildings-3-bold"></iconify-icon>COMPANY DEEP-DIVE</div>
   <div class="pg-title">회사별 분석</div>
   <div style="margin-top:12px">
-    ${[["C-01","IT/SI 기업 분석","13"],["C-02","플랫폼 기업 분석","14"],["C-03","콘텐츠 기업 분석","15"],["C-04","금융/보험 기업 분석","16"],["C-05","물류 기업 분석","17"]].map(([c,t,p],i)=>`<div class="toc-row" onclick="goTo(${i+12})"><span class="toc-ch" style="color:#e67e22">${c}</span><span class="toc-title">${t}</span><span style="flex:1;border-bottom:1px dotted #e0ddd8;margin:0 5px 3px"></span><span class="toc-pg">${p}</span></div>`).join('')}
+    ${[["C-01","IT/SI 기업 분석","12"],["C-02","플랫폼 기업 분석","13"],["C-03","콘텐츠 기업 분석","14"],["C-04","금융/보험 기업 분석","15"],["C-05","물류 기업 분석","16"]].map(([c,t,p],i)=>`<div class="toc-row" onclick="goTo(${i+11})"><span class="toc-ch" style="color:#e67e22">${c}</span><span class="toc-title">${t}</span><span style="flex:1;border-bottom:1px dotted #e0ddd8;margin:0 5px 3px"></span><span class="toc-pg">${p}</span></div>`).join('')}
   </div>
   <div class="insight" style="margin-top:18px">
     <div class="insight-label"><iconify-icon icon="solar:target-bold" style="font-size:10px"></iconify-icon> 이 가이드북의 목적</div>
@@ -785,7 +785,7 @@ const SPREADS = [
   <div class="blockquote">"어렵게 채용한 사람이 왜 6개월 만에 떠나는가? — HR은 이 질문에 답할 수 있어야 합니다."</div>
   <div class="pg-body" style="margin-bottom:12px">대부분의 HR은 퇴사 <strong>이후</strong> 채용을 반복하는 사후 대응에 머무른다. 그러나 퇴사의 씨앗은 채용 단계부터 심어진다. 5개사 분석 결과, 주니어 이탈 원인 상당수가 JD 작성·면접·입사 초기 30일에 이미 결정되어 있었다.</div>
   <div class="stat-grid">
-    <div class="stat-box"><div class="stat-val" style="color:#e8394b">84.7%</div><div class="stat-lbl">조기퇴사자 발생<br>기업 비율</div></div>
+    <div class="stat-box"><div class="stat-val" style="color:#e8394b">84.7%</div><div class="stat-lbl">조기퇴사자 발생<br>기업비율(1년 이내)</div></div>
     <div class="stat-box"><div class="stat-val" style="color:#e67e22">5.2개월</div><div class="stat-lbl">조기퇴사자<br>평균 근무기간</div></div>
     <div class="stat-box"><div class="stat-val" style="color:#0A2240">28.7%</div><div class="stat-lbl">신입사원<br>조기퇴사율</div></div>
     <div class="stat-box"><div class="stat-val" style="color:#1DB87A">59.1%</div><div class="stat-lbl">근속연수<br>'짧아지는 추세'</div></div>
@@ -801,13 +801,13 @@ const SPREADS = [
   <div class="card card-teal" style="margin-bottom:8px">
     <div class="pg-subtitle" style="color:#0a6640;margin-bottom:7px;display:flex;align-items:center;gap:5px"><iconify-icon icon="solar:check-circle-bold" style="font-size:14px"></iconify-icon>HR 개입 가능 영역</div>
     <div class="chk-list">
-      ${["JD-업무 불일치 → 채용 단계에서 정확한 기대 설계","온보딩 구조 부재 → 90일 마일스톤 체계 도입","커리어 성장 부재 → 레벨 맵 공개 + 분기 리뷰"].map(t=>`<div class="chk-item"><div class="chk-icon ci-t"><iconify-icon icon="solar:check-bold"></iconify-icon></div><div>${t}</div></div>`).join('')}
+      ${["JD-업무 불일치 → 채용 단계에서 정확한 기대 설계","온보딩 구조 부재 → 90일 마일스톤 체계 도입","커리어 성장 부재 → 커리어맵 공개 + 분기 리뷰"].map(t=>`<div class="chk-item"><div class="chk-icon ci-t"><iconify-icon icon="solar:check-bold"></iconify-icon></div><div>${t}</div></div>`).join('')}
     </div>
   </div>
   <div class="card card-coral">
     <div class="pg-subtitle" style="color:#8a1a1a;margin-bottom:7px;display:flex;align-items:center;gap:5px"><iconify-icon icon="solar:close-circle-bold" style="font-size:14px;color:#e8394b"></iconify-icon>개입이 어려운 영역</div>
     <div class="chk-list">
-      ${["산업·직군 이동 (구조적 커리어 전환)","보상 경쟁력 (예산 권한의 한계)"].map(t=>`<div class="chk-item"><div class="chk-icon ci-c"><iconify-icon icon="solar:minus-bold"></iconify-icon></div><div>${t}</div></div>`).join('')}
+      ${["보상 경쟁력 (예산 권한의 한계)"].map(t=>`<div class="chk-item"><div class="chk-icon ci-c"><iconify-icon icon="solar:minus-bold"></iconify-icon></div><div>${t}</div></div>`).join('')}
     </div>
   </div>
   <div class="insight">
@@ -825,10 +825,10 @@ const SPREADS = [
   <div class="ch-label" style="color:#e67e22"><iconify-icon icon="solar:graph-up-bold"></iconify-icon>CHAPTER 02</div>
   <div class="pg-title">거시 환경 분석<br><span style="font-size:13px;font-weight:600;color:#888">2024~2026 HR 통계</span></div>
   <div class="divider" style="background:linear-gradient(to right,#e67e22,rgba(230,126,34,.1))"></div>
-  <div class="pg-body" style="margin-bottom:10px">취업 경쟁은 역대 최고이나 조기퇴사율은 오히려 증가하는 역설. 이직의 '경제적 비용'보다 '심리적 기대 불충족'이 퇴사 결정에 더 큰 영향을 미친다.</div>
+  <div class="pg-body" style="margin-bottom:10px">청년 취업 경쟁률 역대 최고(고용노동부 2025)이나 조기퇴사율은 오히려 증가하는 역설. 급여 불만족보다 '심리적 기대 불충족'이 퇴사 결정에 더 큰 영향을 미친다.</div>
   <table class="tbl">
     <tr><th>지표</th><th style="width:80px">수치</th><th>출처</th></tr>
-    ${[["대기업 신입 채용 공고 감소","<span style='color:#e8394b;font-weight:700'>-43%</span>","진학사 캐치 2026"],["IT·통신 신입 채용 감소","<span style='color:#e8394b;font-weight:700'>-67%</span>","진학사 캐치 2026"],["청년 첫 직장 평균 근속","<b>1년 7개월</b>","통계청 2024"],["Z세대 이직의향(급여 미인상)","<span style='color:#e67e22;font-weight:700'>51%</span>","Checkr 2024"],["밀레니얼 이직의향","<b>47%</b>","Checkr 2024"],["심리적 안전성 근속 연장","<span style='color:#1DB87A;font-weight:700'>+2년↑</span>","SHRM 2024"]].map(([a,b,c])=>`<tr><td>${a}</td><td>${b}</td><td style="font-size:9.5px;color:#888">${c}</td></tr>`).join('')}
+    ${[["대기업 신입 채용 공고 감소","<span style='color:#e8394b;font-weight:700'>-43%</span>","진학사 캐치 2026"],["청년 첫 직장 평균 근속","<b>1년 7개월</b>","통계청 2024"],["Z세대 이직의향(급여 미인상)","<span style='color:#e67e22;font-weight:700'>51%</span>","Checkr 2024"],["심리적 안전성 근속 연장","<span style='color:#1DB87A;font-weight:700'>+2년↑</span>","SHRM 2024"]].map(([a,b,c])=>`<tr><td>${a}</td><td>${b}</td><td style="font-size:9.5px;color:#888">${c}</td></tr>`).join('')}
   </table>
 </div>
 <div class="pg-footer"><span class="pg-footer-text">CH.2 — 거시 환경 분석</span><span class="pg-footer-text">4</span></div>
@@ -845,15 +845,6 @@ const SPREADS = [
     <div class="bar-track"><div class="bar-fill" style="width:${p}%;background:${c==='coral'?'#e8394b':c==='amber'?'#e67e22':'#1DB87A'}"></div></div>
   </div>`).join('')}
   <div style="font-size:9px;color:#b0ada6;margin-bottom:12px">출처: 사람인 기업 인사담당자 1,124개사 설문 (복수응답)</div>
-  <div class="card card-teal">
-    <div class="pg-subtitle" style="color:#0a6640;margin-bottom:6px">2026 HR 트렌드 키워드</div>
-    <span class="tag tag-t">모티베이션 핏</span>
-    <span class="tag tag-t">스킬 기반 HRD</span>
-    <span class="tag tag-n">대잔류(Big Stay)</span>
-    <span class="tag tag-a">조용한 퇴사</span>
-    <span class="tag tag-p">심리적 안전성</span>
-    <span class="tag tag-c">Right to Disconnect</span>
-  </div>
 </div>
 <div class="pg-footer"><span class="pg-footer-text">CH.2 — 거시 환경 분석</span><span class="pg-footer-text">4</span></div>
 </div>`
@@ -863,15 +854,16 @@ const SPREADS = [
 `<div class="pg" style="border-radius:10px 0 0 10px">
 <div class="pg-scroll">
   <div class="ch-label"><iconify-icon icon="solar:buildings-bold"></iconify-icon>CHAPTER 03</div>
-  <div class="pg-title">5개사 퇴사 원인<br><em>비교 분석</em></div>
+  <div class="pg-title">5개사 <em>이탈 원인</em><br>비교 분석</div>
   <div class="divider"></div>
+  <div style="font-size:9.5px;color:#888;margin-bottom:8px">M조 구성원: IT/SI · 플랫폼 · 콘텐츠 · 금융/보험 · 물류 기업 소속 HR앰버서더 5명의 자사 분석 기반</div>
   <table class="tbl">
-    <tr><th>업종</th><th>분류</th><th>주니어 핵심 원인</th></tr>
+    <tr><th>업종</th><th>분류</th><th>핵심 퇴사 원인</th></tr>
     ${[["IT/SI","IT","SM(유지보수) 반복·번아웃·성장 비전 부재","purple"],["플랫폼","플랫폼","JD 불일치·피드백 부재·온보딩 미흡","teal"],["콘텐츠","콘텐츠","보상 불만·외부 오퍼 격차 인지","amber"],["금융/보험","금융","워라밸 붕괴·시간 주권 침해","amber"],["물류","물류","현장 근무 적응 어려움 + 본사-현장 물리적 거리 발생","coral"]].map(([n,i,c,col])=>`<tr><td><b>${n}</b></td><td><span class="tag tag-${col}" style="font-size:8px">${i}</span></td><td>${c}</td></tr>`).join('')}
   </table>
   <div class="insight">
     <div class="insight-label"><iconify-icon icon="solar:lightbulb-minimalistic-bold" style="font-size:10px"></iconify-icon> 핵심 발견</div>
-    <div class="insight-text">산업은 달랐지만 신호는 같았다. 주니어 이탈 원인은 업종 특수성보다 <strong style="color:#4ECDC4">재직 초기(0~3년) 공통 과제</strong>—기대-역할 불일치, 성장 경로 부재, 온보딩 공백—로 수렴되는 경향을 보였다.</div>
+    <div class="insight-text">산업은 달랐지만 신호는 같았다. 특히, 주니어 이탈 원인은 업종 특수성보다 <strong style="color:#4ECDC4">재직 초기(0~3년) 공통 과제</strong>—기대-역할 불일치, 성장 경로 부재, 온보딩 공백—로 수렴되는 경향을 보였다.</div>
   </div>
 </div>
 <div class="pg-footer"><span class="pg-footer-text">CH.3 — 5개사 비교 분석</span><span class="pg-footer-text">5</span></div>
@@ -883,11 +875,11 @@ const SPREADS = [
   <div class="compare" style="margin-bottom:14px">
     <div class="cmp-box cmp-t">
       <div class="cmp-title" style="color:#0a6640;display:flex;align-items:center;gap:5px"><iconify-icon icon="solar:user-rounded-bold" style="font-size:14px;color:#1DB87A"></iconify-icon>주니어 (1~4년차)</div>
-      ${["기대-현실 갭","성장 신호 없음","적응 구조 부재","워라밸 붕괴","피드백 부재"].map(t=>`<div class="cmp-item"><div class="cmp-dot" style="background:#1DB87A"></div><div>${t}</div></div>`).join('')}
+      ${["기대-현실 갭","성장 신호 없음","온보딩 구조 부재","워라밸 붕괴","피드백 부재"].map(t=>`<div class="cmp-item"><div class="cmp-dot" style="background:#1DB87A"></div><div>${t}</div></div>`).join('')}
     </div>
     <div class="cmp-box cmp-c">
       <div class="cmp-title" style="color:#8a1a1a;display:flex;align-items:center;gap:5px"><iconify-icon icon="solar:user-bold" style="font-size:14px;color:#e8394b"></iconify-icon>시니어 (5년차+)</div>
-      ${["안정성 붕괴 (조직개편)","영향력 제한","보상 경쟁력 저하","리더십 실망","커리어 정체 우려"].map(t=>`<div class="cmp-item"><div class="cmp-dot" style="background:#e8394b"></div><div>${t}</div></div>`).join('')}
+      ${["안정성 붕괴 (조직개편)","영향력 제한","보상 경쟁력 저하","리더십 불신","커리어 정체 우려"].map(t=>`<div class="cmp-item"><div class="cmp-dot" style="background:#e8394b"></div><div>${t}</div></div>`).join('')}
     </div>
   </div>
   <div class="pg-subtitle" style="margin-bottom:8px">연차별 이탈 위험 패턴</div>
@@ -908,71 +900,13 @@ const SPREADS = [
 [
 `<div class="pg" style="border-radius:10px 0 0 10px">
 <div class="pg-scroll">
-  <div class="ch-label" style="color:#534AB7"><iconify-icon icon="solar:buildings-2-bold"></iconify-icon>CHAPTER 04 · 진단</div>
-  <div class="pg-title">5개 산업<br><em>이탈 진단</em></div>
-  <div class="divider"></div>
-  <div class="pg-body" style="margin-bottom:10px;font-size:11px">환경은 달라도 신호는 같다. 5개 산업에서 수집한 핵심 이탈 시그널.</div>
-  <div style="display:flex;gap:4px;margin-bottom:11px">
-    ${[["IT/SI","#0A2240","11.9%","퇴사율"],["플랫폼","#0d4a3a","급증","퇴직률"],["콘텐츠","#4a2800","3년차","허리이탈"],["금융","#4a1d00","전세대","복합이탈"],["물류","#6b1a1a","12.3%","저연차90%+"]].map(([n,c,v,l])=>`
-    <div style="flex:1;background:${c};color:#fff;border-radius:6px;padding:8px 4px;text-align:center">
-      <div style="font-size:8.5px;font-weight:700;opacity:.75;margin-bottom:3px;letter-spacing:.04em">${n}</div>
-      <div style="font-size:11px;font-weight:900;line-height:1">${v}</div>
-      <div style="font-size:8px;opacity:.55;margin-top:3px">${l}</div>
-    </div>`).join('')}
-  </div>
-  ${[["IT/SI · 기업 A","#0A2240","SM(유지보수) 반복 → 성장 비전 부재 + JD 불일치(AI/클라우드 기대 vs SM 배치)"],["플랫폼 · 기업 B","#0d4a3a","JD 불일치(전략 기획 기대 vs 운영 업무) + 체계적 온보딩 부재"],["콘텐츠 · 기업 C","#4a2800","시장 대비 연봉 격차 + 잦은 조직개편으로 R&R 혼란"],["금융/보험 · 기업 D","#4a1d00","워라밸 붕괴 + 퇴근 후 연락 등 시간 주권 침해"],["물류 · 기업 E","#6b1a1a","현장 근무 조건 사전 미전달 + 본사-현장 소통 단절"]].map(([n,c,d])=>`
-  <div style="display:flex;gap:8px;margin-bottom:6px;align-items:center;background:#fafaf7;border-radius:6px;padding:8px 10px;border-left:3px solid ${c}">
-    <div style="font-size:10px;font-weight:800;color:${c};min-width:90px;flex-shrink:0">${n}</div>
-    <div style="font-size:10px;color:#4a4640;line-height:1.5;flex:1">${d}</div>
-  </div>`).join('')}
-</div>
-<div class="pg-footer"><span class="pg-footer-text">CH.4 — 5개 산업 진단</span><span class="pg-footer-text">6</span></div>
-</div>`,
-
-`<div class="pg" style="border-radius:0 10px 10px 0">
-<div class="pg-scroll pg-r-align">
-  <div style="display:flex;align-items:center;gap:8px;margin-bottom:4px">
-    <div style="width:26px;height:26px;border-radius:50%;background:#1DB87A;display:flex;align-items:center;justify-content:center;flex-shrink:0">
-      <iconify-icon icon="solar:arrow-right-bold" style="font-size:14px;color:#fff"></iconify-icon>
-    </div>
-    <div class="pg-subtitle" style="margin:0;font-size:14px">3가지 공통 패턴 도출</div>
-  </div>
-  <div class="pg-body" style="margin-bottom:12px;font-size:10.5px;color:#666">5개 산업이 수렴하는 이탈의 핵심 신호</div>
-  ${[
-    ["JD 불일치","#e8394b","기대-현실 갭으로 인한 초기 이탈","JD 정확도 + RJP 도입",[1,1,0,0,0]],
-    ["성장 부재","#e67e22","다음 단계 미가시화 + 정기 피드백 부재","레벨 맵 공개 + 분기 리뷰",[1,0,1,0,1]],
-    ["처우·워라밸","#534AB7","시장 보상 격차 + 시간 주권 침해","보상 벤치마크 + 비연결권",[0,0,1,1,1]]
-  ].map(([name,color,desc,sol,aff],i)=>`
-  <div style="background:#fff;border:1px solid #e8e5dd;border-left:4px solid ${color};border-radius:8px;padding:11px 12px;margin-bottom:8px;box-shadow:0 1px 2px rgba(0,0,0,.03)">
-    <div style="display:flex;align-items:center;gap:7px;margin-bottom:7px">
-      <div style="font-size:9px;font-weight:900;color:${color};letter-spacing:.08em;font-family:monospace">PATTERN 0${i+1}</div>
-      <div style="font-size:13px;font-weight:800;color:#0A2240">${name}</div>
-    </div>
-    <div style="display:flex;gap:3px;margin-bottom:8px">
-      ${["IT/SI","플랫폼","콘텐츠","금융","물류"].map((n,idx)=>`<div style="flex:1;text-align:center;padding:4px 2px;border-radius:3px;font-size:8.5px;font-weight:${aff[idx]?'700':'500'};background:${aff[idx]?color:'#f0eeea'};color:${aff[idx]?'#fff':'#aaa'};opacity:${aff[idx]?'1':'.7'}">${n}</div>`).join('')}
-    </div>
-    <div style="font-size:10px;color:#4a4640;line-height:1.55;margin-bottom:3px">${desc}</div>
-    <div style="font-size:10px;color:#1DB87A;font-weight:600;line-height:1.55;display:flex;align-items:center;gap:4px"><iconify-icon icon="solar:arrow-right-linear" style="font-size:11px"></iconify-icon>해결: ${sol}</div>
-  </div>`).join('')}
-  <div class="card card-teal" style="margin-top:6px">
-    <div style="font-size:9.5px;color:#0a6640;font-weight:700;letter-spacing:.08em;margin-bottom:4px;text-transform:uppercase">모티베이션 핏 적용</div>
-    <div style="font-size:10px;color:#4a4640;line-height:1.55">단순 컬처 핏을 넘어 동기부여 검증이 필요. — 에이치닷 HR 트렌드 2026</div>
-  </div>
-</div>
-<div class="pg-footer"><span class="pg-footer-text">CH.4 — 5개 산업 진단</span><span class="pg-footer-text">6</span></div>
-</div>`
-],
-
-[
-`<div class="pg" style="border-radius:10px 0 0 10px">
-<div class="pg-scroll">
   <div class="ch-label"><iconify-icon icon="solar:star-shine-bold"></iconify-icon>CHAPTER 05</div>
   <div class="pg-title">공통 패턴<br><em>3대 인사이트</em></div>
   <div class="divider"></div>
   <div class="card card-navy" style="margin-bottom:8px">
     <div style="font-size:9px;color:#4ECDC4;font-weight:700;letter-spacing:.08em;margin-bottom:4px;text-transform:uppercase">INSIGHT 01</div>
-    <div style="font-size:12px;font-weight:700;color:#fff;margin-bottom:5px;word-break:keep-all">산업보다 재직 초기 경험이 더 중요하다</div>
-    <div style="font-size:10.5px;color:rgba(255,255,255,.72);line-height:1.65;word-break:keep-all">5개 기업 모두 산업이 달랐음에도 주니어 이탈 원인은 기대-역할 불일치·성장 경로 부재·온보딩 공백 3가지로 수렴. 리텐션 전략은 <strong style="color:#4ECDC4">연차별 단계 설계</strong>가 우선.</div>
+    <div style="font-size:12px;font-weight:700;color:#fff;margin-bottom:5px;word-break:keep-all">재직 초기 경험이 이탈을 결정한다</div>
+    <div style="font-size:10.5px;color:rgba(255,255,255,.72);line-height:1.65;word-break:keep-all">5개 기업 모두 산업이 달랐음에도 이탈 원인은 기대-역할 불일치·성장 경로 부재·온보딩 공백 3가지로 수렴. 리텐션 전략은 <strong style="color:#4ECDC4">연차별 단계 설계</strong>가 우선.</div>
   </div>
   <div class="card card-navy" style="margin-bottom:8px">
     <div style="font-size:9px;color:#4ECDC4;font-weight:700;letter-spacing:.08em;margin-bottom:4px;text-transform:uppercase">INSIGHT 02</div>
@@ -990,18 +924,15 @@ const SPREADS = [
 
 `<div class="pg" style="border-radius:0 10px 10px 0">
 <div class="pg-scroll pg-r-align">
-  <div class="pg-subtitle" style="margin-bottom:6px">HR 개입 가능성 분류</div>
-  <table class="tbl">
-    <tr><th>퇴사 원인</th><th>개입 가능성</th></tr>
-    ${[["온보딩 부족","<span class='tag tag-t'>직접 해결 가능</span>"],["JD 불일치","<span class='tag tag-a'>부분 개선 가능</span>"],["커리어 성장 부재","<span class='tag tag-t'>직접 해결 가능</span>"],["리더십 문제","<span class='tag tag-t'>교육·평가로 개선</span>"],["보상 경쟁력","<span class='tag tag-a'>부분 개선 가능</span>"],["산업·직군 이동","<span class='tag tag-c'>개입 어려움</span>"]].map(([a,b])=>`<tr><td>${a}</td><td>${b}</td></tr>`).join('')}
-  </table>
-  <div class="blockquote">"솔직한 피드백 문화가 보상 못지않게 리텐션에 기여한다." — SHRM Q3 2024</div>
-  <div class="pg-subtitle" style="margin-top:5px;margin-bottom:5px">분기별 추적 권장 KPI</div>
-  <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:4px">
-    ${[["JD","JD 일치도","#534AB7"],["NPS","온보딩","#1DB87A"],["12M","리텐션","#4ECDC4"],["GR%","성장체감","#e67e22"],["EXIT","Exit","#e8394b"]].map(([code,t,c])=>`<div style="background:#fafaf7;border:1px solid #e8e5dd;border-top:3px solid ${c};border-radius:5px;padding:5px 3px;text-align:center"><div style="font-size:10px;font-weight:900;color:${c};font-family:monospace">${code}</div><div style="font-size:8px;color:#4a4640;line-height:1.2;margin-top:2px">${t}</div></div>`).join('')}
-  </div>
+  <div class="pg-subtitle" style="margin-bottom:8px">주니어·시니어 모두에게 적용 가능한 단계별 액션플랜</div>
+  ${[["즉시 시행 (0~1개월)","JD 검토 프로세스 수립, 온보딩 체크리스트 제작","coral"],["단기 (1~3개월)","버디 시스템 론칭, 30/60/90일 체크인 구조화","amber"],["중기 (3~6개월)","커리어맵 공개, 성장 리뷰 면담 정례화","teal"],["장기 (6개월+)","리텐션 대시보드 구축, 모티베이션 핏 면접 도입","purple"]].map(([t,d,c])=>`
+  <div class="card card-${c}" style="margin-bottom:7px">
+    <div style="font-size:9.5px;font-weight:700;color:${c==='coral'?'#8a1a1a':c==='amber'?'#7a3c00':c==='teal'?'#0a6640':'#2e2880'};margin-bottom:3px">${t}</div>
+    <div style="font-size:11px;color:#4a4640;word-break:keep-all">${d}</div>
+  </div>`).join('')}
+  <div class="blockquote" style="margin-top:12px">"채용은 리텐션의 시작이다. — M조 HR 앰버서더 스터디 2026"</div>
 </div>
-<div class="pg-footer"><span class="pg-footer-text">CH.5 — 3대 인사이트</span><span class="pg-footer-text">7</span></div>
+<div class="pg-footer"><span class="pg-footer-text">CH.5 — 3대 인사이트</span><span class="pg-footer-text">6</span></div>
 </div>`
 ],
 
@@ -1075,23 +1006,23 @@ const SPREADS = [
 <div class="pg-scroll pg-r-align">
   <div class="pg-subtitle" style="margin-bottom:8px">주니어가 머무는 5가지 조건</div>
   <div style="display:flex;gap:5px;margin-bottom:10px;flex-wrap:wrap">
-    ${[["solar:chat-round-check-bold","인정·피드백","구체적 행동 칭찬"],["solar:star-bold","롤모델 리더","태도·방식에서 배움"],["solar:map-bold","일의 의미","맥락 공유·기여 가시화"],["solar:graph-up-bold","성장 확신","경로·경험·피드백"],["solar:users-group-rounded-bold","관계·분위기","소통 방식이 리텐션"]].map(([ic,t,d])=>`<div style="flex:1;min-width:80px;background:linear-gradient(135deg,#0d6b4a,#085038);border-radius:8px;padding:10px 7px;text-align:center"><div style="width:28px;height:28px;border-radius:50%;background:rgba(255,255,255,.12);display:flex;align-items:center;justify-content:center;margin:0 auto 5px"><iconify-icon icon="${ic}" style="font-size:14px;color:#4ECDC4"></iconify-icon></div><div style="font-size:10px;font-weight:700;color:#fff;margin-bottom:2px">${t}</div><div style="font-size:8.5px;color:rgba(255,255,255,.55);line-height:1.4">${d}</div></div>`).join('')}
+    ${[["solar:chat-round-check-bold","인정·피드백","구체적 행동 칭찬"],["solar:graph-up-bold","성장 확신","경로·경험·피드백"],["solar:star-bold","롤모델 리더","태도·방식에서 배움"],["solar:map-bold","일의 의미","맥락 공유·기여 가시화"],["solar:users-group-rounded-bold","관계·분위기","소통 방식이 리텐션"]].map(([ic,t,d])=>`<div style="flex:1;min-width:80px;background:linear-gradient(135deg,#0d6b4a,#085038);border-radius:8px;padding:10px 7px;text-align:center"><div style="width:28px;height:28px;border-radius:50%;background:rgba(255,255,255,.12);display:flex;align-items:center;justify-content:center;margin:0 auto 5px"><iconify-icon icon="${ic}" style="font-size:14px;color:#4ECDC4"></iconify-icon></div><div style="font-size:10px;font-weight:700;color:#fff;margin-bottom:2px">${t}</div><div style="font-size:8.5px;color:rgba(255,255,255,.55);line-height:1.4">${d}</div></div>`).join('')}
   </div>
   <div class="card card-teal" style="margin-bottom:7px">
     <div style="font-size:9.5px;color:#0a6640;font-weight:700;letter-spacing:.08em;margin-bottom:3px;text-transform:uppercase">01 · 인정과 피드백</div>
     <div style="font-size:10px;color:#4a4640;line-height:1.55">'~해서 행동한 점이 좋았어요' — 구체적 행동 기반 칭찬. 공개 인정 + 1:1 피드백 병행.</div>
   </div>
   <div class="card card-teal" style="margin-bottom:7px">
-    <div style="font-size:9.5px;color:#0a6640;font-weight:700;letter-spacing:.08em;margin-bottom:3px;text-transform:uppercase">02 · 롤모델 리더</div>
+    <div style="font-size:9.5px;color:#0a6640;font-weight:700;letter-spacing:.08em;margin-bottom:3px;text-transform:uppercase">02 · 성장 확신</div>
+    <div style="font-size:10px;color:#4a4640;line-height:1.55">커리어 로드맵 공개. 분기 1회 성장 리뷰 + 새로운 프로젝트 경험 기회.</div>
+  </div>
+  <div class="card card-teal" style="margin-bottom:7px">
+    <div style="font-size:9.5px;color:#0a6640;font-weight:700;letter-spacing:.08em;margin-bottom:3px;text-transform:uppercase">03 · 롤모델 리더</div>
     <div style="font-size:10px;color:#4a4640;line-height:1.55">주니어는 가까운 선배·리더를 통해 자신의 미래를 상상한다. 업무 역량뿐 아니라 일하는 방식·태도·커뮤니케이션에서 배울 점이 있어야 한다.</div>
   </div>
   <div class="card card-teal" style="margin-bottom:7px">
-    <div style="font-size:9.5px;color:#0a6640;font-weight:700;letter-spacing:.08em;margin-bottom:3px;text-transform:uppercase">03 · 일의 의미</div>
+    <div style="font-size:9.5px;color:#0a6640;font-weight:700;letter-spacing:.08em;margin-bottom:3px;text-transform:uppercase">04 · 일의 의미</div>
     <div style="font-size:10px;color:#4a4640;line-height:1.55">반복 업무 속 '부품처럼 느끼기 쉬운' 주니어에게, 업무 배정 시 Why(왜 중요한지)와 결과 맥락을 함께 전달. 분기별 개인 기여도 가시화.</div>
-  </div>
-  <div class="card card-teal" style="margin-bottom:7px">
-    <div style="font-size:9.5px;color:#0a6640;font-weight:700;letter-spacing:.08em;margin-bottom:3px;text-transform:uppercase">04 · 성장 확신</div>
-    <div style="font-size:10px;color:#4a4640;line-height:1.55">커리어 로드맵 공개. 분기 1회 성장 리뷰 + 새로운 프로젝트 경험 기회.</div>
   </div>
   <div class="card card-teal">
     <div style="font-size:9.5px;color:#0a6640;font-weight:700;letter-spacing:.08em;margin-bottom:3px;text-transform:uppercase">05 · 관계·분위기</div>
@@ -1158,7 +1089,7 @@ const SPREADS = [
   <div class="ch-label" style="color:#e8394b"><iconify-icon icon="solar:shield-user-bold"></iconify-icon>CHAPTER 09 · 시니어 리텐션 ①</div>
   <div class="pg-title">시니어<br><em>페인포인트</em></div>
   <div class="divider" style="background:linear-gradient(to right,#e8394b,rgba(232,57,75,.1))"></div>
-  <div class="pg-body" style="margin-bottom:10px">시니어의 이탈은 '안정성 붕괴'에서 시작된다. 5개 산업에서 수렴된 시니어 이탈의 5대 신호.</div>
+  <div class="pg-body" style="margin-bottom:10px">시니어의 이탈은 '안정성 붕괴'에서 시작된다. 5개 산업에서 수렴된 시니어 이탈의 5가지 신호.</div>
   <div class="card card-coral" style="margin-bottom:7px">
     <div style="font-size:9.5px;color:#8a1a1a;font-weight:700;letter-spacing:.08em;margin-bottom:4px;text-transform:uppercase">01 · 안정성 붕괴</div>
     <div style="font-size:10.5px;color:#4a4640;line-height:1.6">잦은 조직개편으로 R&R이 흔들림. 어제까지의 전문성이 오늘 무력화되는 경험.</div>
@@ -1177,7 +1108,7 @@ const SPREADS = [
   </div>
   <div class="card card-coral">
     <div style="font-size:9.5px;color:#8a1a1a;font-weight:700;letter-spacing:.08em;margin-bottom:4px;text-transform:uppercase">05 · 커리어 정체</div>
-    <div style="font-size:10.5px;color:#4a4640;line-height:1.6">"이 회사에서 내가 더 클 수 있는가?" 다음 단계가 보이지 않을 때의 이탈 신호.</div>
+    <div style="font-size:10.5px;color:#4a4640;line-height:1.6">"이 회사에서 내가 리더가 될 수 있는가?" 다음 단계가 보이지 않을 때의 이탈 신호.</div>
   </div>
 </div>
 <div class="pg-footer"><span class="pg-footer-text">CH.9 — 시니어 리텐션 ① 페인포인트·조건</span><span class="pg-footer-text">11</span></div>
@@ -1195,11 +1126,11 @@ const SPREADS = [
   </div>
   <div class="card card-teal" style="margin-bottom:7px">
     <div style="font-size:9.5px;color:#0a6640;font-weight:700;letter-spacing:.08em;margin-bottom:3px;text-transform:uppercase">02 · 전략 영향력</div>
-    <div style="font-size:10px;color:#4a4640;line-height:1.55">신규 사업·대규모 투자 결정 전 시니어 의견 공식 청취 채널.</div>
+    <div style="font-size:10px;color:#4a4640;line-height:1.55">신규 사업·대규모 투자 결정 전 시니어 전략 자문단 운영.</div>
   </div>
   <div class="card card-teal" style="margin-bottom:7px">
     <div style="font-size:9.5px;color:#0a6640;font-weight:700;letter-spacing:.08em;margin-bottom:3px;text-transform:uppercase">03 · 보상 경쟁력</div>
-    <div style="font-size:10px;color:#4a4640;line-height:1.55">시장 보상 매년 투명 공유. LTI(2~3년 장기 인센티브) + Spot Recognition 병행.</div>
+    <div style="font-size:10px;color:#4a4640;line-height:1.55">연간 보상 경쟁력 리포트 공유. LTI(2~3년 장기 인센티브) + Spot Recognition 병행.</div>
   </div>
   <div class="card card-teal" style="margin-bottom:7px">
     <div style="font-size:9.5px;color:#0a6640;font-weight:700;letter-spacing:.08em;margin-bottom:3px;text-transform:uppercase">04 · 대체 불가 존재감</div>
@@ -1207,7 +1138,7 @@ const SPREADS = [
   </div>
   <div class="card card-teal">
     <div style="font-size:9.5px;color:#0a6640;font-weight:700;letter-spacing:.08em;margin-bottom:3px;text-transform:uppercase">05 · 도전 기회</div>
-    <div style="font-size:10px;color:#4a4640;line-height:1.55">프로젝트 단위 리드 역할 부여. Skill-up Support로 자기 투자 극대화.</div>
+    <div style="font-size:10px;color:#4a4640;line-height:1.55">프로젝트 단위 리드 역할 부여. Skill-up Support로 자기 계발 기회 제공.</div>
   </div>
 </div>
 <div class="pg-footer"><span class="pg-footer-text">CH.9 — 시니어 리텐션 ① 페인포인트·조건</span><span class="pg-footer-text">11</span></div>
@@ -1237,9 +1168,9 @@ const SPREADS = [
       <div style="width:28px;height:28px;border-radius:50%;background:#e67e22;display:flex;align-items:center;justify-content:center;flex-shrink:0"><iconify-icon icon="solar:wallet-money-bold" style="font-size:14px;color:#fff"></iconify-icon></div>
       <div><div style="font-size:9px;color:#7a3c00;font-weight:700;letter-spacing:.06em;text-transform:uppercase">ACTION 02 · 보상</div><div style="font-size:11px;font-weight:700;color:#7a3c00">Key Talent Reward Program</div></div>
     </div>
-    <div style="font-size:9.5px;color:#6a5040;line-height:1.5;margin-bottom:5px">핵심 시니어 대상 LTI·RSU·리텐션 보너스 제공으로 중장기 잔류 동기 강화.</div>
+    <div style="font-size:9.5px;color:#6a5040;line-height:1.5;margin-bottom:5px">핵심 시니어 대상 LTI·성과조건부 주식(RSU)·리텐션 보너스 제공으로 중장기 잔류 동기 강화.</div>
     <div class="chk-list">
-      ${["반기 리텐션 리뷰: 사업 영향도·대체 불가능성·기여도 종합 평가","LTI·RSU·리텐션 보너스 차등 지급 → 회사 성장과 함께하는 구조","시장 기준 보상 모니터링으로 경쟁력 격차 사전 관리"].map(t=>`<div class="chk-item"><div class="chk-icon ci-a"><iconify-icon icon="solar:check-bold"></iconify-icon></div><div>${t}</div></div>`).join('')}
+      ${["반기 리텐션 리뷰: 사업 영향도·대체 불가능성·기여도 종합 평가","LTI·성과조건부 주식(RSU)·리텐션 보너스 차등 지급 → 회사 성장과 함께하는 구조","시장 기준 보상 모니터링으로 경쟁력 격차 사전 관리"].map(t=>`<div class="chk-item"><div class="chk-icon ci-a"><iconify-icon icon="solar:check-bold"></iconify-icon></div><div>${t}</div></div>`).join('')}
     </div>
   </div>
 </div>
@@ -1659,9 +1590,9 @@ function goTo(idx) {
 /* ── BOOKMARKS (4 major parts) ── */
 const BOOKMARKS = [
   { roman: 'I',   name: 'WHY · 진단',     start: 2,  color: '#e8394b' },
-  { roman: 'II',  name: 'WHAT · 인사이트', start: 5,  color: '#534AB7' },
-  { roman: 'III', name: 'HOW · 실행',     start: 8,  color: '#1DB87A' },
-  { roman: 'IV',  name: 'CASE · 사례',    start: 12, color: '#e67e22' },
+  { roman: 'II',  name: 'WHAT · 인사이트', start: 4,  color: '#534AB7' },
+  { roman: 'III', name: 'HOW · 실행',     start: 7,  color: '#1DB87A' },
+  { roman: 'IV',  name: 'CASE · 사례',    start: 11, color: '#e67e22' },
 ];
 const bookmarksEl = document.getElementById('bookmarks');
 bookmarksEl.innerHTML = BOOKMARKS.map((b, i) =>
