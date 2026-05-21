@@ -867,7 +867,7 @@ const SPREADS = [
   <div class="divider"></div>
   <table class="tbl">
     <tr><th>업종</th><th>분류</th><th>주니어 핵심 원인</th></tr>
-    ${[["IT/SI","IT","SM(유지보수) 반복·번아웃·성장 비전 부재","purple"],["플랫폼","플랫폼","JD 불일치·피드백 부재·온보딩 미흡","teal"],["콘텐츠","콘텐츠","보상 불만·외부 오퍼 격차 인지","amber"],["금융/보험","금융","워라밸 붕괴·시간 주권 침해","amber"],["물류","물류","환경 적응 실패·소통 단절","coral"]].map(([n,i,c,col])=>`<tr><td><b>${n}</b></td><td><span class="tag tag-${col}" style="font-size:8px">${i}</span></td><td>${c}</td></tr>`).join('')}
+    ${[["IT/SI","IT","SM(유지보수) 반복·번아웃·성장 비전 부재","purple"],["플랫폼","플랫폼","JD 불일치·피드백 부재·온보딩 미흡","teal"],["콘텐츠","콘텐츠","보상 불만·외부 오퍼 격차 인지","amber"],["금융/보험","금융","워라밸 붕괴·시간 주권 침해","amber"],["물류","물류","현장 근무 적응 어려움 + 본사-현장 물리적 거리 발생","coral"]].map(([n,i,c,col])=>`<tr><td><b>${n}</b></td><td><span class="tag tag-${col}" style="font-size:8px">${i}</span></td><td>${c}</td></tr>`).join('')}
   </table>
   <div class="insight">
     <div class="insight-label"><iconify-icon icon="solar:lightbulb-minimalistic-bold" style="font-size:10px"></iconify-icon> 핵심 발견</div>
@@ -1479,9 +1479,9 @@ const SPREADS = [
   <div style="background:linear-gradient(135deg,#6b1a1a,#8b2a2a);color:#fff;border-radius:8px;padding:10px 14px;margin-bottom:11px;font-size:11px;line-height:1.5;font-weight:600;box-shadow:0 3px 10px rgba(107,26,26,.18)">"채용 공고부터 3년까지 <span style="color:#ffc8a0">끊김 없는 연결 구조</span>가 핵심 — 이벤트가 아닌 구조로, 느낌이 아닌 수치로 관리하라"</div>
   <div class="pg-subtitle" style="margin-bottom:7px;font-size:13px;color:#e8394b;display:flex;align-items:center;gap:5px"><iconify-icon icon="solar:danger-triangle-bold" style="font-size:14px"></iconify-icon>핵심 페인포인트 3가지</div>
   ${[
-    ["P1","JD·환경 갭","채용 단계 미전달 → 현장 충돌","주: 입사 직후 기대-현실 충돌 이탈 · 시: 권한·환경 기대 vs 실제 갭"],
-    ["P2","성장 경로 미가시화","반복 현장 업무 속 다음 단계 불명확","주: 정체감 누적·이탈 검토 · 시: 영향력·의사결정권 기대 vs 현실"],
-    ["P3","현장 고립·소통 단절","분산 센터 구조·본사 소속감 형성 어려움","주: 동기 부재·심리적 안전망 부족 · 시: 본사-현장 정보 단절"]
+    ["P1","JD·환경 갭","입사 전 현장 환경 인지 부족 → 적응 충격","주: 입사 직후 기대-현실 충돌 이탈 · 시: 권한·환경 기대 vs 실제 갭"],
+    ["P2","성장 경로 미가시화","반복 현장 업무 속 다음 단계 불명확","주: 정체감 누적·이탈 검토 · 시: 커리어 경로 불투명"],
+    ["P3","현장 고립·소통 단절","센터 분산 구조로 인한 조직 소속감 형성 어려움","주: 동기 부재·심리적 안전망 부족 · 시: 본사-현장 물리적 거리 발생"]
   ].map(([code,title,sub,detail])=>`
   <div class="card card-coral" style="margin-bottom:7px;padding:10px 12px">
     <div style="display:flex;align-items:center;gap:7px;margin-bottom:4px">
@@ -1503,7 +1503,7 @@ const SPREADS = [
   </div>
   ${[
     ["JD·환경 갭","JD 정확도 강화 + 현장 직무 미리보기(RJP)","채용 공고에 현장 조건·스케줄 투명 공개, 현직자 인터뷰 영상 프리보딩 탑재 → 입사 초기 기대-현실 갭 감소, 조기퇴사율 하락 예상"],
-    ["현장 고립·소통 단절","버디 제도 + 30/60/90일 체크인 구조화","선임 1:1 버디 배정, D+60 몰입도 설문으로 위험군 HR 조기 감지 → 현장 고립감 완화, 90일 이내 이탈↓ 예상"],
+    ["센터 분산 구조로 인한 소속감 저하","버디 제도 + 30/60/90일 체크인 구조화","선임 1:1 버디 배정, D+60 몰입도 설문으로 위험군 HR 조기 감지 → 현장 고립감 완화, 90일 이내 이탈↓ 예상"],
     ["성장 경로 미가시화","1~3주년 리텐션 교육 + 주니어보드 상시 운영","1주년 만족도 면담·2주년 직무교육·3주년 커리어 로드맵으로 이어지는 연속 구조 → 1~3년차 핵심인재 리텐션↑ 예상"]
   ].map(([pain,action,effect])=>`
   <div style="background:#f2fdf7;border:1px solid #b6ecd4;border-left:3px solid #1DB87A;border-radius:7px;padding:8px 11px;margin-bottom:5px">
@@ -1516,14 +1516,18 @@ const SPREADS = [
     <div style="font-size:11px;font-weight:800;color:#534AB7;letter-spacing:.04em">시니어 적용 시 예상 결과</div>
     <div style="font-size:8.5px;color:#a0a0a0;margin-left:4px">— 작성 예정</div>
   </div>
-  ${["",""].map(()=>`
-  <div style="border:1.5px dashed #c8c4e8;border-radius:7px;padding:10px 12px;margin-bottom:5px;background:#f8f7fd;display:flex;align-items:center;gap:8px;min-height:50px">
-    <iconify-icon icon="solar:pen-bold" style="font-size:14px;color:#c8c4e8;flex-shrink:0"></iconify-icon>
-    <div style="font-size:9.5px;color:#c0bdd8;font-weight:600;word-break:keep-all">시니어 적용 시 예상 결과 입력 예정</div>
+  ${[
+    ["현장 전문성 관리","직군별 전문가 트랙 + 현장 경력 연속성 관리","발령·조직개편 시 기존 전문성 유지 역할 문서화 → 시니어 이탈 신호 조기 감지 · 전문가로서 존재감 회복 예상"],
+    ["운영 중심 역할 고착","물류 혁신 프로젝트 리드 기회 부여","현장 개선 TF 리더 역할 배정 → 실질적 영향력 행사 · 시니어 몰입도 향상 예상"]
+  ].map(([pain,action,effect])=>`
+  <div style="background:#f4f3fd;border:1px solid #c4bff0;border-left:3px solid #534AB7;border-radius:7px;padding:8px 11px;margin-bottom:5px">
+    <div style="font-size:9px;color:#888;margin-bottom:2px">페인포인트 → 액션</div>
+    <div style="font-size:10px;font-weight:700;color:#6b1a1a;margin-bottom:3px">${pain} → ${action}</div>
+    <div style="font-size:9px;color:#3a3490;line-height:1.55">${effect}</div>
   </div>`).join('')}
   <div class="insight" style="margin-top:2px">
     <div class="insight-label"><iconify-icon icon="solar:lightbulb-bolt-bold" style="font-size:10px"></iconify-icon>핵심 메시지</div>
-    <div class="insight-text">물류 주니어 이탈은 <strong style="color:#ffa07a">현장 파편화</strong>에서 시작된다. 채용부터 3년까지 <strong style="color:#4ECDC4">끊김 없는 HR 연결 구조</strong>가 리텐션의 핵심이다.</div>
+    <div class="insight-text">물류 주니어 이탈은 <strong style="color:#ffa07a">분산 구조</strong>에서 시작된다. 채용부터 3년까지 <strong style="color:#4ECDC4">끊김 없는 HR 연결 구조</strong>가 리텐션의 핵심이다.</div>
   </div>
 </div>
 <div class="pg-footer"><span class="pg-footer-text">C-05 · 물류 자사 적용안</span><span class="pg-footer-text">17</span></div>
