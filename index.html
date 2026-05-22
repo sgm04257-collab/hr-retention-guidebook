@@ -783,7 +783,7 @@ const SPREADS = [
   <div class="pg-title">왜 우리는<br>사람을 <em>놓치는가?</em></div>
   <div class="divider"></div>
   <div class="blockquote">"어렵게 채용한 사람이 왜 6개월 만에 떠나는가? — HR은 이 질문에 답할 수 있어야 합니다."</div>
-  <div class="pg-body" style="margin-bottom:12px">대부분의 HR은 퇴사 <strong>이후</strong> 채용을 반복하는 사후 대응에 머무른다. 그러나 퇴사의 씨앗은 채용 단계부터 심어진다. 5개사 분석 결과, 주니어 이탈 원인 상당수가 JD 작성·면접·입사 초기 30일에 이미 결정되어 있었다.</div>
+  <div class="pg-body" style="margin-bottom:12px">대부분의 HR은 퇴사 <strong>이후</strong> 채용을 반복하는 사후 대응에 머무른다. 그러나 퇴사의 씨앗은 채용 단계부터 심어진다.</div>
   <div class="stat-grid">
     <div class="stat-box"><div class="stat-val" style="color:#e8394b">84.7%</div><div class="stat-lbl">조기퇴사자 발생<br>기업비율(1년 이내)</div></div>
     <div class="stat-box"><div class="stat-val" style="color:#e67e22">5.2개월</div><div class="stat-lbl">조기퇴사자<br>평균 근무기간</div></div>
@@ -802,12 +802,6 @@ const SPREADS = [
     <div class="pg-subtitle" style="color:#0a6640;margin-bottom:7px;display:flex;align-items:center;gap:5px"><iconify-icon icon="solar:check-circle-bold" style="font-size:14px"></iconify-icon>HR 개입 가능 영역</div>
     <div class="chk-list">
       ${["JD-업무 불일치 → 채용 단계에서 정확한 기대 설계","온보딩 구조 부재 → 90일 마일스톤 체계 도입","커리어 성장 부재 → 커리어맵 공개 + 분기 리뷰"].map(t=>`<div class="chk-item"><div class="chk-icon ci-t"><iconify-icon icon="solar:check-bold"></iconify-icon></div><div>${t}</div></div>`).join('')}
-    </div>
-  </div>
-  <div class="card card-coral">
-    <div class="pg-subtitle" style="color:#8a1a1a;margin-bottom:7px;display:flex;align-items:center;gap:5px"><iconify-icon icon="solar:close-circle-bold" style="font-size:14px;color:#e8394b"></iconify-icon>개입이 어려운 영역</div>
-    <div class="chk-list">
-      ${["보상 경쟁력 (예산 권한의 한계)"].map(t=>`<div class="chk-item"><div class="chk-icon ci-c"><iconify-icon icon="solar:minus-bold"></iconify-icon></div><div>${t}</div></div>`).join('')}
     </div>
   </div>
   <div class="insight">
@@ -838,10 +832,10 @@ const SPREADS = [
 <div class="pg-scroll pg-r-align">
   <div class="pg-subtitle" style="margin-bottom:10px">MZ세대 조기퇴사 사유 TOP 5</div>
   ${[["1","직무가 적성에 안 맞음","45.9","coral"],["2","낮은 연봉 (급여)","36.2","amber"],["3","조직문화 불만족","31.5","coral"],["4","높은 근무 강도","21.4","amber"],["5","개인 역량 발전 어려움","20.3","teal"]].map(([r,t,p,c])=>`
-  <div class="bar-item">
-    <span class="bar-label" style="color:var(--c-${c})">${r}</span>
-    <span class="bar-text">${t}</span>
-    <span class="bar-pct" style="color:#0A2240">${p}%</span>
+  <div class="bar-item" style="margin-bottom:8px">
+    <span class="bar-label" style="font-size:13.5px;color:var(--c-${c})">${r}</span>
+    <span class="bar-text" style="font-size:13.5px">${t}</span>
+    <span class="bar-pct" style="font-size:14px;font-weight:800;color:#0A2240">${p}%</span>
     <div class="bar-track"><div class="bar-fill" style="width:${p}%;background:${c==='coral'?'#e8394b':c==='amber'?'#e67e22':'#1DB87A'}"></div></div>
   </div>`).join('')}
   <div style="font-size:9px;color:#b0ada6;margin-bottom:12px">출처: 사람인 기업 인사담당자 1,124개사 설문 (복수응답)</div>
@@ -930,7 +924,6 @@ const SPREADS = [
     <div style="font-size:9.5px;font-weight:700;color:${c==='coral'?'#8a1a1a':c==='amber'?'#7a3c00':c==='teal'?'#0a6640':'#2e2880'};margin-bottom:3px">${t}</div>
     <div style="font-size:11px;color:#4a4640;word-break:keep-all">${d}</div>
   </div>`).join('')}
-  <div class="blockquote" style="margin-top:12px">"채용은 리텐션의 시작이다. — M조 HR 앰버서더 스터디 2026"</div>
 </div>
 <div class="pg-footer"><span class="pg-footer-text">CH.5 — 3대 인사이트</span><span class="pg-footer-text">6</span></div>
 </div>`
@@ -947,11 +940,12 @@ const SPREADS = [
     <div class="phase-box ph2"><div class="ph-label">Phase 2 · 90일</div><div class="ph-title">적응 구조</div><div class="ph-desc">버디 · 체크인 · 리텐션 인터뷰</div></div>
     <div class="phase-box ph3"><div class="ph-label">Phase 3 · 1~3년차</div><div class="ph-title">성장 경로</div><div class="ph-desc">레벨 맵 · 피드백 · 스킬업</div></div>
   </div>
-  <div class="pg-subtitle" style="margin-bottom:7px">HR 모니터링 KPI</div>
-  <table class="tbl">
-    <tr><th>Phase</th><th>핵심 지표</th><th style="width:60px">방향</th></tr>
-    ${[["채용 전","JD 업무 일치도 만족률","up","향상"],["90일","90일 이내 이탈률","down","감소"],["90일","온보딩 NPS","up","향상"],["1~3년차","성장 체감 인식률","up","향상"],["1~3년차","1년·3년차 리텐션율","up","향상"]].map(([a,b,d,t])=>`<tr><td>${a}</td><td>${b}</td><td style="text-align:center"><span style="display:inline-flex;align-items:center;gap:3px;font-size:9.5px;font-weight:800;padding:2px 7px;border-radius:10px;background:${d==='up'?'rgba(29,184,122,.15)':'rgba(232,57,75,.15)'};color:${d==='up'?'#0a6640':'#8a1a1a'}"><iconify-icon icon="solar:${d==='up'?'arrow-up-bold':'arrow-down-bold'}" style="font-size:10px"></iconify-icon>${t}</span></td></tr>`).join('')}
-  </table>
+  <div class="pg-subtitle" style="margin-bottom:7px">HR 공통 액션 플랜</div>
+  ${[["즉시 시행 (0~1개월)","JD 검토 프로세스 수립, 온보딩 체크리스트 제작","coral"],["단기 (1~3개월)","버디 시스템 론칭, 30/60/90일 체크인 구조화","amber"],["중기 (3~6개월)","커리어 레벨 맵 공개, 성장 리뷰 면담 정례화","teal"],["장기 (6개월+)","리텐션 대시보드 구축, 모티베이션 핏 면접 도입","purple"]].map(([t,d,c])=>`
+  <div class="card card-${c}" style="margin-bottom:7px">
+    <div style="font-size:9.5px;font-weight:700;color:${c==='coral'?'#8a1a1a':c==='amber'?'#7a3c00':c==='teal'?'#0a6640':'#2e2880'};margin-bottom:3px">${t}</div>
+    <div style="font-size:11px;color:#4a4640;word-break:keep-all">${d}</div>
+  </div>`).join('')}
 </div>
 <div class="pg-footer"><span class="pg-footer-text">CH.6 — 통합 프레임워크</span><span class="pg-footer-text">8</span></div>
 </div>`,
@@ -977,26 +971,26 @@ const SPREADS = [
   <div class="ch-label" style="color:#1DB87A"><iconify-icon icon="solar:user-heart-bold"></iconify-icon>CHAPTER 07 · 주니어 리텐션 ①</div>
   <div class="pg-title">주니어<br><em>페인포인트</em></div>
   <div class="divider"></div>
-  <div class="pg-body" style="margin-bottom:10px">"채용은 했는데 6개월 안에 떠난다." 5개 산업 데이터에서 수렴된 주니어 이탈의 5대 패턴.</div>
-  <div class="card card-coral" style="margin-bottom:7px">
-    <div style="font-size:9.5px;color:#8a1a1a;font-weight:700;letter-spacing:.08em;margin-bottom:4px;text-transform:uppercase">01 · 막연한 기대와 현실의 갭</div>
-    <div style="font-size:10.5px;color:#4a4640;line-height:1.6">"성장할 수 있을 것"이라는 막연한 기대를 품고 입사했지만, 실제 업무는 반복적 운영·지원 업무. 기대 자체가 구체화되지 않은 상태에서 현실을 마주하며 이탈.</div>
+  <div class="pg-body" style="margin-bottom:6px">"채용은 했는데 6개월 안에 떠난다." 5개 산업 데이터에서 수렴된 주니어 이탈의 5대 패턴.</div>
+  <div class="card card-coral" style="margin-bottom:5px">
+    <div style="font-size:9.5px;color:#8a1a1a;font-weight:700;letter-spacing:.08em;margin-bottom:3px;text-transform:uppercase">01 · 막연한 기대와 현실의 갭</div>
+    <div style="font-size:10px;color:#4a4640;line-height:1.5">"성장할 수 있을 것"이라는 막연한 기대를 품고 입사했지만, 실제 업무는 반복적 운영·지원 업무. 기대 자체가 구체화되지 않은 상태에서 현실을 마주하며 이탈.</div>
   </div>
-  <div class="card card-coral" style="margin-bottom:7px">
-    <div style="font-size:9.5px;color:#8a1a1a;font-weight:700;letter-spacing:.08em;margin-bottom:4px;text-transform:uppercase">02 · 성장 신호 없음</div>
-    <div style="font-size:10.5px;color:#4a4640;line-height:1.6">다음 단계가 보이지 않는다. 커리어 로드맵 부재 + 정기 피드백 부재 → 정체감.</div>
+  <div class="card card-coral" style="margin-bottom:5px">
+    <div style="font-size:9.5px;color:#8a1a1a;font-weight:700;letter-spacing:.08em;margin-bottom:3px;text-transform:uppercase">02 · 성장 신호 없음</div>
+    <div style="font-size:10px;color:#4a4640;line-height:1.5">다음 단계가 보이지 않는다. 커리어 로드맵 부재 + 정기 피드백 부재 → 정체감.</div>
   </div>
-  <div class="card card-coral" style="margin-bottom:7px">
-    <div style="font-size:9.5px;color:#8a1a1a;font-weight:700;letter-spacing:.08em;margin-bottom:4px;text-transform:uppercase">03 · 적응 구조 부재</div>
-    <div style="font-size:10.5px;color:#4a4640;line-height:1.6">52% 기업이 온보딩 7일 이하. 마일스톤·체크인 없이 방치되는 첫 90일.</div>
+  <div class="card card-coral" style="margin-bottom:5px">
+    <div style="font-size:9.5px;color:#8a1a1a;font-weight:700;letter-spacing:.08em;margin-bottom:3px;text-transform:uppercase">03 · 적응 구조 부재</div>
+    <div style="font-size:10px;color:#4a4640;line-height:1.5">52% 기업이 온보딩 7일 이하. 마일스톤·체크인 없이 방치되는 첫 90일.</div>
   </div>
-  <div class="card card-coral" style="margin-bottom:7px">
-    <div style="font-size:9.5px;color:#8a1a1a;font-weight:700;letter-spacing:.08em;margin-bottom:4px;text-transform:uppercase">04 · 인정·피드백 부족</div>
-    <div style="font-size:10.5px;color:#4a4640;line-height:1.6">"내가 잘하고 있는지 모르겠다." 구체적 인정 없는 막연한 칭찬은 효과 없음.</div>
+  <div class="card card-coral" style="margin-bottom:5px">
+    <div style="font-size:9.5px;color:#8a1a1a;font-weight:700;letter-spacing:.08em;margin-bottom:3px;text-transform:uppercase">04 · 인정·피드백 부족</div>
+    <div style="font-size:10px;color:#4a4640;line-height:1.5">"내가 잘하고 있는지 모르겠다." 구체적 인정 없는 막연한 칭찬은 효과 없음.</div>
   </div>
   <div class="card card-coral">
-    <div style="font-size:9.5px;color:#8a1a1a;font-weight:700;letter-spacing:.08em;margin-bottom:4px;text-transform:uppercase">05 · 관계·소통 단절</div>
-    <div style="font-size:10.5px;color:#4a4640;line-height:1.6">팀 내 심리적 안전성 부족. 질문·실수가 허용되지 않는 분위기.</div>
+    <div style="font-size:9.5px;color:#8a1a1a;font-weight:700;letter-spacing:.08em;margin-bottom:3px;text-transform:uppercase">05 · 관계·소통 단절</div>
+    <div style="font-size:10px;color:#4a4640;line-height:1.5">팀 내 심리적 안전성 부족. 질문·실수가 허용되지 않는 분위기.</div>
   </div>
 </div>
 <div class="pg-footer"><span class="pg-footer-text">CH.7 — 주니어 리텐션 ① 페인포인트·조건</span><span class="pg-footer-text">9</span></div>
@@ -1004,29 +998,29 @@ const SPREADS = [
 
 `<div class="pg" style="border-radius:0 10px 10px 0">
 <div class="pg-scroll pg-r-align">
-  <div class="pg-subtitle" style="margin-bottom:8px">주니어가 머무는 5가지 조건</div>
-  <div style="display:flex;gap:5px;margin-bottom:10px;flex-wrap:wrap">
+  <div class="pg-subtitle" style="margin-bottom:6px">주니어가 머무는 5가지 조건</div>
+  <div style="display:flex;gap:5px;margin-bottom:7px;flex-wrap:wrap">
     ${[["solar:chat-round-check-bold","인정·피드백","구체적 행동 칭찬"],["solar:graph-up-bold","성장 확신","경로·경험·피드백"],["solar:star-bold","롤모델 리더","태도·방식에서 배움"],["solar:map-bold","일의 의미","맥락 공유·기여 가시화"],["solar:users-group-rounded-bold","관계·분위기","소통 방식이 리텐션"]].map(([ic,t,d])=>`<div style="flex:1;min-width:80px;background:linear-gradient(135deg,#0d6b4a,#085038);border-radius:8px;padding:10px 7px;text-align:center"><div style="width:28px;height:28px;border-radius:50%;background:rgba(255,255,255,.12);display:flex;align-items:center;justify-content:center;margin:0 auto 5px"><iconify-icon icon="${ic}" style="font-size:14px;color:#4ECDC4"></iconify-icon></div><div style="font-size:10px;font-weight:700;color:#fff;margin-bottom:2px">${t}</div><div style="font-size:8.5px;color:rgba(255,255,255,.55);line-height:1.4">${d}</div></div>`).join('')}
   </div>
-  <div class="card card-teal" style="margin-bottom:7px">
+  <div class="card card-teal" style="margin-bottom:5px">
     <div style="font-size:9.5px;color:#0a6640;font-weight:700;letter-spacing:.08em;margin-bottom:3px;text-transform:uppercase">01 · 인정과 피드백</div>
-    <div style="font-size:10px;color:#4a4640;line-height:1.55">'~해서 행동한 점이 좋았어요' — 구체적 행동 기반 칭찬. 공개 인정 + 1:1 피드백 병행.</div>
+    <div style="font-size:10px;color:#4a4640;line-height:1.5">'~해서 행동한 점이 좋았어요' — 구체적 행동 기반 칭찬. 공개 인정 + 1:1 피드백 병행.</div>
   </div>
-  <div class="card card-teal" style="margin-bottom:7px">
+  <div class="card card-teal" style="margin-bottom:5px">
     <div style="font-size:9.5px;color:#0a6640;font-weight:700;letter-spacing:.08em;margin-bottom:3px;text-transform:uppercase">02 · 성장 확신</div>
-    <div style="font-size:10px;color:#4a4640;line-height:1.55">커리어 로드맵 공개. 분기 1회 성장 리뷰 + 새로운 프로젝트 경험 기회.</div>
+    <div style="font-size:10px;color:#4a4640;line-height:1.5">커리어 로드맵 공개. 분기 1회 성장 리뷰 + 새로운 프로젝트 경험 기회.</div>
   </div>
-  <div class="card card-teal" style="margin-bottom:7px">
+  <div class="card card-teal" style="margin-bottom:5px">
     <div style="font-size:9.5px;color:#0a6640;font-weight:700;letter-spacing:.08em;margin-bottom:3px;text-transform:uppercase">03 · 롤모델 리더</div>
-    <div style="font-size:10px;color:#4a4640;line-height:1.55">주니어는 가까운 선배·리더를 통해 자신의 미래를 상상한다. 업무 역량뿐 아니라 일하는 방식·태도·커뮤니케이션에서 배울 점이 있어야 한다.</div>
+    <div style="font-size:10px;color:#4a4640;line-height:1.5">주니어는 가까운 선배·리더를 통해 자신의 미래를 상상한다. 업무 역량뿐 아니라 일하는 방식·태도·커뮤니케이션에서 배울 점이 있어야 한다.</div>
   </div>
-  <div class="card card-teal" style="margin-bottom:7px">
+  <div class="card card-teal" style="margin-bottom:5px">
     <div style="font-size:9.5px;color:#0a6640;font-weight:700;letter-spacing:.08em;margin-bottom:3px;text-transform:uppercase">04 · 일의 의미</div>
-    <div style="font-size:10px;color:#4a4640;line-height:1.55">반복 업무 속 '부품처럼 느끼기 쉬운' 주니어에게, 업무 배정 시 Why(왜 중요한지)와 결과 맥락을 함께 전달. 분기별 개인 기여도 가시화.</div>
+    <div style="font-size:10px;color:#4a4640;line-height:1.5">반복 업무 속 '부품처럼 느끼기 쉬운' 주니어에게, 업무 배정 시 Why(왜 중요한지)와 결과 맥락을 함께 전달. 분기별 개인 기여도 가시화.</div>
   </div>
   <div class="card card-teal">
     <div style="font-size:9.5px;color:#0a6640;font-weight:700;letter-spacing:.08em;margin-bottom:3px;text-transform:uppercase">05 · 관계·분위기</div>
-    <div style="font-size:10px;color:#4a4640;line-height:1.55">주니어는 업무보다 사람에게 더 많은 영향을 받는다. 팀 내 소통 방식·분위기가 리텐션에 직결. 심리적 안전성 + 멘토링·주니어보드로 연결 고리 형성.</div>
+    <div style="font-size:10px;color:#4a4640;line-height:1.5">주니어는 업무보다 사람에게 더 많은 영향을 받는다. 팀 내 소통 방식·분위기가 리텐션에 직결. 심리적 안전성 + 멘토링·주니어보드로 연결 고리 형성.</div>
   </div>
 </div>
 <div class="pg-footer"><span class="pg-footer-text">CH.7 — 주니어 리텐션 ① 페인포인트·조건</span><span class="pg-footer-text">9</span></div>
