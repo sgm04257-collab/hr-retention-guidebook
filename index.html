@@ -796,9 +796,9 @@ const SPREADS = [
 </div>`,
 
 `<div class="pg" style="border-radius:0 10px 10px 0">
-<div class="pg-scroll pg-r-align">
+<div class="pg-scroll pg-r-align" style="justify-content:flex-start;gap:14px">
   <div class="pg-subtitle">HR이 개입할 수 있었을까?</div>
-  <div class="card card-teal" style="margin-bottom:8px">
+  <div class="card card-teal" style="margin-bottom:0">
     <div class="pg-subtitle" style="color:#0a6640;margin-bottom:7px;display:flex;align-items:center;gap:5px"><iconify-icon icon="solar:check-circle-bold" style="font-size:14px"></iconify-icon>HR 개입 가능 영역</div>
     <div class="chk-list">
       ${["JD-업무 불일치 → 채용 단계에서 정확한 기대 설계","온보딩 구조 부재 → 90일 마일스톤 체계 도입","커리어 성장 부재 → 커리어맵 공개 + 분기 리뷰"].map(t=>`<div class="chk-item"><div class="chk-icon ci-t"><iconify-icon icon="solar:check-bold"></iconify-icon></div><div>${t}</div></div>`).join('')}
@@ -829,10 +829,10 @@ const SPREADS = [
 </div>`,
 
 `<div class="pg" style="border-radius:0 10px 10px 0">
-<div class="pg-scroll pg-r-align">
-  <div class="pg-subtitle" style="margin-bottom:10px">MZ세대 조기퇴사 사유 TOP 5</div>
+<div class="pg-scroll pg-r-align" style="justify-content:flex-start">
+  <div class="pg-subtitle" style="margin-bottom:14px">MZ세대 조기퇴사 사유 TOP 5</div>
   ${[["1","직무가 적성에 안 맞음","45.9","coral"],["2","낮은 연봉 (급여)","36.2","amber"],["3","조직문화 불만족","31.5","coral"],["4","높은 근무 강도","21.4","amber"],["5","개인 역량 발전 어려움","20.3","teal"]].map(([r,t,p,c])=>`
-  <div class="bar-item" style="margin-bottom:8px">
+  <div class="bar-item" style="margin-bottom:12px">
     <span class="bar-label" style="font-size:13.5px;color:var(--c-${c})">${r}</span>
     <span class="bar-text" style="font-size:13.5px">${t}</span>
     <span class="bar-pct" style="font-size:14px;font-weight:800;color:#0A2240">${p}%</span>
@@ -917,10 +917,10 @@ const SPREADS = [
 </div>`,
 
 `<div class="pg" style="border-radius:0 10px 10px 0">
-<div class="pg-scroll pg-r-align">
-  <div class="pg-subtitle" style="margin-bottom:8px">주니어·시니어 모두에게 적용 가능한 단계별 액션플랜</div>
+<div class="pg-scroll pg-r-align" style="justify-content:flex-start;gap:10px">
+  <div class="pg-subtitle" style="margin-bottom:0">주니어·시니어 모두에게 적용 가능한 단계별 액션플랜</div>
   ${[["즉시 시행 (0~1개월)","JD 검토 프로세스 수립, 온보딩 체크리스트 제작","coral"],["단기 (1~3개월)","버디 시스템 론칭, 30/60/90일 체크인 구조화","amber"],["중기 (3~6개월)","커리어맵 공개, 성장 리뷰 면담 정례화","teal"],["장기 (6개월+)","리텐션 대시보드 구축, 모티베이션 핏 면접 도입","purple"]].map(([t,d,c])=>`
-  <div class="card card-${c}" style="margin-bottom:7px">
+  <div class="card card-${c}" style="margin-bottom:0">
     <div style="font-size:9.5px;font-weight:700;color:${c==='coral'?'#8a1a1a':c==='amber'?'#7a3c00':c==='teal'?'#0a6640':'#2e2880'};margin-bottom:3px">${t}</div>
     <div style="font-size:11px;color:#4a4640;word-break:keep-all">${d}</div>
   </div>`).join('')}
@@ -1420,8 +1420,8 @@ const SPREADS = [
 </div>`,
 
 `<div class="pg" style="border-radius:0 10px 10px 0">
-<div class="pg-scroll pg-r-align">
-  <div style="display:flex;align-items:center;gap:5px;margin-bottom:6px">
+<div class="pg-scroll pg-r-align" style="justify-content:flex-start">
+  <div style="display:flex;align-items:center;gap:5px;margin-bottom:4px">
     <div style="width:3px;height:14px;background:#1DB87A;border-radius:2px"></div>
     <div style="font-size:11px;font-weight:800;color:#1DB87A;letter-spacing:.04em">주니어 적용 시 예상 결과</div>
   </div>
@@ -1430,12 +1430,12 @@ const SPREADS = [
     ["센터 분산 구조로 인한 소속감 저하","버디 제도 + 30/60/90일 체크인 구조화","선임 1:1 버디 배정, D+60 몰입도 설문으로 위험군 HR 조기 감지 → 현장 고립감 완화, 90일 이내 이탈↓ 예상"],
     ["성장 경로 미가시화","1~3주년 리텐션 교육 + 주니어보드 상시 운영","1주년 만족도 면담·2주년 직무교육·3주년 커리어 로드맵으로 이어지는 연속 구조 → 1~3년차 핵심인재 리텐션↑ 예상"]
   ].map(([pain,action,effect])=>`
-  <div style="background:#f2fdf7;border:1px solid #b6ecd4;border-left:3px solid #1DB87A;border-radius:7px;padding:8px 11px;margin-bottom:5px">
-    <div style="font-size:9px;color:#888;margin-bottom:2px">페인포인트 → 액션</div>
-    <div style="font-size:10px;font-weight:700;color:#6b1a1a;margin-bottom:3px">${pain} → ${action}</div>
-    <div style="font-size:9px;color:#2a7a54;line-height:1.55">${effect}</div>
+  <div style="background:#f2fdf7;border:1px solid #b6ecd4;border-left:3px solid #1DB87A;border-radius:7px;padding:6px 10px;margin-bottom:4px">
+    <div style="font-size:8.5px;color:#888;margin-bottom:1px">페인포인트 → 액션</div>
+    <div style="font-size:9.5px;font-weight:700;color:#6b1a1a;margin-bottom:2px">${pain} → ${action}</div>
+    <div style="font-size:8.5px;color:#2a7a54;line-height:1.5">${effect}</div>
   </div>`).join('')}
-  <div style="display:flex;align-items:center;gap:5px;margin-top:5px;margin-bottom:5px">
+  <div style="display:flex;align-items:center;gap:5px;margin-top:4px;margin-bottom:4px">
     <div style="width:3px;height:14px;background:#534AB7;border-radius:2px"></div>
     <div style="font-size:11px;font-weight:800;color:#534AB7;letter-spacing:.04em">시니어 적용 시 예상 결과</div>
     <div style="font-size:8.5px;color:#a0a0a0;margin-left:4px">— 작성 예정</div>
@@ -1444,10 +1444,10 @@ const SPREADS = [
     ["현장 전문성 관리","직군별 전문가 트랙 + 현장 경력 연속성 관리","발령·조직개편 시 기존 전문성 유지 역할 문서화 → 시니어 이탈 신호 조기 감지 · 전문가로서 존재감 회복 예상"],
     ["운영 중심 역할 고착","물류 혁신 프로젝트 리드 기회 부여","현장 개선 TF 리더 역할 배정 → 실질적 영향력 행사 · 시니어 몰입도 향상 예상"]
   ].map(([pain,action,effect])=>`
-  <div style="background:#f4f3fd;border:1px solid #c4bff0;border-left:3px solid #534AB7;border-radius:7px;padding:8px 11px;margin-bottom:5px">
-    <div style="font-size:9px;color:#888;margin-bottom:2px">페인포인트 → 액션</div>
-    <div style="font-size:10px;font-weight:700;color:#6b1a1a;margin-bottom:3px">${pain} → ${action}</div>
-    <div style="font-size:9px;color:#3a3490;line-height:1.55">${effect}</div>
+  <div style="background:#f4f3fd;border:1px solid #c4bff0;border-left:3px solid #534AB7;border-radius:7px;padding:6px 10px;margin-bottom:4px">
+    <div style="font-size:8.5px;color:#888;margin-bottom:1px">페인포인트 → 액션</div>
+    <div style="font-size:9.5px;font-weight:700;color:#6b1a1a;margin-bottom:2px">${pain} → ${action}</div>
+    <div style="font-size:8.5px;color:#3a3490;line-height:1.5">${effect}</div>
   </div>`).join('')}
   <div class="insight" style="margin-top:2px">
     <div class="insight-label"><iconify-icon icon="solar:lightbulb-bolt-bold" style="font-size:10px"></iconify-icon>핵심 메시지</div>
