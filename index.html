@@ -894,7 +894,7 @@ const SPREADS = [
 [
 `<div class="pg" style="border-radius:10px 0 0 10px">
 <div class="pg-scroll">
-  <div class="ch-label"><iconify-icon icon="solar:star-shine-bold"></iconify-icon>CHAPTER 05</div>
+  <div class="ch-label"><iconify-icon icon="solar:star-shine-bold"></iconify-icon>CHAPTER 04</div>
   <div class="pg-title">공통 패턴<br><em>3대 인사이트</em></div>
   <div class="divider"></div>
   <div class="card card-navy" style="margin-bottom:8px">
@@ -913,7 +913,7 @@ const SPREADS = [
     <div style="font-size:10.5px;color:rgba(255,255,255,.72);line-height:1.65;word-break:keep-all">'버티고 있는지'가 아닌 <strong style="color:#4ECDC4">'성장하고 있다고 느끼는지'</strong>를 정기 측정. 최소 5개 지표 분기 트래킹.</div>
   </div>
 </div>
-<div class="pg-footer"><span class="pg-footer-text">CH.5 — 3대 인사이트</span><span class="pg-footer-text">7</span></div>
+<div class="pg-footer"><span class="pg-footer-text">CH.4 — 3대 인사이트</span><span class="pg-footer-text">6</span></div>
 </div>`,
 
 `<div class="pg" style="border-radius:0 10px 10px 0">
@@ -925,14 +925,14 @@ const SPREADS = [
     <div style="font-size:11px;color:#4a4640;word-break:keep-all">${d}</div>
   </div>`).join('')}
 </div>
-<div class="pg-footer"><span class="pg-footer-text">CH.5 — 3대 인사이트</span><span class="pg-footer-text">6</span></div>
+<div class="pg-footer"><span class="pg-footer-text">CH.4 — 3대 인사이트</span><span class="pg-footer-text">6</span></div>
 </div>`
 ],
 
 [
 `<div class="pg" style="border-radius:10px 0 0 10px">
 <div class="pg-scroll">
-  <div class="ch-label"><iconify-icon icon="solar:layers-bold"></iconify-icon>CHAPTER 06</div>
+  <div class="ch-label"><iconify-icon icon="solar:layers-bold"></iconify-icon>CHAPTER 05</div>
   <div class="pg-title">리텐션<br><em>통합 프레임워크</em></div>
   <div class="divider"></div>
   <div class="phase-row">
@@ -947,28 +947,27 @@ const SPREADS = [
     <div style="font-size:11px;color:#4a4640;word-break:keep-all">${d}</div>
   </div>`).join('')}
 </div>
-<div class="pg-footer"><span class="pg-footer-text">CH.6 — 통합 프레임워크</span><span class="pg-footer-text">8</span></div>
+<div class="pg-footer"><span class="pg-footer-text">CH.5 — 통합 프레임워크</span><span class="pg-footer-text">7</span></div>
 </div>`,
 
 `<div class="pg" style="border-radius:0 10px 10px 0">
 <div class="pg-scroll pg-r-align">
-  <div class="pg-subtitle" style="margin-bottom:8px">HR 공통 액션 플랜</div>
-  ${[["즉시 시행 (0~1개월)","JD 검토 프로세스 수립, 온보딩 체크리스트 제작","coral"],["단기 (1~3개월)","버디 시스템 론칭, 30/60/90일 체크인 구조화","amber"],["중기 (3~6개월)","커리어 레벨 맵 공개, 성장 리뷰 면담 정례화","teal"],["장기 (6개월+)","리텐션 대시보드 구축, 모티베이션 핏 면접 도입","purple"]].map(([t,d,c])=>`
-  <div class="card card-${c}" style="margin-bottom:7px">
-    <div style="font-size:9.5px;font-weight:700;color:${c==='coral'?'#8a1a1a':c==='amber'?'#7a3c00':c==='teal'?'#0a6640':'#2e2880'};margin-bottom:3px">${t}</div>
-    <div style="font-size:11px;color:#4a4640;word-break:keep-all">${d}</div>
-  </div>`).join('')}
+  <div class="pg-subtitle" style="margin-bottom:7px">HR 모니터링 KPI</div>
+  <table class="tbl">
+    <tr><th>Phase</th><th>핵심 지표</th><th style="width:60px">방향</th></tr>
+    ${[["채용 전","JD 업무 일치도 만족률","up","향상"],["90일","90일 이내 이탈률","down","감소"],["90일","온보딩 NPS","up","향상"],["1~3년차","성장 체감 인식률","up","향상"],["1~3년차","1년·3년차 리텐션율","up","향상"]].map(([a,b,d,t])=>`<tr><td>${a}</td><td>${b}</td><td style="text-align:center"><span style="display:inline-flex;align-items:center;gap:3px;font-size:9.5px;font-weight:800;padding:2px 7px;border-radius:10px;background:${d==='up'?'rgba(29,184,122,.15)':'rgba(232,57,75,.15)'};color:${d==='up'?'#0a6640':'#8a1a1a'}"><iconify-icon icon="solar:${d==='up'?'arrow-up-bold':'arrow-down-bold'}" style="font-size:10px"></iconify-icon>${t}</span></td></tr>`).join('')}
+  </table>
   <div class="blockquote" style="margin-top:12px">"채용은 리텐션의 시작이다. — M조 HR 앰버서더 스터디 2026"</div>
 </div>
-<div class="pg-footer"><span class="pg-footer-text">CH.6 — 통합 프레임워크</span><span class="pg-footer-text">8</span></div>
+<div class="pg-footer"><span class="pg-footer-text">CH.5 — 통합 프레임워크</span><span class="pg-footer-text">7</span></div>
 </div>`
 ],
 
-/* ─── CH.7 주니어 리텐션 ① 페인포인트·머무는 조건 ─── */
+/* ─── CH.6 주니어 리텐션 ① 페인포인트·머무는 조건 ─── */
 [
 `<div class="pg" style="border-radius:10px 0 0 10px">
 <div class="pg-scroll">
-  <div class="ch-label" style="color:#1DB87A"><iconify-icon icon="solar:user-heart-bold"></iconify-icon>CHAPTER 07 · 주니어 리텐션 ①</div>
+  <div class="ch-label" style="color:#1DB87A"><iconify-icon icon="solar:user-heart-bold"></iconify-icon>CHAPTER 06 · 주니어 리텐션 ①</div>
   <div class="pg-title">주니어<br><em>페인포인트</em></div>
   <div class="divider"></div>
   <div class="pg-body" style="margin-bottom:6px">"채용은 했는데 6개월 안에 떠난다." 5개 산업 데이터에서 수렴된 주니어 이탈의 5대 패턴.</div>
@@ -993,7 +992,7 @@ const SPREADS = [
     <div style="font-size:10px;color:#4a4640;line-height:1.5">팀 내 심리적 안전성 부족. 질문·실수가 허용되지 않는 분위기.</div>
   </div>
 </div>
-<div class="pg-footer"><span class="pg-footer-text">CH.7 — 주니어 리텐션 ① 페인포인트·조건</span><span class="pg-footer-text">9</span></div>
+<div class="pg-footer"><span class="pg-footer-text">CH.6 — 주니어 리텐션 ① 페인포인트·조건</span><span class="pg-footer-text">8</span></div>
 </div>`,
 
 `<div class="pg" style="border-radius:0 10px 10px 0">
@@ -1023,15 +1022,15 @@ const SPREADS = [
     <div style="font-size:10px;color:#4a4640;line-height:1.5">주니어는 업무보다 사람에게 더 많은 영향을 받는다. 팀 내 소통 방식·분위기가 리텐션에 직결. 심리적 안전성 + 멘토링·주니어보드로 연결 고리 형성.</div>
   </div>
 </div>
-<div class="pg-footer"><span class="pg-footer-text">CH.7 — 주니어 리텐션 ① 페인포인트·조건</span><span class="pg-footer-text">9</span></div>
+<div class="pg-footer"><span class="pg-footer-text">CH.6 — 주니어 리텐션 ① 페인포인트·조건</span><span class="pg-footer-text">8</span></div>
 </div>`
 ],
 
-/* ─── CH.8 주니어 리텐션 ② 액션플랜 ─── */
+/* ─── CH.7 주니어 리텐션 ② 액션플랜 ─── */
 [
 `<div class="pg" style="border-radius:10px 0 0 10px">
 <div class="pg-scroll">
-  <div class="ch-label" style="color:#e67e22"><iconify-icon icon="solar:case-round-minimalistic-bold"></iconify-icon>CHAPTER 08 · 주니어 리텐션 ②</div>
+  <div class="ch-label" style="color:#e67e22"><iconify-icon icon="solar:case-round-minimalistic-bold"></iconify-icon>CHAPTER 07 · 주니어 리텐션 ②</div>
   <div class="pg-title">주니어<br><em>액션플랜</em></div>
   <div class="divider" style="background:linear-gradient(to right,#e67e22,rgba(230,126,34,.1))"></div>
   <div class="pg-body" style="margin-bottom:8px;font-size:11px">채용 단계부터 HR이 개입할 수 있는 4가지 핵심 액션.</div>
@@ -1051,7 +1050,7 @@ const SPREADS = [
     </div>
   </div>`).join('')}
 </div>
-<div class="pg-footer"><span class="pg-footer-text">CH.8 — 주니어 리텐션 ② 액션플랜</span><span class="pg-footer-text">10</span></div>
+<div class="pg-footer"><span class="pg-footer-text">CH.7 — 주니어 리텐션 ② 액션플랜</span><span class="pg-footer-text">9</span></div>
 </div>`,
 
 `<div class="pg" style="border-radius:0 10px 10px 0">
@@ -1072,15 +1071,15 @@ const SPREADS = [
     <div class="insight-text">채용은 '뽑는 것'에서 끝나지 않는다. <strong style="color:#4ECDC4">기대치 → 성장 사례 → 팀 검증 → 적응 모니터링</strong>까지 채용 담당자가 리텐션의 첫 설계자.</div>
   </div>
 </div>
-<div class="pg-footer"><span class="pg-footer-text">CH.8 — 주니어 리텐션 ② 액션플랜</span><span class="pg-footer-text">10</span></div>
+<div class="pg-footer"><span class="pg-footer-text">CH.7 — 주니어 리텐션 ② 액션플랜</span><span class="pg-footer-text">9</span></div>
 </div>`
 ],
 
-/* ─── CH.9 시니어 리텐션 ① 페인포인트·머무는 조건 ─── */
+/* ─── CH.8 시니어 리텐션 ① 페인포인트·머무는 조건 ─── */
 [
 `<div class="pg" style="border-radius:10px 0 0 10px">
 <div class="pg-scroll">
-  <div class="ch-label" style="color:#e8394b"><iconify-icon icon="solar:shield-user-bold"></iconify-icon>CHAPTER 09 · 시니어 리텐션 ①</div>
+  <div class="ch-label" style="color:#e8394b"><iconify-icon icon="solar:shield-user-bold"></iconify-icon>CHAPTER 08 · 시니어 리텐션 ①</div>
   <div class="pg-title">시니어<br><em>페인포인트</em></div>
   <div class="divider" style="background:linear-gradient(to right,#e8394b,rgba(232,57,75,.1))"></div>
   <div class="pg-body" style="margin-bottom:10px">시니어의 이탈은 '안정성 붕괴'에서 시작된다. 5개 산업에서 수렴된 시니어 이탈의 5가지 신호.</div>
@@ -1097,7 +1096,7 @@ const SPREADS = [
     <div style="font-size:10.5px;color:#4a4640;line-height:1.6">시장 보상 수준에 대한 인식이 높아지면서 현재 처우와의 괴리를 체감. 보상 조정 시점이 멀게 느껴질수록 이탈 검토가 빨라지는 경향.</div>
   </div>
   <div class="card card-coral" style="margin-bottom:7px">
-    <div style="font-size:9.5px;color:#8a1a1a;font-weight:700;letter-spacing:.08em;margin-bottom:4px;text-transform:uppercase">04 · 리더십 실망</div>
+    <div style="font-size:9.5px;color:#8a1a1a;font-weight:700;letter-spacing:.08em;margin-bottom:4px;text-transform:uppercase">04 · 리더십 불신</div>
     <div style="font-size:10.5px;color:#4a4640;line-height:1.6">상위 직급의 의사결정 방식·소통 구조에 대한 신뢰가 서서히 낮아지는 과정. 관계 회복보다 이탈을 선택하게 되는 임계점.</div>
   </div>
   <div class="card card-coral">
@@ -1105,7 +1104,7 @@ const SPREADS = [
     <div style="font-size:10.5px;color:#4a4640;line-height:1.6">"이 회사에서 내가 리더가 될 수 있는가?" 다음 단계가 보이지 않을 때의 이탈 신호.</div>
   </div>
 </div>
-<div class="pg-footer"><span class="pg-footer-text">CH.9 — 시니어 리텐션 ① 페인포인트·조건</span><span class="pg-footer-text">11</span></div>
+<div class="pg-footer"><span class="pg-footer-text">CH.8 — 시니어 리텐션 ① 페인포인트·조건</span><span class="pg-footer-text">10</span></div>
 </div>`,
 
 `<div class="pg" style="border-radius:0 10px 10px 0">
@@ -1135,15 +1134,15 @@ const SPREADS = [
     <div style="font-size:10px;color:#4a4640;line-height:1.55">프로젝트 단위 리드 역할 부여. Skill-up Support로 자기 계발 기회 제공.</div>
   </div>
 </div>
-<div class="pg-footer"><span class="pg-footer-text">CH.9 — 시니어 리텐션 ① 페인포인트·조건</span><span class="pg-footer-text">11</span></div>
+<div class="pg-footer"><span class="pg-footer-text">CH.8 — 시니어 리텐션 ① 페인포인트·조건</span><span class="pg-footer-text">10</span></div>
 </div>`
 ],
 
-/* ─── CH.10 시니어 리텐션 ② 액션플랜 ─── */
+/* ─── CH.9 시니어 리텐션 ② 액션플랜 ─── */
 [
 `<div class="pg" style="border-radius:10px 0 0 10px">
 <div class="pg-scroll">
-  <div class="ch-label" style="color:#e67e22"><iconify-icon icon="solar:wallet-money-bold"></iconify-icon>CHAPTER 10 · 시니어 리텐션 ②</div>
+  <div class="ch-label" style="color:#e67e22"><iconify-icon icon="solar:wallet-money-bold"></iconify-icon>CHAPTER 09 · 시니어 리텐션 ②</div>
   <div class="pg-title">시니어<br><em>액션플랜</em></div>
   <div class="divider" style="background:linear-gradient(to right,#e67e22,rgba(230,126,34,.1))"></div>
   <div class="pg-body" style="margin-bottom:10px">시니어 리텐션은 '구조 + 보상 + 인정' 3축. 3가지 핵심 제도.</div>
@@ -1168,7 +1167,7 @@ const SPREADS = [
     </div>
   </div>
 </div>
-<div class="pg-footer"><span class="pg-footer-text">CH.10 — 시니어 리텐션 ② 액션플랜</span><span class="pg-footer-text">12</span></div>
+<div class="pg-footer"><span class="pg-footer-text">CH.9 — 시니어 리텐션 ② 액션플랜</span><span class="pg-footer-text">11</span></div>
 </div>`,
 
 `<div class="pg" style="border-radius:0 10px 10px 0">
@@ -1194,7 +1193,7 @@ const SPREADS = [
     <div class="insight-text">시니어는 연봉만으로 붙잡을 수 없다. <strong style="color:#4ECDC4">업무 총량 관리 + 장기 보상 + 대체 불가 전문가 트랙</strong>을 제도화하라.</div>
   </div>
 </div>
-<div class="pg-footer"><span class="pg-footer-text">CH.10 — 시니어 리텐션 ② 액션플랜</span><span class="pg-footer-text">12</span></div>
+<div class="pg-footer"><span class="pg-footer-text">CH.9 — 시니어 리텐션 ② 액션플랜</span><span class="pg-footer-text">11</span></div>
 </div>`
 ],
 
@@ -1220,7 +1219,7 @@ const SPREADS = [
     <div style="font-size:9.5px;color:#888;line-height:1.5">${detail}</div>
   </div>`).join('')}
 </div>
-<div class="pg-footer"><span class="pg-footer-text">C-01 · IT/SI 자사 적용안</span><span class="pg-footer-text">13</span></div>
+<div class="pg-footer"><span class="pg-footer-text">C-01 · IT/SI 자사 적용안</span><span class="pg-footer-text">12</span></div>
 </div>`,
 
 `<div class="pg" style="border-radius:0 10px 10px 0">
@@ -1259,7 +1258,7 @@ const SPREADS = [
     <div class="insight-text">같은 액션이라도 <strong style="color:#1DB87A">주니어는 '연결'</strong>, <strong style="color:#4ECDC4">시니어는 '역할 명확화'</strong>로 귀결될 때 리텐션 효과가 극대화된다.</div>
   </div>
 </div>
-<div class="pg-footer"><span class="pg-footer-text">C-01 · IT/SI 자사 적용안</span><span class="pg-footer-text">13</span></div>
+<div class="pg-footer"><span class="pg-footer-text">C-01 · IT/SI 자사 적용안</span><span class="pg-footer-text">12</span></div>
 </div>`
 ],
 
@@ -1279,7 +1278,7 @@ const SPREADS = [
     <div style="font-size:10.5px;color:#666;line-height:1.75;word-break:keep-all">분석 기업 / 산업 유형 / 퇴사율 현황<br>주니어·시니어 이탈 원인 비교<br>HR 개입 가능 포인트 / 대응 방안<br>이 가이드북 프레임워크 적용 제안</div>
   </div>
 </div>
-<div class="pg-footer"><span class="pg-footer-text">C-02 · 플랫폼 기업 분석</span><span class="pg-footer-text">14</span></div>
+<div class="pg-footer"><span class="pg-footer-text">C-02 · 플랫폼 기업 분석</span><span class="pg-footer-text">13</span></div>
 </div>`,
 
 `<div class="pg" style="border-radius:0 10px 10px 0">
@@ -1294,7 +1293,7 @@ const SPREADS = [
     <div style="font-weight:700;color:#c0bdb6;font-size:11px">핵심 인사이트 3줄 요약</div>
   </div>
 </div>
-<div class="pg-footer"><span class="pg-footer-text">C-02 · 플랫폼 기업 분석</span><span class="pg-footer-text">14</span></div>
+<div class="pg-footer"><span class="pg-footer-text">C-02 · 플랫폼 기업 분석</span><span class="pg-footer-text">13</span></div>
 </div>`
 ],
 
@@ -1314,7 +1313,7 @@ const SPREADS = [
     <div style="font-size:10.5px;color:#666;line-height:1.75;word-break:keep-all">분석 기업 / 산업 유형 / 퇴사율 현황<br>주니어·시니어 이탈 원인 비교<br>HR 개입 가능 포인트 / 대응 방안<br>이 가이드북 프레임워크 적용 제안</div>
   </div>
 </div>
-<div class="pg-footer"><span class="pg-footer-text">C-03 · 콘텐츠 기업 분석</span><span class="pg-footer-text">15</span></div>
+<div class="pg-footer"><span class="pg-footer-text">C-03 · 콘텐츠 기업 분석</span><span class="pg-footer-text">14</span></div>
 </div>`,
 
 `<div class="pg" style="border-radius:0 10px 10px 0">
@@ -1329,7 +1328,7 @@ const SPREADS = [
     <div style="font-weight:700;color:#c0bdb6;font-size:11px">핵심 인사이트 3줄 요약</div>
   </div>
 </div>
-<div class="pg-footer"><span class="pg-footer-text">C-03 · 콘텐츠 기업 분석</span><span class="pg-footer-text">15</span></div>
+<div class="pg-footer"><span class="pg-footer-text">C-03 · 콘텐츠 기업 분석</span><span class="pg-footer-text">14</span></div>
 </div>`
 ],
 
@@ -1355,7 +1354,7 @@ const SPREADS = [
     <div style="font-size:9.5px;color:#888;line-height:1.5">${detail}</div>
   </div>`).join('')}
 </div>
-<div class="pg-footer"><span class="pg-footer-text">C-04 · 금융/보험 자사 적용안</span><span class="pg-footer-text">16</span></div>
+<div class="pg-footer"><span class="pg-footer-text">C-04 · 금융/보험 자사 적용안</span><span class="pg-footer-text">15</span></div>
 </div>`,
 
 `<div class="pg" style="border-radius:0 10px 10px 0">
@@ -1391,7 +1390,7 @@ const SPREADS = [
     <div class="insight-text">주니어는 <strong style="color:#1DB87A">'내 일의 의미와 성장의 연결감'</strong>을 느낄 때, 시니어는 <strong style="color:#4ECDC4">'역할과 권한의 명확성'</strong>을 확보할 때 리텐션이 강화된다.</div>
   </div>
 </div>
-<div class="pg-footer"><span class="pg-footer-text">C-04 · 금융/보험 자사 적용안</span><span class="pg-footer-text">16</span></div>
+<div class="pg-footer"><span class="pg-footer-text">C-04 · 금융/보험 자사 적용안</span><span class="pg-footer-text">15</span></div>
 </div>`
 ],
 
@@ -1417,7 +1416,7 @@ const SPREADS = [
     <div style="font-size:9.5px;color:#888;line-height:1.5">${detail}</div>
   </div>`).join('')}
 </div>
-<div class="pg-footer"><span class="pg-footer-text">C-05 · 물류 자사 적용안</span><span class="pg-footer-text">17</span></div>
+<div class="pg-footer"><span class="pg-footer-text">C-05 · 물류 자사 적용안</span><span class="pg-footer-text">16</span></div>
 </div>`,
 
 `<div class="pg" style="border-radius:0 10px 10px 0">
@@ -1455,7 +1454,7 @@ const SPREADS = [
     <div class="insight-text">물류 주니어 이탈은 <strong style="color:#ffa07a">분산 구조</strong>에서 시작된다. 채용부터 3년까지 <strong style="color:#4ECDC4">끊김 없는 HR 연결 구조</strong>가 리텐션의 핵심이다.</div>
   </div>
 </div>
-<div class="pg-footer"><span class="pg-footer-text">C-05 · 물류 자사 적용안</span><span class="pg-footer-text">17</span></div>
+<div class="pg-footer"><span class="pg-footer-text">C-05 · 물류 자사 적용안</span><span class="pg-footer-text">16</span></div>
 </div>`
 ],
 
