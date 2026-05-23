@@ -792,9 +792,9 @@ const SPREADS = [
 </div>`,
 
 `<div class="pg" style="border-radius:0 10px 10px 0">
-<div class="pg-scroll pg-r-align" style="justify-content:flex-start;gap:14px">
-  <div class="pg-subtitle">HR이 개입할 수 있었을까?</div>
-  <div class="card card-teal" style="margin-bottom:0">
+<div class="pg-scroll pg-r-align">
+  <div class="pg-subtitle" style="margin-bottom:12px">HR이 개입할 수 있었을까?</div>
+  <div class="card card-teal" style="margin-bottom:12px">
     <div class="pg-subtitle" style="color:#0a6640;margin-bottom:7px;display:flex;align-items:center;gap:5px"><iconify-icon icon="solar:check-circle-bold" style="font-size:14px"></iconify-icon>HR 개입 가능 영역</div>
     <div class="chk-list">
       ${["JD-업무 불일치 → 채용 단계에서 정확한 기대 설계","온보딩 구조 부재 → 90일 마일스톤 체계 도입","커리어 성장 부재 → 커리어맵 공개 + 분기 리뷰"].map(t=>`<div class="chk-item"><div class="chk-icon ci-t"><iconify-icon icon="solar:check-bold"></iconify-icon></div><div>${t}</div></div>`).join('')}
@@ -804,6 +804,7 @@ const SPREADS = [
     <div class="insight-label"><iconify-icon icon="solar:lightbulb-bolt-bold" style="font-size:10px"></iconify-icon> 핵심 명제</div>
     <div class="insight-text">퇴사는 갑자기 일어나지 않습니다.<br><strong style="color:#4ECDC4">이미 채용 단계부터 씨앗이 심어집니다.</strong></div>
   </div>
+  <div style="flex:1 0 0"></div>
 </div>
 <div class="pg-footer"><span class="pg-footer-text">CH.1 — 문제 제기</span><span class="pg-footer-text">3</span></div>
 </div>`
@@ -825,7 +826,7 @@ const SPREADS = [
 </div>`,
 
 `<div class="pg" style="border-radius:0 10px 10px 0">
-<div class="pg-scroll pg-r-align" style="justify-content:flex-start">
+<div class="pg-scroll pg-r-align">
   <div class="pg-subtitle" style="margin-bottom:14px">MZ세대 조기퇴사 사유 TOP 5</div>
   ${[["1","직무가 적성에 안 맞음","45.9","coral"],["2","낮은 연봉 (급여)","36.2","amber"],["3","조직문화 불만족","31.5","coral"],["4","높은 근무 강도","21.4","amber"],["5","개인 역량 발전 어려움","20.3","teal"]].map(([r,t,p,c])=>`
   <div class="bar-item" style="margin-bottom:12px">
@@ -834,7 +835,8 @@ const SPREADS = [
     <span class="bar-pct" style="font-size:14px;font-weight:800;color:#0A2240">${p}%</span>
     <div class="bar-track"><div class="bar-fill" style="width:${p}%;background:${c==='coral'?'#e8394b':c==='amber'?'#e67e22':'#1DB87A'}"></div></div>
   </div>`).join('')}
-  <div style="font-size:9px;color:#b0ada6;margin-bottom:12px">출처: 사람인 기업 인사담당자 1,124개사 설문 (복수응답)</div>
+  <div style="font-size:9px;color:#b0ada6;margin-bottom:0">출처: 사람인 기업 인사담당자 1,124개사 설문 (복수응답)</div>
+  <div style="flex:1 0 0"></div>
 </div>
 <div class="pg-footer"><span class="pg-footer-text">CH.2 — 거시 환경 분석</span><span class="pg-footer-text">4</span></div>
 </div>`
@@ -913,13 +915,14 @@ const SPREADS = [
 </div>`,
 
 `<div class="pg" style="border-radius:0 10px 10px 0">
-<div class="pg-scroll pg-r-align" style="justify-content:flex-start;gap:10px">
-  <div class="pg-subtitle" style="margin-bottom:0">주니어·시니어 모두에게 적용 가능한 단계별 액션플랜</div>
+<div class="pg-scroll pg-r-align">
+  <div class="pg-subtitle" style="margin-bottom:10px">주니어·시니어 모두에게 적용 가능한 단계별 액션플랜</div>
   ${[["즉시 시행 (0~1개월)","JD 검토 프로세스 수립, 온보딩 체크리스트 제작","coral"],["단기 (1~3개월)","버디 시스템 론칭, 30/60/90일 체크인 구조화","amber"],["중기 (3~6개월)","커리어맵 공개, 성장 리뷰 면담 정례화","teal"],["장기 (6개월+)","리텐션 대시보드 구축, 모티베이션 핏 면접 도입","purple"]].map(([t,d,c])=>`
-  <div class="card card-${c}" style="margin-bottom:0">
+  <div class="card card-${c}" style="margin-bottom:10px">
     <div style="font-size:9.5px;font-weight:700;color:${c==='coral'?'#8a1a1a':c==='amber'?'#7a3c00':c==='teal'?'#0a6640':'#2e2880'};margin-bottom:3px">${t}</div>
     <div style="font-size:11px;color:#4a4640;word-break:keep-all">${d}</div>
   </div>`).join('')}
+  <div style="flex:1 0 0"></div>
 </div>
 <div class="pg-footer"><span class="pg-footer-text">CH.4 — 3대 인사이트</span><span class="pg-footer-text">6</span></div>
 </div>`
