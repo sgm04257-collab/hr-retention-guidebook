@@ -800,11 +800,15 @@ const SPREADS = [
       ${["JD-업무 불일치 → 채용 단계에서 정확한 기대 설계","온보딩 구조 부재 → 90일 마일스톤 체계 도입","커리어 성장 부재 → 커리어맵 공개 + 분기 리뷰"].map(t=>`<div class="chk-item"><div class="chk-icon ci-t"><iconify-icon icon="solar:check-bold"></iconify-icon></div><div>${t}</div></div>`).join('')}
     </div>
   </div>
-  <div class="insight">
+  <div class="insight" style="margin-bottom:8px">
     <div class="insight-label"><iconify-icon icon="solar:lightbulb-bolt-bold" style="font-size:10px"></iconify-icon> 핵심 명제</div>
     <div class="insight-text">퇴사는 갑자기 일어나지 않습니다.<br><strong style="color:#4ECDC4">이미 채용 단계부터 씨앗이 심어집니다.</strong></div>
   </div>
-  <div style="flex:1 0 0"></div>
+  <div style="flex:1 0 0;overflow:hidden;min-height:60px">
+    <img src="seed.jpg" style="width:100%;height:100%;object-fit:cover;object-position:50% 42%;display:block;
+      -webkit-mask-image:linear-gradient(to bottom, transparent 0%, black 20%, black 62%, transparent 100%);
+      mask-image:linear-gradient(to bottom, transparent 0%, black 20%, black 62%, transparent 100%);">
+  </div>
 </div>
 <div class="pg-footer"><span class="pg-footer-text">CH.1 — 문제 제기</span><span class="pg-footer-text">3</span></div>
 </div>`
