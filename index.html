@@ -1304,34 +1304,62 @@ const SPREADS = [
 `<div class="pg" style="border-radius:10px 0 0 10px">
 <div class="pg-scroll">
   <div class="ch-label" style="color:#7a3c00"><iconify-icon icon="solar:videocamera-record-bold"></iconify-icon>COMPANY · 03 · 콘텐츠</div>
-  <div class="pg-title">콘텐츠 기업 분석<br><span style="font-size:13px;font-weight:500;color:#b0ada6">[ 자료 입력 예정 ]</span></div>
-  <div class="divider" style="background:linear-gradient(to right,#7a3c00,rgba(122,60,0,.1))"></div>
-  <div class="member-slot" style="height:180px;margin-bottom:10px">
-    <iconify-icon icon="solar:document-text-bold"></iconify-icon>
-    <div style="font-weight:700;color:#c0bdb6;font-size:12px;word-break:keep-all">콘텐츠 기업 분석</div>
-    <div style="font-size:10px;color:#d0cdc8;margin-top:3px">회사명 · 퇴사 원인 · HR 인사이트</div>
-  </div>
-  <div class="card card-gray">
-    <div style="font-size:9.5px;color:#888;margin-bottom:4px;display:flex;align-items:center;gap:4px"><iconify-icon icon="solar:pen-bold" style="font-size:11px"></iconify-icon>작성 가이드</div>
-    <div style="font-size:10.5px;color:#666;line-height:1.75;word-break:keep-all">분석 기업 / 산업 유형 / 퇴사율 현황<br>주니어·시니어 이탈 원인 비교<br>HR 개입 가능 포인트 / 대응 방안<br>이 가이드북 프레임워크 적용 제안</div>
-  </div>
+  <div class="pg-title">콘텐츠<br><em>자사 적용안</em></div>
+  <div class="divider" style="background:linear-gradient(to right,#7a3c00 25%,rgba(122,60,0,.08) 100%)"></div>
+  <div style="background:linear-gradient(135deg,#7a3c00,#a05a10);color:#fff;border-radius:8px;padding:10px 14px;margin-bottom:11px;font-size:11px;line-height:1.5;font-weight:600;box-shadow:0 3px 10px rgba(122,60,0,.18)">콘텐츠 리텐션은 <span style="color:#ffd8a8">'성장 체감'</span>과 <span style="color:#ffd8a8">'역할 안정성'</span> 설계에서 시작된다</div>
+  <div class="pg-subtitle" style="margin-bottom:7px;font-size:13px;color:#e8394b;display:flex;align-items:center;gap:5px"><iconify-icon icon="solar:danger-triangle-bold" style="font-size:14px"></iconify-icon>핵심 페인포인트 3가지</div>
+  ${[
+    ["P1","조직 안정성 부족","잦은 조직 개편·운영 체계 변경으로 안정감 저하","예측 불가한 구조 변화 → 심리적 안정감 훼손 · 몰입도 저하"],
+    ["P2","리드급 피로도 증가","동시다발 IP 확장으로 멀티태스킹·R&R 과부하 심화","시니어 소진 누적 → 조직 핵심 노하우 이탈 위험"],
+    ["P3","장기 성장 경로 불투명","전문 커리어 및 미래 역할에 대한 불확실성 확대","성장 체감 불가 → 잔류 근거 소멸 · 이직 탐색 가속"]
+  ].map(([code,title,sub,detail])=>`
+  <div class="card card-coral" style="margin-bottom:7px;padding:10px 12px">
+    <div style="display:flex;align-items:center;gap:7px;margin-bottom:4px">
+      <div style="font-size:10px;font-weight:900;color:#e8394b;font-family:monospace;letter-spacing:.06em">${code}</div>
+      <div style="font-size:12px;font-weight:800;color:#7a3c00">${title}</div>
+    </div>
+    <div style="font-size:10px;color:#5a4a45;line-height:1.5;font-weight:600;margin-bottom:2px">${sub}</div>
+    <div style="font-size:9.5px;color:#888;line-height:1.5">${detail}</div>
+  </div>`).join('')}
 </div>
-<div class="pg-footer"><span class="pg-footer-text">C-03 · 콘텐츠 기업 분석</span><span class="pg-footer-text">14</span></div>
+<div class="pg-footer"><span class="pg-footer-text">C-03 · 콘텐츠 자사 적용안</span><span class="pg-footer-text">14</span></div>
 </div>`,
 
 `<div class="pg" style="border-radius:0 10px 10px 0">
 <div class="pg-scroll pg-r-align">
-  <div class="member-slot" style="height:220px;margin-bottom:10px">
-    <iconify-icon icon="solar:chart-2-bold"></iconify-icon>
-    <div style="font-weight:700;color:#c0bdb6;font-size:12px">데이터 / 표 / 차트 영역</div>
-    <div style="font-size:10px;color:#d0cdc8;margin-top:4px">퇴사 원인 분석 표 또는 그래프</div>
+  <div style="display:flex;align-items:center;gap:5px;margin-bottom:6px">
+    <div style="width:3px;height:14px;background:#1DB87A;border-radius:2px"></div>
+    <div style="font-size:11px;font-weight:800;color:#1DB87A;letter-spacing:.04em">주니어 적용 시 예상 결과</div>
   </div>
-  <div class="member-slot" style="height:130px">
-    <iconify-icon icon="solar:lightbulb-minimalistic-bold"></iconify-icon>
-    <div style="font-weight:700;color:#c0bdb6;font-size:11px">핵심 인사이트 3줄 요약</div>
+  ${[
+    ["직무핏 얼라인 제도","콘텐츠 업계 특유의 직무 기대 불일치 감소 및 조기 퇴사 예방 · 입사 전 업무 이해도 향상으로 조직 적응 속도 개선"],
+    ["초기 적응 모니터링","온보딩 몰입도 향상 및 초기 리텐션 강화 · 주니어 이탈 위험군 조기 발견 및 빠른 케어 가능"]
+  ].map(([action,effect])=>`
+  <div style="background:#f2fdf7;border:1px solid #b6ecd4;border-left:3px solid #1DB87A;border-radius:7px;padding:8px 11px;margin-bottom:6px">
+    <div style="font-size:9px;color:#888;margin-bottom:2px">적용 액션</div>
+    <div style="font-size:10.5px;font-weight:700;color:#7a3c00;margin-bottom:3px">${action}</div>
+    <div style="font-size:9px;color:#2a7a54;line-height:1.6">${effect}</div>
+  </div>`).join('')}
+  <div style="display:flex;align-items:center;gap:5px;margin-top:4px;margin-bottom:6px">
+    <div style="width:3px;height:14px;background:#534AB7;border-radius:2px"></div>
+    <div style="font-size:11px;font-weight:800;color:#534AB7;letter-spacing:.04em">시니어 적용 시 예상 결과</div>
   </div>
+  ${[
+    ["72시간 역할 정리제","역할·책임 범위 명확화로 시니어 피로도 및 혼선 감소 · 조직 개편·프로젝트 확장 상황에서도 업무 안정성 유지"],
+    ["Master-fellow Track","관리직 외 전문가 성장 경로 확보를 통한 시니어 리텐션 강화 · 핵심 IP 노하우 및 산업 전문성의 조직 내 장기 축적 가능"]
+  ].map(([action,effect])=>`
+  <div style="background:#f4f3fd;border:1px solid #c4bff0;border-left:3px solid #534AB7;border-radius:7px;padding:8px 11px;margin-bottom:6px">
+    <div style="font-size:9px;color:#888;margin-bottom:2px">적용 액션</div>
+    <div style="font-size:10.5px;font-weight:700;color:#7a3c00;margin-bottom:3px">${action}</div>
+    <div style="font-size:9px;color:#3a3490;line-height:1.6">${effect}</div>
+  </div>`).join('')}
+  <div class="insight" style="margin-top:2px">
+    <div class="insight-label"><iconify-icon icon="solar:lightbulb-bolt-bold" style="font-size:10px"></iconify-icon>핵심 메시지</div>
+    <div class="insight-text">콘텐츠 산업의 리텐션은 단순 복지가 아닌,<br><strong style="color:#4ECDC4">'성장 체감'</strong>과 <strong style="color:#a05a10">'역할 안정성'</strong> 설계에서 시작된다.</div>
+  </div>
+  <div style="flex:1 0 0"></div>
 </div>
-<div class="pg-footer"><span class="pg-footer-text">C-03 · 콘텐츠 기업 분석</span><span class="pg-footer-text">14</span></div>
+<div class="pg-footer"><span class="pg-footer-text">C-03 · 콘텐츠 자사 적용안</span><span class="pg-footer-text">14</span></div>
 </div>`
 ],
 
