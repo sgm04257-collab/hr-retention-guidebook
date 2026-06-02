@@ -1265,34 +1265,65 @@ const SPREADS = [
 `<div class="pg" style="border-radius:10px 0 0 10px">
 <div class="pg-scroll">
   <div class="ch-label" style="color:#0d6b4a"><iconify-icon icon="solar:smartphone-bold"></iconify-icon>COMPANY · 02 · 플랫폼</div>
-  <div class="pg-title">플랫폼 기업 분석<br><span style="font-size:13px;font-weight:500;color:#b0ada6">[ 자료 입력 예정 ]</span></div>
-  <div class="divider" style="background:linear-gradient(to right,#0d6b4a,rgba(13,107,74,.1))"></div>
-  <div class="member-slot" style="height:180px;margin-bottom:10px">
-    <iconify-icon icon="solar:document-text-bold"></iconify-icon>
-    <div style="font-weight:700;color:#c0bdb6;font-size:12px;word-break:keep-all">플랫폼 기업 분석</div>
-    <div style="font-size:10px;color:#d0cdc8;margin-top:3px">회사명 · 퇴사 원인 · HR 인사이트</div>
-  </div>
-  <div class="card card-gray">
-    <div style="font-size:9.5px;color:#888;margin-bottom:4px;display:flex;align-items:center;gap:4px"><iconify-icon icon="solar:pen-bold" style="font-size:11px"></iconify-icon>작성 가이드</div>
-    <div style="font-size:10.5px;color:#666;line-height:1.75;word-break:keep-all">분석 기업 / 산업 유형 / 퇴사율 현황<br>주니어·시니어 이탈 원인 비교<br>HR 개입 가능 포인트 / 대응 방안<br>이 가이드북 프레임워크 적용 제안</div>
-  </div>
+  <div class="pg-title">플랫폼<br><em>자사 적용안</em></div>
+  <div class="divider" style="background:linear-gradient(to right,#0d6b4a 25%,rgba(13,107,74,.08) 100%)"></div>
+  <div style="background:linear-gradient(135deg,#0d6b4a,#0a8a5e);color:#fff;border-radius:8px;padding:10px 14px;margin-bottom:11px;font-size:11px;line-height:1.5;font-weight:600;box-shadow:0 3px 10px rgba(13,107,74,.2)">구조·성장·보상의 균형 — <span style="color:#a8ffd8">주니어는 성장 확신</span>을, <span style="color:#a8ffd8">시니어는 안정성과 인정 체계</span>를 필요로 한다</div>
+  <div class="pg-subtitle" style="margin-bottom:7px;font-size:13px;color:#e8394b;display:flex;align-items:center;gap:5px"><iconify-icon icon="solar:danger-triangle-bold" style="font-size:14px"></iconify-icon>핵심 페인포인트 3가지</div>
+  ${[
+    ["P1","역할 명확성 불안","사업 변화보다 '내 역할이 어떻게 달라지는지 불명확한 상태'가 퇴직 트리거","구조 변화 → 역할 모호성 → 심리적 불안 누적 → 이탈 검토"],
+    ["P2","성장·영향력 정체","전문성이 조직에 반영되고 성장 가능한가에 대한 확신 부재","처우보다 '내 성장'을 더 중시하는 IT 인재 특성 → 몰입도 급락"],
+    ["P3","보상 상대 경쟁력 저하","절대 보상보다 시장 대비 상대 경쟁력이 퇴직 의사결정에 직접 영향","플랫폼 업계 인재 이동성 높아 → 경쟁사 오퍼에 즉각 반응"]
+  ].map(([code,title,sub,detail])=>`
+  <div class="card card-coral" style="margin-bottom:7px;padding:10px 12px">
+    <div style="display:flex;align-items:center;gap:7px;margin-bottom:4px">
+      <div style="font-size:10px;font-weight:900;color:#e8394b;font-family:monospace;letter-spacing:.06em">${code}</div>
+      <div style="font-size:12px;font-weight:800;color:#0d6b4a">${title}</div>
+    </div>
+    <div style="font-size:10px;color:#5a4a45;line-height:1.5;font-weight:600;margin-bottom:2px">${sub}</div>
+    <div style="font-size:9.5px;color:#888;line-height:1.5">${detail}</div>
+  </div>`).join('')}
 </div>
-<div class="pg-footer"><span class="pg-footer-text">C-02 · 플랫폼 기업 분석</span><span class="pg-footer-text">13</span></div>
+<div class="pg-footer"><span class="pg-footer-text">C-02 · 플랫폼 자사 적용안</span><span class="pg-footer-text">13</span></div>
 </div>`,
 
 `<div class="pg" style="border-radius:0 10px 10px 0">
 <div class="pg-scroll pg-r-align">
-  <div class="member-slot" style="height:220px;margin-bottom:10px">
-    <iconify-icon icon="solar:chart-2-bold"></iconify-icon>
-    <div style="font-weight:700;color:#c0bdb6;font-size:12px">데이터 / 표 / 차트 영역</div>
-    <div style="font-size:10px;color:#d0cdc8;margin-top:4px">퇴사 원인 분석 표 또는 그래프</div>
+  <div style="display:flex;align-items:center;gap:5px;margin-bottom:6px">
+    <div style="width:3px;height:14px;background:#1DB87A;border-radius:2px"></div>
+    <div style="font-size:11px;font-weight:800;color:#1DB87A;letter-spacing:.04em">주니어 적용 시 예상 결과</div>
   </div>
-  <div class="member-slot" style="height:130px">
-    <iconify-icon icon="solar:lightbulb-minimalistic-bold"></iconify-icon>
-    <div style="font-weight:700;color:#c0bdb6;font-size:11px">핵심 인사이트 3줄 요약</div>
+  <div style="background:#f2fdf7;border:1px solid #b6ecd4;border-left:3px solid #1DB87A;border-radius:7px;padding:8px 11px;margin-bottom:6px">
+    <div style="font-size:9px;color:#888;margin-bottom:3px">적용 액션</div>
+    <div style="font-size:10.5px;font-weight:700;color:#0d6b4a;margin-bottom:5px">현실적 기대치 설정</div>
+    ${[
+      ["초기 퇴직률 감소","입사 전 기대와 실제 업무 간 괴리가 감소하며, 입사 3~6개월 내 조기 퇴직 감소 예상"],
+      ["채용 품질 향상","직무 현실을 충분히 이해한 후보자 중심으로 지원이 이뤄져, 입사 후 조직 적응도 및 직무 몰입도 향상 예상"]
+    ].map(([label,desc])=>`
+    <div style="display:flex;gap:6px;margin-bottom:4px">
+      <div style="font-size:9px;font-weight:700;color:#0d6b4a;white-space:nowrap;padding-top:1px">▸ ${label}</div>
+    </div>
+    <div style="font-size:9px;color:#2a7a54;line-height:1.55;margin-bottom:4px;padding-left:10px">${desc}</div>`).join('')}
   </div>
+  <div style="display:flex;align-items:center;gap:5px;margin-bottom:6px">
+    <div style="width:3px;height:14px;background:#534AB7;border-radius:2px"></div>
+    <div style="font-size:11px;font-weight:800;color:#534AB7;letter-spacing:.04em">시니어 적용 시 예상 결과</div>
+  </div>
+  ${[
+    ["72시간 역할 정리제도","조직개편·신규업무 후 R&R 혼선형 퇴사 감소 — '내 역할이 흔들린다'는 불안이 줄어들며 퇴사 검토 시점 지연 예상"],
+    ["Key Talent Reward Program","시장 대비 보상 경쟁력 확보를 통해 핵심 시니어 인재의 외부 오퍼 대응력 강화 · 조직 내 인정 체계 구축으로 잔류 동기 강화"]
+  ].map(([action,effect])=>`
+  <div style="background:#f4f3fd;border:1px solid #c4bff0;border-left:3px solid #534AB7;border-radius:7px;padding:8px 11px;margin-bottom:6px">
+    <div style="font-size:9px;color:#888;margin-bottom:2px">적용 액션</div>
+    <div style="font-size:10.5px;font-weight:700;color:#0d6b4a;margin-bottom:3px">${action}</div>
+    <div style="font-size:9px;color:#3a3490;line-height:1.6">${effect}</div>
+  </div>`).join('')}
+  <div class="insight" style="margin-top:2px">
+    <div class="insight-label"><iconify-icon icon="solar:lightbulb-bolt-bold" style="font-size:10px"></iconify-icon>핵심 메시지</div>
+    <div class="insight-text">IT 플랫폼 리텐션의 핵심은 <strong style="color:#1DB87A">구조·성장·보상의 균형</strong>이다.<br>주니어는 <strong style="color:#4ECDC4">성장 확신</strong>을, 시니어는 <strong style="color:#a8c4ff">안정성과 인정 체계</strong>를 필요로 한다.</div>
+  </div>
+  <div style="flex:1 0 0"></div>
 </div>
-<div class="pg-footer"><span class="pg-footer-text">C-02 · 플랫폼 기업 분석</span><span class="pg-footer-text">13</span></div>
+<div class="pg-footer"><span class="pg-footer-text">C-02 · 플랫폼 자사 적용안</span><span class="pg-footer-text">13</span></div>
 </div>`
 ],
 
